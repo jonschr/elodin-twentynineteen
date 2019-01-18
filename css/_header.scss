@@ -1,23 +1,113 @@
+/* ==========================================================================
+   Wrappers
+   ========================================================================== */
+
 .site-header {
-    background-color: #fff;
+    background-color: rgba(white, 0.95);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-    padding: 0 30px;
+    padding: 0 20px;
+    transition: .3s all ease;
+
+    > .wrap {
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        @include notdesktop {
+            display: block;
+        }
+
+
+        .title-area,
+        .nav-primary,
+        .menu-toggle {
+            @include desktop {
+                flex: 0 1 auto;
+            }
+        }
+
+        .title-area {
+            @include desktop {
+                margin-right: auto;
+                flex: 0 1 auto;
+            }
+
+
+            @include notdesktop {
+                float: left;
+                max-width: 170px;
+            }
+        }
+
+        .nav-primary {
+            @include desktop {
+                margin-left: auto;
+                flex: 0 1 auto;
+            }
+
+
+            @include notdesktop {
+                clear: left;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                width: 100%;
+            }
+        }
+
+        .menu-toggle {
+            flex: 0 1 auto;
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
 }
 
-/* Title Area
---------------------------------------------- */
+/* ==========================================================================
+   Title area
+   ========================================================================== */
 
-.title-area {
-    float: left;
-    padding-bottom: 25px;
-    padding-top: 25px;
+.site-header {
+    .title-area {
+        padding-bottom: 25px;
+        padding-top: 25px;
+        transition: .3s all ease;
+
+        img.custom-logo {
+            transition: .3s all ease;
+            width: 170px;
+            margin: 0 auto;
+            display: block;
+
+            @include notdesktop {
+                max-height: 66px;
+                margin-left: 0;
+                text-align: left;
+            }
+        }
+    }
 }
 
 .wp-custom-logo .title-area {
     max-width: 350px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     width: 100%;
+
+    @include notdesktop {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        max-width: 200px;
+
+        img {
+            margin-left: 0;
+
+            // max-width: 130px;
+       
+        }
+    }
 }
 
 .wp-custom-logo .title-area img {
@@ -54,4 +144,22 @@
     padding-bottom: 15px;
     padding-top: 15px;
     width: 100%;
+}
+
+/* ==========================================================================
+   Scrolled
+   ========================================================================== */
+
+.site-header.header-scrolled {
+    background: white;
+    box-shadow: 0 0 20px 0 rgba(black, 0.15);
+
+    .title-area {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        img {
+            width: 175px;
+        }
+    }
 }

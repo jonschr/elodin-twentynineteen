@@ -3,7 +3,8 @@
    ========================================================================== */
 
 .site-container,
-.acf-block-preview {
+.acf-block-preview,
+.lity {
     .button {
         background-color: #333;
         border: none;
@@ -18,6 +19,7 @@
         line-height: 1em;
         text-align: center;
         text-decoration: none;
+        text-transform: uppercase;
         height: auto;
 
         &:focus,
@@ -25,5 +27,10 @@
             background-color: #0073e5;
             color: #fff;
         }
+    }
+
+    .button.button-small {
+        padding: 5px 20px;
+        height: auto;
     }
 }

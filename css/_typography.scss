@@ -11,8 +11,13 @@ a:hover {
 }
 
 p {
-    margin: 0 0 30px;
+    margin: 0 0 20px;
     padding: 0;
+    font-size: 18px;
+
+    @include mobile {
+        font-size: 16px;
+    }
 }
 
 ol,
