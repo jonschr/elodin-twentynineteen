@@ -1,22 +1,12 @@
 <?php
-/**
- * Genesis Sample.
- *
- * This file adds functions to the Genesis Sample Theme.
- *
- * @package Genesis Sample
- * @author  StudioPress
- * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
- */
 
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
 
 // Defines the child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'Genesis Sample' );
-define( 'CHILD_THEME_URL', 'https://www.studiopress.com/' );
-define( 'CHILD_THEME_VERSION', '2.8.0' );
+define( 'CHILD_THEME_NAME', 'Elodin TwentyNineteen' );
+define( 'CHILD_THEME_URL', 'https://elod.in' );
+define( 'CHILD_THEME_VERSION', '2.8.1' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -72,6 +62,14 @@ function genesis_sample_enqueue_scripts_styles() {
 	wp_enqueue_style(
 		'genesis-sample-fonts',
 		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
+		array(),
+		CHILD_THEME_VERSION
+	);
+
+	// Add the main stylesheet
+	wp_enqueue_style(
+		'theme-style',
+		get_stylesheet_directory_uri() . "/css/theme-style.css",
 		array(),
 		CHILD_THEME_VERSION
 	);
