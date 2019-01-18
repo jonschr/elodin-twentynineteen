@@ -10,10 +10,12 @@
         margin-top: 0 !important;
     }
 
-    .entry-content {
-        > .gutenberg-section:first-child {
-            .content-wrap {
-                margin-top: $headerheight;
+    @include desktop {
+        .entry-content {
+            > .gutenberg-section:first-child {
+                .content-wrap {
+                    margin-top: $headerheight;
+                }
             }
         }
     }
