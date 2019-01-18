@@ -6,7 +6,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Elodin TwentyNineteen' );
 define( 'CHILD_THEME_URL', 'https://elod.in' );
-define( 'CHILD_THEME_VERSION', '2.8.1' );
+define( 'CHILD_THEME_VERSION', '0.1' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -97,6 +97,22 @@ function genesis_sample_enqueue_scripts_styles() {
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
+	);
+
+}
+
+/**
+ * Gutenberg styles for the backend
+ *
+ */
+add_action( 'enqueue_block_editor_assets', 'elodin_enqueue_gutenberg_styles' );
+function elodin_enqueue_gutenberg_styles() {
+
+    wp_enqueue_style(
+		'elodin-gutenberg-style',
+		get_stylesheet_directory_uri() . "/css/gutenberg-style.css",
+		array(),
+		CHILD_THEME_VERSION
 	);
 
 }

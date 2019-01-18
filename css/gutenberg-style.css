@@ -1,0 +1,238 @@
+/* ==========================================================================
+   Get options
+   ========================================================================== */
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+/* ==========================================================================
+   Vars
+   ========================================================================== */
+/* ==========================================================================
+   Queries
+   ========================================================================== */
+/* ==========================================================================
+   Includes
+   ========================================================================== */
+/* ==========================================================================
+   Automatic heading removal
+   ========================================================================== */
+.first-block-acf-fullwidth .content > .page > .entry-header {
+  display: none;
+}
+
+.first-block-acf-fullwidth .site-inner {
+  margin-top: 0 !important;
+}
+
+.first-block-acf-fullwidth .entry-content > .gutenberg-section:first-child .content-wrap {
+  margin-top: 70px;
+}
+
+/* ==========================================================================
+   Section 0 treatment
+   ========================================================================== */
+@media (min-width: 960px) {
+  .entry-content > .gutenberg-section:first-child {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .entry-content > .gutenberg-section:first-child {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+a {
+  color: #0073e5;
+  text-decoration: underline;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+a:focus,
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+hr {
+  border: none;
+  border-collapse: collapse;
+  border-top: 1px solid #eee;
+  clear: both;
+  margin: 30px 0;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+blockquote,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+mark {
+  background: #ddd;
+  color: #333;
+}
+
+blockquote {
+  margin: 30px;
+}
+
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 27px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.entry-content h3,
+.entry-content h4 {
+  font-weight: 600;
+}
+
+.entry-content h4 {
+  margin-top: 40px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+/* ==========================================================================
+   Titles
+   ========================================================================== */
+.archive-description .entry-title,
+.archive-title,
+.author-box-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.entry-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.entry-title a,
+.sidebar .widget-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.entry-title a:focus,
+.entry-title a:hover {
+  color: #0073e5;
+}
+
+.widget-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.button,
+.wp-block .button {
+  background-color: #333;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px !important;
+  font-weight: 600;
+  padding: 15px 30px;
+  display: inline-block;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  height: auto;
+}
+
+.button:focus,
+.button:hover,
+.wp-block .button:focus,
+.wp-block .button:hover {
+  background-color: #0073e5;
+  color: #fff;
+}
+
+.entry-content .button:focus,
+.entry-content .button:hover {
+  color: #fff;
+}
+
+.site-container button:disabled,
+.site-container button:disabled:hover,
+.site-container input:disabled,
+.site-container input:disabled:hover,
+.site-container input[type="button"]:disabled,
+.site-container input[type="button"]:disabled:hover,
+.site-container input[type="reset"]:disabled,
+.site-container input[type="reset"]:disabled:hover,
+.site-container input[type="submit"]:disabled,
+.site-container input[type="submit"]:disabled:hover {
+  background-color: #eee;
+  border-width: 0;
+  color: #777;
+  cursor: not-allowed;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+  display: none;
+}
+/*# sourceMappingURL=gutenberg-style.css.map */
