@@ -113,17 +113,30 @@ function genesis_sample_enqueue_scripts_styles() {
  * Gutenberg styles for the backend
  *
  */
-add_action( 'enqueue_block_editor_assets', 'elodin_enqueue_gutenberg_styles' );
-function elodin_enqueue_gutenberg_styles() {
+// add_action( 'enqueue_block_editor_assets', 'elodin_enqueue_gutenberg_styles' );
+// function elodin_enqueue_gutenberg_styles() {
 
-    wp_enqueue_style(
-		'elodin-gutenberg-style',
-		get_stylesheet_directory_uri() . "/css/gutenberg-style.css",
-		array(),
-		CHILD_THEME_VERSION
-	);
+//     wp_enqueue_style(
+// 		'elodin-gutenberg-style',
+// 		get_stylesheet_directory_uri() . "/css/gutenberg-style.css",
+// 		array(),
+// 		CHILD_THEME_VERSION
+// 	);
 
+// }
+
+/**
+ * Sets up theme defaults and registers support for various WordPress features.
+ */
+function gutenberg_editor_style_setup() {
+	  
+	// Add support for editor styles
+	  add_theme_support( 'editor-styles' );
+  
+	// Enqueue editor styles
+	add_editor_style( get_stylesheet_directory_uri() . "/css/gutenberg-style.css" );
 }
+add_action( 'after_setup_theme', 'gutenberg_editor_style_setup' );
 
 /**
  * Defines responsive menu settings.
