@@ -314,7 +314,13 @@ body {
 .site-inner {
   clear: both;
   margin: 0 auto;
-  padding: 60px 30px 0;
+  padding: 80px 30px 0;
+}
+
+@media (max-width: 600px) {
+  .site-inner {
+    padding-top: 30px;
+  }
 }
 
 /* ==========================================================================
@@ -620,7 +626,7 @@ blockquote {
 .site-header .title-area img.custom-logo {
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
-  width: 170px;
+  width: 100%;
   margin: 0 auto;
   display: block;
 }
@@ -634,7 +640,6 @@ blockquote {
 }
 
 .wp-custom-logo .title-area {
-  max-width: 350px;
   padding-bottom: 20px;
   padding-top: 20px;
   width: 100%;
@@ -886,15 +891,15 @@ blockquote {
    ========================================================================== */
 @media (min-width: 960px) {
   .entry-content > .gutenberg-section:first-child {
-    padding-top: 125px;
-    padding-bottom: 125px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 }
 
 @media (min-width: 1200px) {
   .entry-content > .gutenberg-section:first-child {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
   }
 }
 
@@ -1112,6 +1117,134 @@ h6 {
   text-align: center;
 }
 
+/* ==========================================================================
+   Archives AND Single
+   ========================================================================== */
+@media (min-width: 960px) {
+  body.archive #respond,
+  body.category #respond,
+  body.single-post #respond,
+  body.blog #respond {
+    padding: 30px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.07);
+            box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+  }
+}
+
+body.archive .entry-footer p.entry-meta,
+body.category .entry-footer p.entry-meta,
+body.single-post .entry-footer p.entry-meta,
+body.blog .entry-footer p.entry-meta {
+  display: none;
+}
+
+/* ==========================================================================
+   Archives
+   ========================================================================== */
+.archive-description {
+  background: transparent;
+  padding: 0 0 20px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  .archive-description {
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.archive-description h1.archive-title {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+@media (min-width: 600px) and (max-width: 960px) {
+  .archive-description h1.archive-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .archive-description h1.archive-title {
+    font-size: 20px;
+  }
+}
+
+body.archive,
+body.category,
+body.blog {
+  background: #f5f5f5;
+}
+
+body.archive .site-inner,
+body.category .site-inner,
+body.blog .site-inner {
+  max-width: 1260px;
+}
+
+body.archive article.post,
+body.category article.post,
+body.blog article.post {
+  padding: 30px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 3px;
+}
+
+body.archive article.post .entry-content img.post-image,
+body.category article.post .entry-content img.post-image,
+body.blog article.post .entry-content img.post-image {
+  width: calc( 100% + 60px);
+  max-width: calc( 100% + 60px);
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-bottom: 20px;
+  height: auto !important;
+}
+
+body.archive article.post:last-child,
+body.category article.post:last-child,
+body.blog article.post:last-child {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 600px) {
+  body.archive article.post,
+  body.category article.post,
+  body.blog article.post {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 40px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+body.archive .entry-content :last-child,
+body.category .entry-content :last-child,
+body.blog .entry-content :last-child {
+  margin-bottom: 0;
+}
+
+body.archive h2.entry-title,
+body.category h2.entry-title,
+body.blog h2.entry-title {
+  line-height: 1.1em;
+  margin-bottom: 5px;
+}
+
+body.archive h2.entry-title a,
+body.category h2.entry-title a,
+body.blog h2.entry-title a {
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+/* ==========================================================================
+   Single
+   ========================================================================== */
 /* ==========================================================================
    Entry content
    ========================================================================== */
@@ -1605,6 +1738,13 @@ th:first-child {
   background-color: #fff;
   clear: both;
   padding: 60px 0;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .footer-widgets {
+    text-align: left;
+  }
 }
 
 .footer-widgets .wrap {
@@ -1922,7 +2062,6 @@ th:first-child {
   /* Entry Misc.
     --------------------------------------------- */
   .after-entry,
-  .archive-description,
   .author-box,
   .comment-respond,
   .entry,

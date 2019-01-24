@@ -7,6 +7,11 @@
     background-color: #fff;
     clear: both;
     padding: 60px 0;
+    text-align: center;
+
+    @include mobile {
+        text-align: left;
+    }
 }
 
 .footer-widgets .wrap {

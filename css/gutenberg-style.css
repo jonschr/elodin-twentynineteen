@@ -35,15 +35,15 @@
    ========================================================================== */
 @media (min-width: 960px) {
   .entry-content > .gutenberg-section:first-child {
-    padding-top: 125px;
-    padding-bottom: 125px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 }
 
 @media (min-width: 1200px) {
   .entry-content > .gutenberg-section:first-child {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
   }
 }
 
