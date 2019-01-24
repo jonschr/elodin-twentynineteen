@@ -1870,6 +1870,31 @@ th:first-child {
   content: "\f460";
 }
 
+/* ==========================================================================
+   Table of contents block
+   ========================================================================== */
+.wp-block-advanced-gutenberg-blocks-summary {
+  margin-bottom: 20px;
+}
+
+.wp-block-advanced-gutenberg-blocks-summary > ul {
+  padding-top: 5px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.wp-block-advanced-gutenberg-blocks-summary > ul > li > a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.wp-block-advanced-gutenberg-blocks-summary > ul > li > ul {
+  line-height: 1em;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-bottom: 5px;
+}
+
 /* Media Queries
 ---------------------------------------------------------------------------- */
 @media only screen and (min-width: 960px) {

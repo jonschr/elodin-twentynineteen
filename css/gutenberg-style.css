@@ -13,57 +13,6 @@
 /* ==========================================================================
    Includes
    ========================================================================== */
-/* ==========================================================================
-   Automatic heading removal
-   ========================================================================== */
-.first-block-acf-fullwidth .content > .page > .entry-header,
-.first-block-acf-twocolumn .content > .page > .entry-header,
-.first-block-acf-featureditems .content > .page > .entry-header,
-.first-block-acf-checkerboard .content > .page > .entry-header {
-  display: none;
-}
-
-.first-block-acf-fullwidth .site-inner,
-.first-block-acf-twocolumn .site-inner,
-.first-block-acf-featureditems .site-inner,
-.first-block-acf-checkerboard .site-inner {
-  margin-top: 0 !important;
-}
-
-@media (min-width: 960px) {
-  .first-block-acf-fullwidth .entry-content > .gutenberg-section:first-child .content-wrap,
-  .first-block-acf-twocolumn .entry-content > .gutenberg-section:first-child .content-wrap,
-  .first-block-acf-featureditems .entry-content > .gutenberg-section:first-child .content-wrap,
-  .first-block-acf-checkerboard .entry-content > .gutenberg-section:first-child .content-wrap {
-    margin-top: 70px;
-  }
-}
-
-/* ==========================================================================
-   Section 0 treatment
-   ========================================================================== */
-@media (min-width: 960px) {
-  .entry-content > .gutenberg-section:first-child {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-  }
-}
-
-@media (min-width: 1200px) {
-  .entry-content > .gutenberg-section:first-child {
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-  }
-}
-
-/* ==========================================================================
-   Kicker headings
-   ========================================================================== */
-.gutenberg-section .content-wrap > h3:first-child,
-.gutenberg-section .content-wrap > h4:first-child {
-  margin-bottom: 0;
-}
-
 a {
   color: #0073e5;
   text-decoration: underline;
@@ -274,5 +223,81 @@ h6 {
 .lity .button.button-small {
   padding: 5px 20px;
   height: auto;
+}
+
+/* ==========================================================================
+   Automatic heading removal
+   ========================================================================== */
+.first-block-acf-fullwidth .content > .page > .entry-header,
+.first-block-acf-twocolumn .content > .page > .entry-header,
+.first-block-acf-featureditems .content > .page > .entry-header,
+.first-block-acf-checkerboard .content > .page > .entry-header {
+  display: none;
+}
+
+.first-block-acf-fullwidth .site-inner,
+.first-block-acf-twocolumn .site-inner,
+.first-block-acf-featureditems .site-inner,
+.first-block-acf-checkerboard .site-inner {
+  margin-top: 0 !important;
+}
+
+@media (min-width: 960px) {
+  .first-block-acf-fullwidth .entry-content > .gutenberg-section:first-child .content-wrap,
+  .first-block-acf-twocolumn .entry-content > .gutenberg-section:first-child .content-wrap,
+  .first-block-acf-featureditems .entry-content > .gutenberg-section:first-child .content-wrap,
+  .first-block-acf-checkerboard .entry-content > .gutenberg-section:first-child .content-wrap {
+    margin-top: 70px;
+  }
+}
+
+/* ==========================================================================
+   Section 0 treatment
+   ========================================================================== */
+@media (min-width: 960px) {
+  .entry-content > .gutenberg-section:first-child {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .entry-content > .gutenberg-section:first-child {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
+}
+
+/* ==========================================================================
+   Kicker headings
+   ========================================================================== */
+.gutenberg-section .content-wrap > h3:first-child,
+.gutenberg-section .content-wrap > h4:first-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Table of contents block
+   ========================================================================== */
+.wp-block-advanced-gutenberg-blocks-summary {
+  margin-bottom: 20px;
+}
+
+.wp-block-advanced-gutenberg-blocks-summary > ul {
+  padding-top: 5px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.wp-block-advanced-gutenberg-blocks-summary > ul > li > a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.wp-block-advanced-gutenberg-blocks-summary > ul > li > ul {
+  line-height: 1em;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=gutenberg-style.css.map */

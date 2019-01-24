@@ -107,6 +107,14 @@ function genesis_sample_enqueue_scripts_styles() {
 		true
 	);
 
+	wp_enqueue_script(
+		'smoothscroll',
+		get_stylesheet_directory_uri() . '/js/smoothscroll.js',
+		array( 'jquery' ),
+		CHILD_THEME_VERSION,
+		true
+	);
+
 }
 
 /**
