@@ -1,7 +1,11 @@
 /* ==========================================================================
    Automatic heading removal
    ========================================================================== */
-.first-block-acf-fullwidth {
+
+.first-block-acf-fullwidth,
+.first-block-acf-twocolumn,
+.first-block-acf-featureditems,
+.first-block-acf-checkerboard {
     .content > .page > .entry-header {
         display: none;
     }

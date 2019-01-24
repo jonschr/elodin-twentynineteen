@@ -16,17 +16,26 @@
 /* ==========================================================================
    Automatic heading removal
    ========================================================================== */
-.first-block-acf-fullwidth .content > .page > .entry-header {
+.first-block-acf-fullwidth .content > .page > .entry-header,
+.first-block-acf-twocolumn .content > .page > .entry-header,
+.first-block-acf-featureditems .content > .page > .entry-header,
+.first-block-acf-checkerboard .content > .page > .entry-header {
   display: none;
 }
 
-.first-block-acf-fullwidth .site-inner {
+.first-block-acf-fullwidth .site-inner,
+.first-block-acf-twocolumn .site-inner,
+.first-block-acf-featureditems .site-inner,
+.first-block-acf-checkerboard .site-inner {
   margin-top: 0 !important;
 }
 
 @media (min-width: 960px) {
-  .first-block-acf-fullwidth .entry-content > .gutenberg-section:first-child .content-wrap {
-    margin-top: 120px;
+  .first-block-acf-fullwidth .entry-content > .gutenberg-section:first-child .content-wrap,
+  .first-block-acf-twocolumn .entry-content > .gutenberg-section:first-child .content-wrap,
+  .first-block-acf-featureditems .entry-content > .gutenberg-section:first-child .content-wrap,
+  .first-block-acf-checkerboard .entry-content > .gutenberg-section:first-child .content-wrap {
+    margin-top: 70px;
   }
 }
 
