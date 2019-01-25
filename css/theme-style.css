@@ -496,10 +496,6 @@ ul {
   padding: 0;
 }
 
-li {
-  list-style-type: none;
-}
-
 hr {
   border: none;
   border-collapse: collapse;
