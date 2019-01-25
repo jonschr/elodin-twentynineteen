@@ -66,3 +66,20 @@
     left: auto;
     opacity: 1;
 }
+
+/* ==========================================================================
+   Dropdown hinting
+   ========================================================================== */
+
+@include desktop {
+    .menu-item-has-children > a {
+        &:after {
+            content: "\f347";
+            font-family: 'dashicons';
+            margin-left: 4px;
+            margin-top: 3px;
+            float: right;
+            font-size: 12px;
+        }
+    }
+}
