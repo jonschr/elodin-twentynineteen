@@ -9,7 +9,6 @@
         background-color: #333;
         border: none;
         box-shadow: none;
-        border-radius: 3px;
         color: #fff;
         cursor: pointer;
         font-size: 16px !important;
@@ -33,4 +32,19 @@
         padding: 5px 20px;
         height: auto;
     }
+}
+
+.ab-button {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+    &.ab-button-size-small {}
+
+    &.ab-button-size-medium {}
+
+    &.ab-button-size-large {}
+
+    &.ab-button-size-extralarge {}
 }

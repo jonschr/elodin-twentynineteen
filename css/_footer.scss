@@ -12,6 +12,20 @@
     @include mobile {
         text-align: left;
     }
+
+
+    > .wrap {
+        display: flex;
+
+        @include tablet {
+            flex-flow: row wrap;
+        }
+
+
+        @include mobile {
+            flex-flow: column;
+        }
+    }
 }
 
 .footer-widgets .wrap {
@@ -23,6 +37,7 @@
     margin-bottom: 40px;
     padding-left: 30px;
     padding-right: 30px;
+    width: 100%;
 }
 
 .footer-widget-area:last-child,

@@ -248,10 +248,10 @@
     .footer-widgets .wrap {
         max-width: 1140px;
     }
+}
 
-    .footer-widget-area {
-        float: left;
-        margin-bottom: 0;
-        width: calc(100% / 3);
+@include mobile {
+    .hide-on-mobile {
+        display: none !important;
     }
 }

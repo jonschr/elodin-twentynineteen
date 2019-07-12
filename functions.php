@@ -6,7 +6,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Elodin TwentyNineteen' );
 define( 'CHILD_THEME_URL', 'https://elod.in' );
-define( 'CHILD_THEME_VERSION', '0.2.1' );
+define( 'CHILD_THEME_VERSION', '0.2.2' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -301,4 +301,36 @@ function genesis_sample_comments_gravatar( $args ) {
 	$args['avatar_size'] = 60;
 	return $args;
 
+}
+
+
+/**
+ * Set the theme colors
+ */
+add_action( 'after_setup_theme', 'elodin_register_colors' );
+function elodin_register_colors() {
+	add_theme_support(
+		'editor-color-palette', array(
+			array(
+				'name'  => esc_html__( 'White', 'prefix_textdomain' ),
+				'slug' => 'white',
+				'color' => '#ffffff',
+			),
+			array(
+				'name'  => esc_html__( 'Light', 'prefix_textdomain' ),
+				'slug' => 'light',
+				'color' => '#f5f5f5',
+            ),
+            array(
+				'name'  => esc_html__( 'Default', 'prefix_textdomain' ),
+				'slug' => 'default',
+				'color' => '#666',
+            ),
+            array(
+				'name'  => esc_html__( 'Dark', 'prefix_textdomain' ),
+				'slug' => 'dark',
+				'color' => '#333',
+            ),
+		)
+	);
 }

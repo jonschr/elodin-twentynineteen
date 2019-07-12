@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Defaults: mobile padding and alignment
+   ========================================================================== */
+
+.entry-content > div[class*="wp-block-atomic-blocks"] {
+    @include mobile {
+        padding: 30px !important;
+
+        h1,
+        h2,
+        h3,
+        p,
+        div {
+            text-align: left !important;
+        }
+    }
+}
