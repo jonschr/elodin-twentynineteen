@@ -6,7 +6,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Elodin TwentyNineteen' );
 define( 'CHILD_THEME_URL', 'https://elod.in' );
-define( 'CHILD_THEME_VERSION', '0.2.2' );
+define( 'CHILD_THEME_VERSION', '0.2.3' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -142,7 +142,7 @@ function gutenberg_editor_style_setup() {
 	  add_theme_support( 'editor-styles' );
   
 	// Enqueue editor styles
-	add_editor_style( get_stylesheet_directory_uri() . "/css/gutenberg-style.css" );
+	add_editor_style( "/css/gutenberg-style.css" );
 }
 add_action( 'after_setup_theme', 'gutenberg_editor_style_setup' );
 
