@@ -6,7 +6,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Elodin TwentyNineteen' );
 define( 'CHILD_THEME_URL', 'https://elod.in' );
-define( 'CHILD_THEME_VERSION', '0.2.3' );
+define( 'CHILD_THEME_VERSION', '0.2.4' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -91,13 +91,13 @@ function genesis_sample_enqueue_scripts_styles() {
 		genesis_sample_responsive_menu_settings()
 	);
 
-	wp_enqueue_script(
-		'genesis-sample',
-		get_stylesheet_directory_uri() . '/js/genesis-sample.js',
-		array( 'jquery' ),
-		CHILD_THEME_VERSION,
-		true
-	);
+	// wp_enqueue_script(
+	// 	'genesis-sample',
+	// 	get_stylesheet_directory_uri() . '/js/genesis-sample.js',
+	// 	array( 'jquery' ),
+	// 	CHILD_THEME_VERSION,
+	// 	true
+	// );
 
 	wp_enqueue_script(
 		'nav-scroll-detection',
@@ -107,13 +107,13 @@ function genesis_sample_enqueue_scripts_styles() {
 		true
 	);
 
-	wp_enqueue_script(
-		'smoothscroll',
-		get_stylesheet_directory_uri() . '/js/smoothscroll.js',
-		array( 'jquery' ),
-		CHILD_THEME_VERSION,
-		true
-	);
+	// wp_enqueue_script(
+	// 	'smoothscroll',
+	// 	get_stylesheet_directory_uri() . '/js/smoothscroll.js',
+	// 	array( 'jquery' ),
+	// 	CHILD_THEME_VERSION,
+	// 	true
+	// );
 
 }
 

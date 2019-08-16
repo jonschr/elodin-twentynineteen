@@ -40,10 +40,16 @@ body {
 .site-inner {
     clear: both;
     margin: 0 auto;
-    padding: 80px 30px 0;
+    padding: 0 30px;
+    margin-top: $headerheightdesktop;
+
+    @include tablet {
+        margin-top: 0;
+    }
+
 
     @include mobile {
-        padding-top: 30px;
+        margin-top: 0;
     }
 }
 
@@ -190,4 +196,16 @@ img.alignright,
 .entry-content .wp-playlist,
 .entry-content .wp-video {
     margin: 0 0 30px;
+}
+
+/* ==========================================================================
+   Remove the edit link
+   ========================================================================== */
+
+article.page {
+    > .entry-content {
+        .post-edit-link {
+            display: none;
+        }
+    }
 }

@@ -46,13 +46,31 @@ body[class*="first-block-atomic"] {
         .entry-content {
             > .gutenberg-section:first-child {
                 .content-wrap {
-                    margin-top: $headerheight;
+                    margin-top: $headerheightdesktop;
+
+                    @include tablet {
+                        margin-top: $headerheighttablet;
+                    }
+
+
+                    @include mobile {
+                        margin-top: $headerheightmobile;
+                    }
                 }
             }
 
             div[class*="wp-block-atomic-blocks"]:first-child > .ab-container-inside,
             div[class*="wp-block-atomic-blocks"]:first-child > .ab-layout-column-wrap {
-                margin-top: $headerheight;
+                margin-top: $headerheightdesktop;
+
+                @include tablet {
+                    margin-top: $headerheighttablet;
+                }
+
+
+                @include mobile {
+                    margin-top: $headerheightmobile;
+                }
             }
         }
     }

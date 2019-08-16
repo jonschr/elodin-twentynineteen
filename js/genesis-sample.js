@@ -6,7 +6,7 @@
  * @license GPL-2.0-or-later
  */
 
-var genesisSample = ( function( $ ) {
+var genesisSample = (function ($) {
 	'use strict';
 
 	/**
@@ -14,46 +14,46 @@ var genesisSample = ( function( $ ) {
 	 *
 	 * @since 2.6.0
 	 */
-	var moveContentBelowFixedHeader = function() {
+	var moveContentBelowFixedHeader = function () {
 		var siteInnerMarginTop = 0;
 
-		if( $('.site-header').css('position') === 'fixed' ) {
+		if ($('.site-header').css('position') === 'fixed') {
 			siteInnerMarginTop = $('.site-header').outerHeight();
 		}
 
 		$('.site-inner').css('margin-top', siteInnerMarginTop);
 	},
 
-	/**
-	 * Initialize Genesis Sample.
-	 *
-	 * Internal functions to execute on full page load.
-	 *
-	 * @since 2.6.0
-	 */
-	load = function() {
-		moveContentBelowFixedHeader();
-
-		$( window ).resize(function() {
+		/**
+		 * Initialize Genesis Sample.
+		 *
+		 * Internal functions to execute on full page load.
+		 *
+		 * @since 2.6.0
+		 */
+		load = function () {
 			moveContentBelowFixedHeader();
-		});
 
-		// Run after the Customizer updates.
-		// 1.5s delay is to allow logo area reflow.
-		if (typeof wp != "undefined" && typeof wp.customize != "undefined") {
-			wp.customize.bind( 'change', function ( setting ) {
-				setTimeout(function() {
-					moveContentBelowFixedHeader();
-				  }, 1500);
+			$(window).resize(function () {
+				moveContentBelowFixedHeader();
 			});
-		}
-	};
+
+			// Run after the Customizer updates.
+			// 1.5s delay is to allow logo area reflow.
+			if (typeof wp != "undefined" && typeof wp.customize != "undefined") {
+				wp.customize.bind('change', function (setting) {
+					setTimeout(function () {
+						moveContentBelowFixedHeader();
+					}, 1500);
+				});
+			}
+		};
 
 	// Expose the load and ready functions.
 	return {
 		load: load
 	};
 
-})( jQuery );
+})(jQuery);
 
-jQuery( window ).on( 'load', genesisSample.load );
+jQuery(window).on('load', genesisSample.load);

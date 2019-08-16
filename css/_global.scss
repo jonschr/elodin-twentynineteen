@@ -27,7 +27,9 @@ $colors: ("white": $white, "light": $light, "default": $default, "dark": $dark);
    Vars
    ========================================================================== */
 
-$headerheight: 70px;
+$headerheightdesktop: 70px;
+$headerheighttablet: 70px;
+$headerheightmobile: 70px;
 
 /* ==========================================================================
    Queries

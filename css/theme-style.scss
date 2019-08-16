@@ -14,6 +14,7 @@
 @import "general";
 @import "typography";
 @import "header";
+@import "entry-header";
 @import "nav";
 @import "nav-responsive";
 @import "plugins/gutenberg-sections";
@@ -23,9 +24,6 @@
 @import "blog";
 
 @import "entry";
-
-// templates and template parts
-@import "template/block";
 
 // defaults (less important for lead time)
 @import "defaults/comments";

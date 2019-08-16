@@ -3,12 +3,33 @@
    ========================================================================== */
 
 .entry-content > div[class*="wp-block-atomic-blocks"] {
+    :not(div):last-child {
+        margin-bottom: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+
     @include mobile {
-        padding: 30px !important;
+        &.ab-block-container {
+            padding: 30px !important;
+        }
 
         h1,
         h2,
         h3,
+        h4,
+        h5,
+        h6,
         p,
         div {
             text-align: left !important;
