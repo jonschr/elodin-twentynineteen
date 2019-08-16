@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Get options
+   Get global options
    ========================================================================== */
 
 @import "global";
@@ -8,7 +8,7 @@
    Includes
    ========================================================================== */
 
-// early includes, leaded in tne order the page would load
+//* Early-load defaults
 @import "defaults/reset";
 @import "defaults/screenreader";
 @import "general";
@@ -22,10 +22,12 @@
 @import "buttons";
 @import "widget";
 @import "blog";
-
 @import "entry";
 
-// defaults (less important for lead time)
+//* Gutenberg
+@import "gutenberg/media-and-image";
+
+//* Remaining defaults
 @import "defaults/comments";
 @import "defaults/gallery";
 @import "defaults/forms";
@@ -37,9 +39,11 @@
 @import "defaults/print";
 @import "footer";
 
+//* Plugin-specific styles
 @import "plugins/enews";
 @import "plugins/genesis-simple-faq";
 @import "plugins/advanced-gutenberg-blocks";
 @import "plugins/atomic-blocks";
 
+//* Media queries
 @import "media-queries";

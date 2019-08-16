@@ -35,6 +35,15 @@
         //* The last child is always the edit link, so we target the second to last item if it's a container block
         &:nth-last-child(2) {
             margin-bottom: -60px;
+
+            @include tablet {
+                margin-bottom: -40px;
+            }
+
+
+            @include mobile {
+                margin-bottom: -40px;
+            }
         }
 
         h1,
@@ -49,5 +58,38 @@
                 text-align: left !important;
             }
         }
+    }
+}
+
+/* ==========================================================================
+   Spacing for columns as we collapse
+   ========================================================================== */
+
+.ab-block-layout-column {
+    @include tablet {
+        margin-bottom: 50px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+    @include mobile {
+        margin-bottom: 50px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   HR on mobile 
+   ========================================================================== */
+
+.ab-block-spacer hr {
+    @include mobile {
+        max-height: 30px;
     }
 }
