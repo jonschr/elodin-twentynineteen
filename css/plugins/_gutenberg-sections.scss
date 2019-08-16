@@ -59,8 +59,8 @@ body[class*="first-block-atomic"] {
                 }
             }
 
-            div[class*="wp-block-atomic-blocks"]:first-child > .ab-container-inside,
-            div[class*="wp-block-atomic-blocks"]:first-child > .ab-layout-column-wrap {
+            > div[class*="wp-block-atomic-blocks"]:first-child > .ab-container-inside,
+            > div[class*="wp-block-atomic-blocks"]:first-child > .ab-layout-column-wrap {
                 margin-top: $headerheightdesktop;
 
                 @include tablet {

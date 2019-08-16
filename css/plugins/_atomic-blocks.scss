@@ -2,7 +2,8 @@
    Defaults: mobile padding and alignment
    ========================================================================== */
 
-.entry-content > div[class*="wp-block-atomic-blocks"] {
+.entry-content > div[class*="wp-block-atomic-blocks"],
+.entry-content > .wp-block-atomic-blocks-ab-columns {
     :not(div):last-child {
         margin-bottom: 0;
     }
@@ -19,9 +20,21 @@
         }
     }
 
-    @include mobile {
-        &.ab-block-container {
+    &.ab-block-container,
+    &.wp-block-atomic-blocks-ab-columns {
+        @include tablet {
+            padding: 60px !important;
+        }
+
+
+        @include mobile {
             padding: 30px !important;
+        }
+
+
+        //* The last child is always the edit link, so we target the second to last item if it's a container block
+        &:nth-last-child(2) {
+            margin-bottom: -60px;
         }
 
         h1,
@@ -32,7 +45,9 @@
         h6,
         p,
         div {
-            text-align: left !important;
+            @include mobile {
+                text-align: left !important;
+            }
         }
     }
 }
