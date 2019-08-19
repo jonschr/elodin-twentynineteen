@@ -334,3 +334,67 @@ function elodin_register_colors() {
 		)
 	);
 }
+
+///////////////////////
+// PREHEADER WIDGETS //
+///////////////////////
+
+/**
+ * Header customization
+ */
+//* Register the widget area
+genesis_register_sidebar( array(
+	'id'		=> 'preheader',
+	'name'		=> __( 'Preheader', 'elodin-twentynineteen' ),
+	'description'	=> __( 'Displays before anything else.', 'elodin-twentynineteen' ),
+) );
+
+//* Add the widget area before the opening wrap
+remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
+add_action( 'genesis_header', 'elodin_header_markup_open', 5 );
+
+/**
+ * This is a modified version of the core genesis function, instead inserting the preheader area
+ */
+function elodin_header_markup_open() {
+
+	genesis_markup( array(
+		'open'    => '<header %s>',
+		'context' => 'site-header',
+	) );
+
+	if ( is_active_sidebar( 'preheader' ) ) {
+		genesis_widget_area ('preheader', array(
+			'before' => '<div class="preheader"><div class="wrap">',
+			'after' => '</div></div>',
+		) );
+	}
+
+	genesis_structural_wrap( 'header' );
+
+}
+
+
+///////////////
+// PREFOOTER //
+///////////////
+
+// //* Register the widget area
+// genesis_register_sidebar( array(
+// 	'id'		=> 'above-footer',
+// 	'name'		=> __( 'Above footer', 'nabm' ),
+// ) );
+
+// //* Display the widget area
+// add_action( 'genesis_before_footer', 'nabm_add_page_content' );
+// function nabm_add_page_content() {
+	
+// 	//* Bail if we're on the contact page
+// 	if ( is_page('schedule') )
+// 		return;
+
+// 	genesis_widget_area ('above-footer', array(
+//         'before' => '<div class="above-footer"><div class="wrap">',
+//         'after' => '</div></div>',
+// 	) );
+// }
