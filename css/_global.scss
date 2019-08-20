@@ -14,11 +14,15 @@ $dark: #333;
 $colors: ("white": $white, "light": $light, "default": $default, "dark": $dark);
 
 @each $name, $color in $colors {
-    .has-#{$name}-color {
+    .has-#{$name}-color,
+    .has-color-#{$name},
+    .#{$name} {
         color: $color;
     }
 
-    .has-#{$name}-background-color {
+    .has-#{$name}-background-color,
+    .background-#{$name},
+    .#{$name}-background {
         background-color: $color;
     }
 }
