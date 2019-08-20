@@ -20,6 +20,14 @@ p {
     }
 }
 
+li {
+    font-size: 18px;
+
+    @include mobile {
+        font-size: 16px;
+    }
+}
+
 ol,
 ul {
     margin: 0;
