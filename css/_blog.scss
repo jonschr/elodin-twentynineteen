@@ -8,6 +8,11 @@ body.single-post,
 body.blog {
     background: $light;
 
+    @include mobile {
+        background-color: white;
+    }
+
+
     #respond {
         @include desktop {
             padding: 30px;
@@ -18,6 +23,10 @@ body.blog {
 
     .site-inner {
         padding: 60px 30px 30px;
+
+        @include mobile {
+            padding: 20px;
+        }
     }
 
     .entry-footer p.entry-meta {
