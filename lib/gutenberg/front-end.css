@@ -71,11 +71,16 @@ h6.light {
 /* Background Color
 ---------------------------------------------------------------------------- */
 
-.entry-content p.has-background {
+.entry-content .has-background {
     padding: 25px 30px;
+    margin-bottom: 20px;
 }
 
-.entry-content p.has-background.box-shadow {
+.entry-content .has-background :last-child {
+    margin-bottom: 0;
+}
+
+.entry-content .has-background.box-shadow {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
