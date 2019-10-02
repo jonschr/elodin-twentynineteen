@@ -6,7 +6,7 @@
 .acf-block-preview,
 .lity {
     .button {
-        background-color: #333;
+        background-color: $blue;
         border: none;
         box-shadow: none;
         color: #fff;
@@ -20,10 +20,11 @@
         text-decoration: none;
         text-transform: uppercase;
         height: auto;
+        border-radius: 3px;
 
         &:focus,
         &:hover {
-            background-color: #0073e5;
+            background-color: lighten($blue, 10%);
             color: #fff;
         }
     }
@@ -35,16 +36,11 @@
 }
 
 .ab-button {
+    background-color: $blue;
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 600;
-
-    &.ab-button-size-small {}
-
-    &.ab-button-size-medium {}
-
-    &.ab-button-size-large {}
-
-    &.ab-button-size-extralarge {}
+    border-radius: 3px;
+    padding: 15px 20px;
 }
