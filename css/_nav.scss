@@ -14,15 +14,14 @@
 }
 
 .genesis-nav-menu a {
-    color: darken($tan, 30%);
+    color: #333;
     display: block;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     outline-offset: -1px;
     padding-bottom: 12px;
     padding-top: 12px;
     text-decoration: none;
-    font-family: 'Playfair Display', serif;
 }
 
 .genesis-nav-menu a:focus,
@@ -30,7 +29,7 @@
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-    color: $navy;
+    color: #0073e5;
     text-decoration: none;
 }
 
