@@ -1,12 +1,12 @@
 a {
-    color: #0073e5;
-    text-decoration: underline;
+    color: $blue;
+    text-decoration: none;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 a:focus,
 a:hover {
-    color: #333;
+    color: darken($blue, 15%);
     text-decoration: none;
 }
 

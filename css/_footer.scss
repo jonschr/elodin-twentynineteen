@@ -55,12 +55,21 @@
    ========================================================================== */
 
 .site-footer {
-    background-color: #fff;
-    border-top: 1px solid #eee;
+    background-color: rgba($tan, 0.3);
+    border-top: none;
     font-size: 15px;
     line-height: 1.5;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
+
+    p {
+        font-size: 15px;
+        color: darken($tan, 30%);
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
 
     .wrap {
         max-width: 1200px;

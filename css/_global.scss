@@ -3,15 +3,18 @@
    ========================================================================== */
 
 $white: #ffffff;
-$light: #f5f5f5;
+$light: #eeeae5;
 $default: #666;
 $dark: #333;
+$blue: #4EA1CF;
+$tan: #DAD2C6;
+$navy: #023057;
 
 /* ==========================================================================
    Color loop
    ========================================================================== */
 
-$colors: ("white": $white, "light": $light, "default": $default, "dark": $dark);
+$colors: ("white": $white, "light": $light, "default": $default, "dark": $dark, "blue": $blue, "tan": $tan, "navy": $navy);
 
 @each $name, $color in $colors {
     .has-#{$name}-color,
@@ -31,9 +34,9 @@ $colors: ("white": $white, "light": $light, "default": $default, "dark": $dark);
    Vars
    ========================================================================== */
 
-$headerheightdesktop: 114px;
-$headerheighttablet: 70px;
-$headerheightmobile: 70px;
+$headerheightdesktop: 95px;
+$headerheighttablet: 42px;
+$headerheightmobile: 42px;
 
 /* ==========================================================================
    Queries

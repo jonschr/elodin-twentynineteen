@@ -61,7 +61,7 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	wp_enqueue_style(
 		'genesis-sample-fonts',
-		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
+		'//fonts.googleapis.com/css?family=Playfair+Display:400,400i|Source+Sans+Pro:400,400i,600,600i&display=swap',
 		array(),
 		CHILD_THEME_VERSION
 	);
@@ -312,25 +312,35 @@ function elodin_register_colors() {
 	add_theme_support(
 		'editor-color-palette', array(
 			array(
-				'name'  => esc_html__( 'White', 'prefix_textdomain' ),
+				'name'  => esc_html__( 'White', 'marcucci' ),
 				'slug' => 'white',
 				'color' => '#ffffff',
 			),
 			array(
-				'name'  => esc_html__( 'Light', 'prefix_textdomain' ),
+				'name'  => esc_html__( 'Light', 'marcucci' ),
 				'slug' => 'light',
-				'color' => '#f5f5f5',
+				'color' => '#eeeae5',
             ),
             array(
-				'name'  => esc_html__( 'Default', 'prefix_textdomain' ),
+				'name'  => esc_html__( 'Default', 'marcucci' ),
 				'slug' => 'default',
 				'color' => '#666',
             ),
             array(
-				'name'  => esc_html__( 'Dark', 'prefix_textdomain' ),
-				'slug' => 'dark',
-				'color' => '#333',
-            ),
+				'name'  => esc_html__( 'Tan', 'marcucci' ),
+				'slug' => 'tan',
+				'color' => '#DAD2C6',
+			),
+			array(
+				'name'  => esc_html__( 'Navy', 'marcucci' ),
+				'slug' => 'navy',
+				'color' => '#023057',
+			),
+			array(
+				'name'  => esc_html__( 'Blue', 'marcucci' ),
+				'slug' => 'blue',
+				'color' => '#4EA1CF',
+			),
 		)
 	);
 }
@@ -398,3 +408,86 @@ function elodin_header_markup_open() {
 //         'after' => '</div></div>',
 // 	) );
 // }
+
+
+//* Output books before
+// add_action( 'before_loop_layout_books', 'rb_books_before' );
+function rb_books_before( $args ) {
+	// wp_enqueue_script( 'SCRIPTHANDLE' );
+}
+
+//* Output each books
+add_action( 'add_loop_layout_books', 'rb_books_each' );
+function rb_books_each() {
+
+	//* Global vars
+	global $post;
+	$id = get_the_ID();
+
+	//* Vars
+	$title = get_the_title();
+	$permalink = get_the_permalink();
+	$author = get_post_meta( $id, 'author', true );
+	$publisher = get_post_meta( $id, 'publisher', true );
+	$purchase_url = get_post_meta( $id, 'purchase_url', true );
+	$year = get_post_meta( $id, 'year', true );
+
+	//* Markup
+	if ( has_post_thumbnail() ) {
+		printf( '<div class="featured-image" style="background-image:url( %s )">', get_the_post_thumbnail_url( $id, 'large' ) );
+
+			if ( $purchase_url )
+				printf( '<div class="purchase-container"><a href="%s" target="_blank" class="button">Purchase</a></div>', $purchase_url );
+
+		echo '</div>';
+
+	}
+
+
+
+	if ( $title )
+		printf( '<h3>%s</h3>', $title );
+
+	if ( $author )
+		printf( '<div class="author">By %s</div>', $author );
+
+	if ( $publisher )
+		printf( '<div class="publisher">%s</div>', $publisher );
+
+	if ( $year )
+		printf( '<div class="year">%s</div>', $year );
+
+
+}
+
+
+
+//* Output websites before
+// add_action( 'before_loop_layout_websites', 'rb_websites_before' );
+function rb_websites_before( $args ) {
+	// wp_enqueue_script( 'SCRIPTHANDLE' );
+}
+
+//* Output each websites
+add_action( 'add_loop_layout_websites', 'rb_websites_each' );
+function rb_websites_each() {
+
+	//* Global vars
+	global $post;
+	$id = get_the_ID();
+
+	//* Vars
+	$title = get_the_title();
+	$url = get_post_meta( $id, 'url', true );
+
+	//* Markup
+	if ( has_post_thumbnail() )
+		printf( '<div class="featured-wrap"><a class="featured-image" target="_blank" href="%s" style="background-image:url( %s )"></a></div>', $url, get_the_post_thumbnail_url( $id, 'large' ) );
+
+	if ( $title )
+		printf( '<h3>%s</h3>', $title );
+
+	the_excerpt();
+}
+
+
