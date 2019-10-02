@@ -74,13 +74,15 @@
    ========================================================================== */
 
 .site-header {
-    background-color: rgba(white, 0.95);
+    background-color: lighten($tan, 10%);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     padding: 0;
     transition: .3s all ease;
 
     > .wrap {
         padding: 0 20px;
+        max-width: 1200px;
+        margin: 0 auto;
 
         @include desktop {
             display: flex;
@@ -106,6 +108,7 @@
             @include desktop {
                 margin-right: auto;
                 flex: 0 1 auto;
+                transition: 0s all;
             }
 
 
@@ -224,7 +227,7 @@
    ========================================================================== */
 
 .site-header.header-scrolled {
-    background: white;
+    background: $tan;
     box-shadow: 0 0 20px 0 rgba(black, 0.15);
 
     .preheader {
@@ -239,5 +242,26 @@
         //     width: 175px;
         // }
    
+    }
+}
+
+.mobile-header-wrapper {
+    background-color: $tan;
+
+    a.logo {
+        text-decoration: none;
+        color: $navy;
+    }
+}
+
+.open-menu span {
+    background-color: $navy;
+}
+
+.slide-menu {
+    background-color: $navy;
+
+    .mobile-nav-area ul.menu > li > a {
+        color: white;
     }
 }
