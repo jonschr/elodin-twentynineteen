@@ -427,13 +427,13 @@ article.page > .entry-content .post-edit-link {
   display: none; }
 
 a {
-  color: red;
+  color: #1a0dab;
   text-decoration: underline;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
 
 a:focus,
 a:hover {
-  color: #ff1a1a;
+  color: #1e0fc3;
   text-decoration: none; }
 
 p {
@@ -952,7 +952,7 @@ h6 {
 .wp-block-file .lity .wp-block-file__button,
 .lity .comment-respond input#submit,
 .comment-respond .lity input#submit {
-  background-color: red;
+  background-color: #1a0dab;
   border: none;
   box-shadow: none;
   color: #fff;
@@ -988,7 +988,7 @@ h6 {
   .wp-block-file .lity .wp-block-file__button:hover,
   .lity .comment-respond input#submit:hover,
   .comment-respond .lity input#submit:hover {
-    background-color: #ff3333;
+    background-color: #2111da;
     color: #fff; }
 
 .site-container .button.button-small, .site-container .wp-block-file .button-small.wp-block-file__button, .wp-block-file .site-container .button-small.wp-block-file__button, .site-container .comment-respond input.button-small#submit, .comment-respond .site-container input.button-small#submit,
@@ -1006,7 +1006,7 @@ h6 {
   height: auto; }
 
 .ab-button {
-  background-color: red;
+  background-color: #1a0dab;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 1px;

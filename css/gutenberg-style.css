@@ -148,7 +148,7 @@ h6 {
 .lity .button,
 .lity .wp-block-file .wp-block-file__button,
 .wp-block-file .lity .wp-block-file__button {
-  background-color: red;
+  background-color: #1a0dab;
   border: none;
   box-shadow: none;
   color: #fff;
@@ -176,7 +176,7 @@ h6 {
   .lity .button:hover,
   .lity .wp-block-file .wp-block-file__button:hover,
   .wp-block-file .lity .wp-block-file__button:hover {
-    background-color: #ff3333;
+    background-color: #2111da;
     color: #fff; }
 
 .site-container .button.button-small, .site-container .wp-block-file .button-small.wp-block-file__button, .wp-block-file .site-container .button-small.wp-block-file__button,
@@ -190,7 +190,7 @@ h6 {
   height: auto; }
 
 .ab-button {
-  background-color: red;
+  background-color: #1a0dab;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 1px;
