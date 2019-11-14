@@ -1,12 +1,12 @@
 a {
-    color: #0073e5;
+    color: $highlight;
     text-decoration: underline;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 a:focus,
 a:hover {
-    color: #333;
+    color: lighten($highlight, 5%);
     text-decoration: none;
 }
 
