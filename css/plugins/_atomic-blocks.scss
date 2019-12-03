@@ -2,8 +2,8 @@
    Defaults: mobile padding and alignment
    ========================================================================== */
 
-.entry-content > div[class*="wp-block-atomic-blocks"],
-.entry-content > .wp-block-atomic-blocks-ab-columns {
+.entry-content>div[class*="wp-block-atomic-blocks"],
+.entry-content>.wp-block-atomic-blocks-ab-columns {
     :not(div):not(.entry):last-child {
         margin-bottom: 0;
     }
@@ -65,10 +65,12 @@
    Admin bar negative margin
    ========================================================================== */
 
-body.admin-bar .entry-content > div[class*="wp-block-atomic-blocks"],
-body.admin-bar .entry-content > .wp-block-atomic-blocks-ab-columns {
+body.admin-bar .entry-content>div[class*="wp-block-atomic-blocks"],
+body.admin-bar .entry-content>.wp-block-atomic-blocks-ab-columns {
+
     &.ab-block-container,
     &.wp-block-atomic-blocks-ab-columns {
+
         //* The last child is always the edit link, so we target the second to last item if it's a container block
         &:nth-last-child(2) {
             margin-bottom: -60px;
@@ -115,5 +117,27 @@ body.admin-bar .entry-content > .wp-block-atomic-blocks-ab-columns {
 .ab-block-spacer hr {
     @include mobile {
         max-height: 30px;
+    }
+}
+
+/* ==========================================================================
+   Pull left and right
+   ========================================================================== */
+
+.wp-block-atomic-blocks-ab-container {
+    &.left {
+        >.ab-container-inside {
+            >.ab-container-content {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &.right {
+        >.ab-container-inside {
+            >.ab-container-content {
+                margin-right: 0;
+            }
+        }
     }
 }
