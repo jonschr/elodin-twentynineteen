@@ -15,7 +15,7 @@ h6 {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
 
     @include tablet {
         font-size: 32px;
@@ -51,15 +51,6 @@ h4 {
     font-size: 20px;
 }
 
-.entry-content h3,
-.entry-content h4 {
-    font-weight: 600;
-}
-
-.entry-content h4 {
-    margin-top: 40px;
-}
-
 h5 {
     font-size: 18px;
 }
@@ -67,6 +58,29 @@ h5 {
 h6 {
     font-size: 16px;
 }
+
+/* ==========================================================================
+   Headings used in the context of entry content
+   ========================================================================== */
+
+.entry-content {
+
+    h3,
+    h4 {
+        font-weight: 600;
+    }
+
+    >h2,
+    >h3,
+    >h4 {
+        margin-top: 50px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
 
 /* ==========================================================================
    Titles
@@ -80,7 +94,7 @@ h6 {
     margin-bottom: 10px;
 }
 
-.entry-title {
+h2.entry-title {
     font-size: 30px;
     margin-bottom: 10px;
 }
