@@ -31,21 +31,6 @@
             // padding: 30px !important;
         }
 
-
-        //* The last child is always the edit link, so we target the second to last item if it's a container block
-        &:last-child {
-            margin-bottom: -60px;
-
-            @include tablet {
-                margin-bottom: -40px;
-            }
-
-
-            @include mobile {
-                margin-bottom: -40px;
-            }
-        }
-
         h1,
         h2,
         h3,
@@ -72,18 +57,18 @@ body.admin-bar .entry-content>.wp-block-atomic-blocks-ab-columns {
     &.wp-block-atomic-blocks-ab-columns {
 
         //* The last child is always the edit link, so we target the second to last item if it's a container block
-        &:nth-last-child(2) {
-            margin-bottom: -60px;
+        // &:nth-last-child(2) {
+    //     margin-bottom: -60px;
 
-            @include tablet {
-                margin-bottom: -40px;
-            }
+    //     @include tablet {
+    //         margin-bottom: -40px;
+    //     }
 
 
-            @include mobile {
-                margin-bottom: -40px;
-            }
-        }
+    //     @include mobile {
+    //         margin-bottom: -40px;
+    //     }
+    // }
     }
 }
 
