@@ -9,7 +9,7 @@
     }
 }
 
-.wp-block-media-text > figure > img {
+.wp-block-media-text>figure>img {
     @include mobile {
         width: auto;
     }

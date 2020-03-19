@@ -1,47 +1,33 @@
 {
-	"name": "genesis-sample",
-	"description": "Development files for the Genesis Framework.",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/studiopress/genesis-sample/"
-	},
-	"license": "GPL-2.0-or-later",
-	"devDependencies": {
-		"autoprefixer": "^9.4.2",
-		"chalk": "^2.4.1",
-		"node-wp-i18n": "^1.2.1",
-		"postcss-cli": "^6.0.1",
-		"stylelint": "^9.9.0",
-		"stylelint-config-wordpress": "^13.1.0"
+	"name": "elodin-twentynineteen",
+	"version": "1.0.0",
+	"description": "GitHub project link: https://github.com/studiopress/genesis-sample/.",
+	"main": "index.js",
+	"directories": {
+		"lib": "lib"
 	},
 	"scripts": {
-		"autoprefixer": "postcss style.css lib/**/*.css --use autoprefixer --replace --no-map --verbose",
-		"makepot": "node .scripts/makepot.js",
-		"lint:css": "stylelint \"style.css\" \"lib/gutenberg/*.css\" \"lib/woocommerce/*.css\"",
-		"zip": "git archive -o genesis-sample.zip --prefix=genesis-sample/ HEAD"
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"browserslist": [
-		"> 1%",
-		"ie >= 11",
-		"last 1 Android versions",
-		"last 1 ChromeAndroid versions",
-		"last 2 Chrome versions",
-		"last 2 Firefox versions",
-		"last 2 Safari versions",
-		"last 2 iOS versions",
-		"last 2 Edge versions",
-		"last 2 Opera versions"
-	],
-	"theme": {
-		"name": "Genesis Sample",
-		"uri": "https://demo.studiopress.com/genesis-sample/",
-		"description": "The sample child theme for the Genesis Framework.",
-		"author": "StudioPress",
-		"authoruri": "https://www.studiopress.com/",
-		"version": "2.8.0",
-		"tags": "one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready",
-		"license": "GPL-2.0-or-later",
-		"licenseuri": "https://www.gnu.org/licenses/gpl-2.0.html",
-		"textdomain": "genesis-sample"
+	"repository": {
+		"type": "git",
+		"url": "git+https://jonschr@github.com/jonschr/elodin-twentynineteen.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jonschr/elodin-twentynineteen/issues"
+	},
+	"homepage": "https://github.com/jonschr/elodin-twentynineteen#readme",
+	"dependencies": {
+		"cssnano": "^4.1.10",
+		"dependencies": "0.0.1",
+		"gulp-load-plugins": "^2.0.2",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.5"
+	},
+	"devDependencies": {
+		"gulp-minify": "^3.1.0",
+		"gulp-sass-glob": "^1.1.0"
 	}
 }

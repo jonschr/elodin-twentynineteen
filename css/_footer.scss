@@ -15,7 +15,7 @@
     }
 
 
-    > .wrap {
+    >.wrap {
         display: flex;
 
         @include tablet {
@@ -56,9 +56,6 @@
 
 .site-footer {
     background-color: #fff;
-    border-top: 1px solid #eee;
-    font-size: 15px;
-    line-height: 1.5;
     padding: 30px;
     text-align: center;
 
@@ -70,6 +67,10 @@
 
     p {
         text-align: center;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 

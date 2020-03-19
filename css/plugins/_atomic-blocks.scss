@@ -47,32 +47,6 @@
 }
 
 /* ==========================================================================
-   Admin bar negative margin
-   ========================================================================== */
-
-body.admin-bar .entry-content>div[class*="wp-block-atomic-blocks"],
-body.admin-bar .entry-content>.wp-block-atomic-blocks-ab-columns {
-
-    &.ab-block-container,
-    &.wp-block-atomic-blocks-ab-columns {
-
-        //* The last child is always the edit link, so we target the second to last item if it's a container block
-        // &:nth-last-child(2) {
-    //     margin-bottom: -60px;
-
-    //     @include tablet {
-    //         margin-bottom: -40px;
-    //     }
-
-
-    //     @include mobile {
-    //         margin-bottom: -40px;
-    //     }
-    // }
-    }
-}
-
-/* ==========================================================================
    Spacing for columns as we collapse
    ========================================================================== */
 
@@ -124,5 +98,15 @@ body.admin-bar .entry-content>.wp-block-atomic-blocks-ab-columns {
                 margin-right: 0;
             }
         }
+    }
+}
+
+/* ==========================================================================
+   Pages shouldn't have space at the bottom by default
+   ========================================================================== */
+
+body.page {
+    .content>.page {
+        margin-bottom: 0;
     }
 }

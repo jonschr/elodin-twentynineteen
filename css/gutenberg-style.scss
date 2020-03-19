@@ -11,10 +11,10 @@
 //* Defaults
 @import "headings";
 @import "buttons";
+@import "typography";
 @import "plugins/gutenberg-sections";
 @import "plugins/advanced-gutenberg-blocks";
 @import "plugins/atomic-blocks";
 
 //* Gutenberg
-@import "gutenberg/media-and-image";
-@import "gutenberg/files";
+@import "gutenberg/*";

@@ -5,6 +5,16 @@
 html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+
+    scroll-padding-top: $headerheightdesktop;
+
+    @include tablet {
+        scroll-padding-top: $headerheighttablet;
+    }
+
+    @include mobile {
+        scroll-padding-top: $headerheightmobile;
+    }
 }
 
 body {
@@ -203,7 +213,7 @@ img.alignright,
    ========================================================================== */
 
 article.page {
-    > .entry-content {
+    >.entry-content {
         .post-edit-link {
             display: none;
         }
