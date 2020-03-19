@@ -77,9 +77,10 @@ body.blog {
         border-radius: 3px;
         background-color: white;
 
-        .entry-content img.post-image {
-            width: calc( 100% + 60px );
-            max-width: calc( 100% + 60px );
+        .entry-content img.post-image,
+        .entry-content picture.entry-image>img {
+            width: calc(100% + 60px);
+            max-width: calc(100% + 60px);
             margin-left: -30px;
             margin-right: -30px;
             margin-bottom: 20px;

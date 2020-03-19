@@ -110,3 +110,19 @@ body.page {
         margin-bottom: 0;
     }
 }
+
+/* ==========================================================================
+   Don't allow sections to overlap by default
+   ========================================================================== */
+
+.entry-content>.wp-block-atomic-blocks-ab-container {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Default padding on mobile 
+   ========================================================================== */
+
+.entry-content>.wp-block-atomic-blocks-ab-container {
+    padding: 30px !important;
+}
