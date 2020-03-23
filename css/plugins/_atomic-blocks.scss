@@ -31,16 +31,9 @@
             // padding: 30px !important;
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        div {
+        .has-text-align-center {
             @include mobile {
-                text-align: left !important;
+                text-align: left;
             }
         }
     }
@@ -105,8 +98,8 @@
    Pages shouldn't have space at the bottom by default
    ========================================================================== */
 
-body.page {
-    .content>.page {
+body[class*="first-block-atomic-blocks"] {
+    .content>article {
         margin-bottom: 0;
     }
 }
@@ -124,5 +117,7 @@ body.page {
    ========================================================================== */
 
 .entry-content>.wp-block-atomic-blocks-ab-container {
-    padding: 30px !important;
+    @include mobile {
+        padding: 30px !important;
+    }
 }

@@ -7,6 +7,9 @@
 /* ==========================================================================
    Color loop
    ========================================================================== */
+/*
+   Connect up the colors
+   ========================================================================== */
 .has-white-color,
 .has-color-white,
 .white {
@@ -150,15 +153,10 @@ h2.entry-title {
 /* ==========================================================================
    Buttons
    ========================================================================== */
-.site-container .button, .site-container .wp-block-file .wp-block-file__button, .wp-block-file .site-container .wp-block-file__button,
+.button, .site-container .button,
 .acf-block-preview .button,
-.acf-block-preview .wp-block-file .wp-block-file__button,
-.wp-block-file .acf-block-preview .wp-block-file__button,
-.lity .button,
-.lity .wp-block-file .wp-block-file__button,
-.wp-block-file .lity .wp-block-file__button {
+.lity .button, .wp-block-file .wp-block-file__button {
   background-color: #1a0dab;
-  border: none;
   box-shadow: none;
   color: #fff;
   cursor: pointer;
@@ -171,32 +169,25 @@ h2.entry-title {
   text-decoration: none;
   text-transform: uppercase;
   height: auto;
-  border-radius: 3px; }
-  .site-container .button:focus, .site-container .wp-block-file .wp-block-file__button:focus, .wp-block-file .site-container .wp-block-file__button:focus, .site-container .button:hover, .site-container .wp-block-file .wp-block-file__button:hover, .wp-block-file .site-container .wp-block-file__button:hover,
-  .acf-block-preview .button:focus,
-  .acf-block-preview .wp-block-file .wp-block-file__button:focus,
-  .wp-block-file .acf-block-preview .wp-block-file__button:focus,
-  .acf-block-preview .button:hover,
-  .acf-block-preview .wp-block-file .wp-block-file__button:hover,
-  .wp-block-file .acf-block-preview .wp-block-file__button:hover,
-  .lity .button:focus,
-  .lity .wp-block-file .wp-block-file__button:focus,
-  .wp-block-file .lity .wp-block-file__button:focus,
-  .lity .button:hover,
-  .lity .wp-block-file .wp-block-file__button:hover,
-  .wp-block-file .lity .wp-block-file__button:hover {
+  border-radius: 3px;
+  margin-right: 5px;
+  border: 2px solid #1a0dab;
+  transitioN: .3s all ease; }
+  .button:focus, .wp-block-file .wp-block-file__button:focus, .button:hover, .wp-block-file .wp-block-file__button:hover {
+    color: #fff;
     background-color: #2111da;
-    color: #fff; }
-
-.site-container .button.button-small, .site-container .wp-block-file .button-small.wp-block-file__button, .wp-block-file .site-container .button-small.wp-block-file__button,
-.acf-block-preview .button.button-small,
-.acf-block-preview .wp-block-file .button-small.wp-block-file__button,
-.wp-block-file .acf-block-preview .button-small.wp-block-file__button,
-.lity .button.button-small,
-.lity .wp-block-file .button-small.wp-block-file__button,
-.wp-block-file .lity .button-small.wp-block-file__button {
-  padding: 5px 20px;
-  height: auto; }
+    border-color: #2111da; }
+  .button.button-small, .wp-block-file .button-small.wp-block-file__button {
+    padding: 5px 20px;
+    height: auto; }
+  .button.button-outline, .wp-block-file .button-outline.wp-block-file__button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white; }
+    .button.button-outline:focus, .wp-block-file .button-outline.wp-block-file__button:focus, .button.button-outline:hover, .wp-block-file .button-outline.wp-block-file__button:hover {
+      color: #fff;
+      background-color: #2111da;
+      border-color: #2111da; }
 
 .ab-button {
   background-color: #1a0dab;
@@ -293,7 +284,7 @@ body[class*="first-block-atomic"] .site-inner {
 @media (min-width: 960px) {
   body[class*="first-block-acf"]:not(.landing-page) .entry-content > .gutenberg-section:first-child .content-wrap,
   body[class*="first-block-atomic"]:not(.landing-page) .entry-content > .gutenberg-section:first-child .content-wrap {
-    margin-top: 77px; } }
+    margin-top: 114px; } }
   @media (min-width: 960px) and (min-width: 600px) and (max-width: 960px) {
     body[class*="first-block-acf"]:not(.landing-page) .entry-content > .gutenberg-section:first-child .content-wrap,
     body[class*="first-block-atomic"]:not(.landing-page) .entry-content > .gutenberg-section:first-child .content-wrap {
@@ -308,7 +299,7 @@ body[class*="first-block-atomic"] .site-inner {
   body[class*="first-block-acf"]:not(.landing-page) .entry-content > div[class*="wp-block-atomic-blocks"]:first-child > .ab-layout-column-wrap,
   body[class*="first-block-atomic"]:not(.landing-page) .entry-content > div[class*="wp-block-atomic-blocks"]:first-child > .ab-container-inside,
   body[class*="first-block-atomic"]:not(.landing-page) .entry-content > div[class*="wp-block-atomic-blocks"]:first-child > .ab-layout-column-wrap {
-    margin-top: 77px; } }
+    margin-top: 114px; } }
   @media (min-width: 960px) and (min-width: 600px) and (max-width: 960px) {
     body[class*="first-block-acf"]:not(.landing-page) .entry-content > div[class*="wp-block-atomic-blocks"]:first-child > .ab-container-inside,
     body[class*="first-block-acf"]:not(.landing-page) .entry-content > div[class*="wp-block-atomic-blocks"]:first-child > .ab-layout-column-wrap,
@@ -369,38 +360,10 @@ body[class*="first-block-atomic"] .site-inner {
     padding: 60px !important; } }
 
 @media (max-width: 600px) {
-  .entry-content > div[class*="wp-block-atomic-blocks"].ab-block-container h1,
-  .entry-content > div[class*="wp-block-atomic-blocks"].ab-block-container h2,
-  .entry-content > div[class*="wp-block-atomic-blocks"].ab-block-container h3,
-  .entry-content > div[class*="wp-block-atomic-blocks"].ab-block-container h4,
-  .entry-content > div[class*="wp-block-atomic-blocks"].ab-block-container h5,
-  .entry-content > div[class*="wp-block-atomic-blocks"].ab-block-container h6,
-  .entry-content > div[class*="wp-block-atomic-blocks"].ab-block-container p,
-  .entry-content > div[class*="wp-block-atomic-blocks"].ab-block-container div, .entry-content > div[class*="wp-block-atomic-blocks"].wp-block-atomic-blocks-ab-columns h1,
-  .entry-content > div[class*="wp-block-atomic-blocks"].wp-block-atomic-blocks-ab-columns h2,
-  .entry-content > div[class*="wp-block-atomic-blocks"].wp-block-atomic-blocks-ab-columns h3,
-  .entry-content > div[class*="wp-block-atomic-blocks"].wp-block-atomic-blocks-ab-columns h4,
-  .entry-content > div[class*="wp-block-atomic-blocks"].wp-block-atomic-blocks-ab-columns h5,
-  .entry-content > div[class*="wp-block-atomic-blocks"].wp-block-atomic-blocks-ab-columns h6,
-  .entry-content > div[class*="wp-block-atomic-blocks"].wp-block-atomic-blocks-ab-columns p,
-  .entry-content > div[class*="wp-block-atomic-blocks"].wp-block-atomic-blocks-ab-columns div,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.ab-block-container h1,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.ab-block-container h2,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.ab-block-container h3,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.ab-block-container h4,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.ab-block-container h5,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.ab-block-container h6,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.ab-block-container p,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.ab-block-container div,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.wp-block-atomic-blocks-ab-columns h1,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.wp-block-atomic-blocks-ab-columns h2,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.wp-block-atomic-blocks-ab-columns h3,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.wp-block-atomic-blocks-ab-columns h4,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.wp-block-atomic-blocks-ab-columns h5,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.wp-block-atomic-blocks-ab-columns h6,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.wp-block-atomic-blocks-ab-columns p,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.wp-block-atomic-blocks-ab-columns div {
-    text-align: left !important; } }
+  .entry-content > div[class*="wp-block-atomic-blocks"].ab-block-container .has-text-align-center, .entry-content > div[class*="wp-block-atomic-blocks"].wp-block-atomic-blocks-ab-columns .has-text-align-center,
+  .entry-content > .wp-block-atomic-blocks-ab-columns.ab-block-container .has-text-align-center,
+  .entry-content > .wp-block-atomic-blocks-ab-columns.wp-block-atomic-blocks-ab-columns .has-text-align-center {
+    text-align: left; } }
 
 /* ==========================================================================
    Spacing for columns as we collapse
@@ -436,7 +399,7 @@ body[class*="first-block-atomic"] .site-inner {
 /* ==========================================================================
    Pages shouldn't have space at the bottom by default
    ========================================================================== */
-body.page .content > .page {
+body[class*="first-block-atomic-blocks"] .content > article {
   margin-bottom: 0; }
 
 /* ==========================================================================
@@ -448,8 +411,9 @@ body.page .content > .page {
 /* ==========================================================================
    Default padding on mobile 
    ========================================================================== */
-.entry-content > .wp-block-atomic-blocks-ab-container {
-  padding: 30px !important; }
+@media (max-width: 600px) {
+  .entry-content > .wp-block-atomic-blocks-ab-container {
+    padding: 30px !important; } }
 
 .wp-block-file {
   display: flex;

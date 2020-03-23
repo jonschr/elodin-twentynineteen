@@ -51,6 +51,35 @@
 }
 
 /* ==========================================================================
+   Prefooter
+   ========================================================================== */
+
+.above-footer {
+    background-color: $light;
+    text-align: center;
+    padding: 50px 0;
+
+    @include mobile {
+        text-align: left;
+        padding: 30px;
+    }
+
+    h3.widgettitle {
+        @extend h2;
+    }
+
+    .wrap {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+/* ==========================================================================
    Site footer
    ========================================================================== */
 

@@ -14,6 +14,10 @@ $highlight: #1a0dab;
 
 $colors: ("white": $white, "light": $light, "default": $default, "dark": $dark);
 
+/*
+   Connect up the colors
+   ========================================================================== */
+
 @each $name,
 $color in $colors {
 
@@ -30,11 +34,12 @@ $color in $colors {
     }
 }
 
+
 /* ==========================================================================
    Vars
    ========================================================================== */
 
-$headerheightdesktop: 77px;
+$headerheightdesktop: 114px;
 $headerheighttablet: 77px;
 $headerheightmobile: 77px;
 

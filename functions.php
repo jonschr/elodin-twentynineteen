@@ -379,22 +379,22 @@ function elodin_header_markup_open() {
 // PREFOOTER //
 ///////////////
 
-// //* Register the widget area
-// genesis_register_sidebar( array(
-// 	'id'		=> 'above-footer',
-// 	'name'		=> __( 'Above footer', 'nabm' ),
-// ) );
+//* Register the widget area
+genesis_register_sidebar( array(
+	'id'		=> 'above-footer',
+	'name'		=> __( 'Above footer', 'elodin' ),
+) );
 
-// //* Display the widget area
-// add_action( 'genesis_before_footer', 'nabm_add_page_content' );
-// function nabm_add_page_content() {
+//* Display the widget area
+add_action( 'genesis_before_footer', 'elodin_add_page_content' );
+function elodin_add_page_content() {
 	
-// 	//* Bail if we're on the contact page
-// 	if ( is_page('schedule') )
-// 		return;
+	//* Bail if we're on the contact page
+	if ( is_page( 'contact' ) )
+		return;
 
-// 	genesis_widget_area ('above-footer', array(
-//         'before' => '<div class="above-footer"><div class="wrap">',
-//         'after' => '</div></div>',
-// 	) );
-// }
+	genesis_widget_area ( 'above-footer', array(
+        'before' => '<div class="above-footer"><div class="wrap">',
+        'after' => '</div></div>',
+	) );
+}

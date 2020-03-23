@@ -2,36 +2,56 @@
    Buttons
    ========================================================================== */
 
+.button {
+    background-color: $highlight;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px !important;
+    font-weight: 600;
+    padding: 15px 30px;
+    display: inline-block;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: auto;
+    border-radius: 3px;
+    margin-right: 5px;
+    border: 2px solid $highlight;
+    transitioN: .3s all ease;
+
+    &:focus,
+    &:hover {
+        color: #fff;
+        background-color: lighten($highlight, 10%);
+        border-color: lighten($highlight, 10%);
+    }
+
+    &.button-small {
+        padding: 5px 20px;
+        height: auto;
+    }
+
+    &.button-outline {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+
+        &:focus,
+        &:hover {
+            color: #fff;
+            background-color: lighten($highlight, 10%);
+            border-color: lighten($highlight, 10%);
+        }
+    }
+}
+
 .site-container,
 .acf-block-preview,
 .lity {
     .button {
-        background-color: $highlight;
-        border: none;
-        box-shadow: none;
-        color: #fff;
-        cursor: pointer;
-        font-size: 16px !important;
-        font-weight: 600;
-        padding: 15px 30px;
-        display: inline-block;
-        line-height: 1em;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        height: auto;
-        border-radius: 3px;
-
-        &:focus,
-        &:hover {
-            background-color: lighten($highlight, 10%);
-            color: #fff;
-        }
-    }
-
-    .button.button-small {
-        padding: 5px 20px;
-        height: auto;
+        @extend .button;
     }
 }
 
