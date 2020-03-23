@@ -115,6 +115,28 @@ function genesis_sample_enqueue_scripts_styles() {
 	// 	true
 	// );
 
+	wp_register_script(
+		'slick-main-theme',
+		get_stylesheet_directory_uri() . '/vendor/slick/slick.min.js',
+		array( 'jquery' ),
+		CHILD_THEME_VERSION,
+		true
+	);
+
+	wp_register_style(
+		'slick-main-styles',
+		get_stylesheet_directory_uri() . '/vendor/slick/slick.css',
+		array(),
+		CHILD_THEME_VERSION
+	);
+
+	wp_register_style(
+		'slick-main-styles',
+		get_stylesheet_directory_uri() . '/vendor/slick/slick-theme.css',
+		array(),
+		CHILD_THEME_VERSION
+	);
+
 }
 
 /**
