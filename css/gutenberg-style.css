@@ -107,6 +107,13 @@ h6 {
   font-size: 16px; }
 
 /* ==========================================================================
+   Kicker headings
+   ========================================================================== */
+.gutenberg-section .content-wrap > h3:first-child,
+.gutenberg-section .content-wrap > h4:first-child {
+  margin-bottom: 0; }
+
+/* ==========================================================================
    Headings used in the context of entry content
    ========================================================================== */
 .entry-content h3,
@@ -264,17 +271,14 @@ blockquote {
     padding-bottom: 15vh; } }
 
 /* ==========================================================================
-   Kicker headings
-   ========================================================================== */
-.gutenberg-section .content-wrap > h3:first-child,
-.gutenberg-section .content-wrap > h4:first-child {
-  margin-bottom: 0; }
-
-/* ==========================================================================
    Automatic heading removal
    ========================================================================== */
-body[class*="first-block-acf"] .content > .page > .entry-header,
-body[class*="first-block-atomic"] .content > .page > .entry-header {
+body[class*="first-block-acf"] .content > article > .entry-header,
+body[class*="first-block-atomic"] .content > article > .entry-header {
+  display: none; }
+
+body[class*="first-block-acf"] .content > article .post-edit-link,
+body[class*="first-block-atomic"] .content > article .post-edit-link {
   display: none; }
 
 body[class*="first-block-acf"] .site-inner,

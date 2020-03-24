@@ -15,19 +15,7 @@
     }
 }
 
-/* ==========================================================================
-   Kicker headings
-   ========================================================================== */
 
-.gutenberg-section {
-    .content-wrap {
-
-        >h3:first-child,
-        >h4:first-child {
-            margin-bottom: 0;
-        }
-    }
-}
 
 /* ==========================================================================
    Automatic heading removal
@@ -35,7 +23,11 @@
 
 body[class*="first-block-acf"],
 body[class*="first-block-atomic"] {
-    .content>.page>.entry-header {
+    .content>article>.entry-header {
+        display: none;
+    }
+
+    .content>article .post-edit-link {
         display: none;
     }
 

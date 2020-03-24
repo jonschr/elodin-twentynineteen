@@ -207,15 +207,3 @@ img.alignright,
 .entry-content .wp-video {
     margin: 0 0 30px;
 }
-
-/* ==========================================================================
-   Remove the edit link
-   ========================================================================== */
-
-article.page {
-    >.entry-content {
-        .post-edit-link {
-            display: none;
-        }
-    }
-}
