@@ -4,9 +4,6 @@
 
 .entry-content>div[class*="wp-block-atomic-blocks"],
 .entry-content>.wp-block-atomic-blocks-ab-columns {
-    :not(div):not(.entry):last-child {
-        margin-bottom: 0;
-    }
 
     h1,
     h2,
@@ -44,31 +41,12 @@
    ========================================================================== */
 
 .ab-block-layout-column {
-    @include tablet {
+    @include notdesktop {
         margin-bottom: 50px;
 
-        &:last-child {
+        >&:last-child {
             margin-bottom: 0;
         }
-    }
-
-
-    @include mobile {
-        margin-bottom: 50px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-/* ==========================================================================
-   HR on mobile 
-   ========================================================================== */
-
-.ab-block-spacer hr {
-    @include mobile {
-        max-height: 30px;
     }
 }
 

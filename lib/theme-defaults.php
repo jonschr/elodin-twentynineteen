@@ -47,17 +47,17 @@ function genesis_sample_theme_setting_defaults() {
 			array(
 				'blog_cat_num'              => 6,
 				'breadcrumb_front_page'     => 0,
-				'content_archive'           => 'full',
+				'content_archive'           => 'excerpt',
 				'content_archive_limit'     => 0,
-				'content_archive_thumbnail' => 0,
+				'content_archive_thumbnail' => 1,
 				'posts_nav'                 => 'numeric',
-				'site_layout'               => 'content-sidebar',
+				'site_layout'               => 'full-width-content',
 			)
 		);
 
 	}
 
-	update_option( 'posts_per_page', 6 );
+	update_option( 'posts_per_page', 10 );
 
 }
 

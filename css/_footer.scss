@@ -7,7 +7,6 @@
     background-color: #fff;
     clear: both;
     padding: 60px 0;
-    text-align: center;
 
     @include mobile {
         text-align: left;
@@ -17,6 +16,9 @@
 
     >.wrap {
         display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: calc(#{$defaultcontentwidth} + 40px);
 
         @include tablet {
             flex-flow: row wrap;
@@ -28,27 +30,23 @@
         }
     }
 
+    .footer-widget-area {
+        margin-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+    }
+
+    .footer-widget-area:last-child,
+    .footer-widgets .widget:last-child {
+        margin-bottom: 0;
+    }
+
     .widget:last-child {
         margin-bottom: 0;
     }
 }
 
-.footer-widgets .wrap {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer-widget-area {
-    margin-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 100%;
-}
-
-.footer-widget-area:last-child,
-.footer-widgets .widget:last-child {
-    margin-bottom: 0;
-}
 
 /* ==========================================================================
    Prefooter
@@ -89,7 +87,7 @@
     text-align: center;
 
     .wrap {
-        max-width: 1200px;
+        max-width: $defaultcontentwidth;
         margin-left: auto;
         margin-right: auto;
     }

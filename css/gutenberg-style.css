@@ -163,7 +163,7 @@ h2.entry-title {
 .button, .site-container .button,
 .acf-block-preview .button,
 .lity .button, .wp-block-file .wp-block-file__button {
-  background-color: #1a0dab;
+  background-color: red;
   box-shadow: none;
   color: #fff;
   cursor: pointer;
@@ -178,12 +178,12 @@ h2.entry-title {
   height: auto;
   border-radius: 3px;
   margin-right: 5px;
-  border: 2px solid #1a0dab;
+  border: 2px solid red;
   transitioN: .3s all ease; }
   .button:focus, .wp-block-file .wp-block-file__button:focus, .button:hover, .wp-block-file .wp-block-file__button:hover {
     color: #fff;
-    background-color: #2111da;
-    border-color: #2111da; }
+    background-color: #ff3333;
+    border-color: #ff3333; }
   .button.button-small, .wp-block-file .button-small.wp-block-file__button {
     padding: 5px 20px;
     height: auto; }
@@ -193,11 +193,11 @@ h2.entry-title {
     color: white; }
     .button.button-outline:focus, .wp-block-file .button-outline.wp-block-file__button:focus, .button.button-outline:hover, .wp-block-file .button-outline.wp-block-file__button:hover {
       color: #fff;
-      background-color: #2111da;
-      border-color: #2111da; }
+      background-color: #ff3333;
+      border-color: #ff3333; }
 
 .ab-button {
-  background-color: #1a0dab;
+  background-color: red;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 1px;
@@ -206,13 +206,13 @@ h2.entry-title {
   padding: 15px 20px; }
 
 a {
-  color: #1a0dab;
+  color: red;
   text-decoration: underline;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
 
 a:focus,
 a:hover {
-  color: #1e0fc3; }
+  color: #ff1a1a; }
 
 p {
   margin: 0 0 20px;
@@ -337,10 +337,6 @@ body[class*="first-block-atomic"] .site-inner {
 /* ==========================================================================
    Defaults: mobile padding and alignment
    ========================================================================== */
-.entry-content > div[class*="wp-block-atomic-blocks"] :not(div):not(.entry):last-child,
-.entry-content > .wp-block-atomic-blocks-ab-columns :not(div):not(.entry):last-child {
-  margin-bottom: 0; }
-
 .entry-content > div[class*="wp-block-atomic-blocks"] h1:first-child,
 .entry-content > div[class*="wp-block-atomic-blocks"] h2:first-child,
 .entry-content > div[class*="wp-block-atomic-blocks"] h3:first-child,
@@ -371,24 +367,11 @@ body[class*="first-block-atomic"] .site-inner {
 /* ==========================================================================
    Spacing for columns as we collapse
    ========================================================================== */
-@media (min-width: 600px) and (max-width: 960px) {
+@media (max-width: 960px) {
   .ab-block-layout-column {
     margin-bottom: 50px; }
-    .ab-block-layout-column:last-child {
+    > .ab-block-layout-column:last-child {
       margin-bottom: 0; } }
-
-@media (max-width: 600px) {
-  .ab-block-layout-column {
-    margin-bottom: 50px; }
-    .ab-block-layout-column:last-child {
-      margin-bottom: 0; } }
-
-/* ==========================================================================
-   HR on mobile 
-   ========================================================================== */
-@media (max-width: 600px) {
-  .ab-block-spacer hr {
-    max-height: 30px; } }
 
 /* ==========================================================================
    Pull left and right
@@ -418,6 +401,14 @@ body[class*="first-block-atomic-blocks"] .content > article {
   .entry-content > .wp-block-atomic-blocks-ab-container {
     padding: 30px !important; } }
 
+/* ==========================================================================
+   HR on mobile 
+   ========================================================================== */
+@media (max-width: 960px) {
+  .ab-block-spacer hr {
+    max-height: 30px;
+    margin-bottom: 0; } }
+
 .wp-block-file {
   display: flex;
   align-content: center;
@@ -432,6 +423,10 @@ body[class*="first-block-atomic-blocks"] .content > article {
   .wp-block-file .wp-block-file__button {
     margin: 0 15px 0 0;
     order: 0; }
+
+.wp-block-gallery ul.blocks-gallery-grid {
+  margin-left: 0;
+  padding-left: 0; }
 
 /* ==========================================================================
    Mobile padding

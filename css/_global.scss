@@ -6,7 +6,7 @@ $white: #ffffff;
 $light: #f5f5f5;
 $default: #666;
 $dark: #333;
-$highlight: #1a0dab;
+$highlight: red;
 
 /* ==========================================================================
    Color loop
@@ -43,6 +43,8 @@ $headerheightdesktop: 114px;
 $headerheighttablet: 77px;
 $headerheightmobile: 77px;
 
+$defaultcontentwidth: 1200px;
+
 /* ==========================================================================
    Queries
    ========================================================================== */
@@ -65,6 +67,12 @@ $wide: 1200px;
 
 @mixin notdesktop {
     @media (max-width: #{$medium}) {
+        @content;
+    }
+}
+
+@mixin notmobile {
+    @media (min-width: #{$thin}) {
         @content;
     }
 }

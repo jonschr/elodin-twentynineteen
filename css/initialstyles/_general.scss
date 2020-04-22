@@ -29,6 +29,41 @@ body {
 }
 
 /* ==========================================================================
+   Hide on size
+   ========================================================================== */
+
+@include mobile {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+@include notmobile {
+    .show-on-mobile {
+        display: none !important;
+    }
+}
+
+@include desktop {
+    .hide-on-desktop {
+        display: none !important;
+    }
+}
+
+@include notdesktop {
+    .show-on-desktop {
+        display: none !important;
+    }
+}
+
+@include tablet {
+    .hide-on-tablet {
+        display: none !important;
+    }
+}
+
+
+/* ==========================================================================
    Containers
    ========================================================================== */
 
@@ -50,16 +85,39 @@ body {
 .site-inner {
     clear: both;
     margin: 0 auto;
-    padding: 0 30px;
     margin-top: $headerheightdesktop;
+    max-width: $defaultcontentwidth;
 
-    @include tablet {
+    @include notdesktop {
+        padding: 0 30px;
         margin-top: 0;
     }
+}
 
+@include desktop {
+    .content {
+        float: left;
+        width: 65%;
+    }
 
-    @include mobile {
-        margin-top: 0;
+    .sidebar-content .content {
+        float: right;
+    }
+
+    .full-width-content .content,
+    .landing-page .content {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sidebar {
+        float: right;
+        width: 30%;
+    }
+
+    .sidebar-content .sidebar {
+        float: left;
     }
 }
 
@@ -136,6 +194,18 @@ figure {
 .archive-description p:last-child,
 .author-box p:last-child {
     margin-bottom: 0;
+}
+
+@include desktop {
+
+    .after-entry,
+    .author-box,
+    .comment-respond,
+    .entry,
+    .entry-comments,
+    .entry-pings {
+        margin-bottom: 60px;
+    }
 }
 
 /* ==========================================================================
