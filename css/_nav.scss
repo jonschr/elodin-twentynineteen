@@ -2,10 +2,6 @@
    Menu defaults
    ========================================================================== */
 
-nav.genesis-responsive-menu {
-    display: block;
-}
-
 .menu {
     clear: both;
     line-height: 1;
@@ -21,6 +17,10 @@ nav.genesis-responsive-menu {
         position: relative;
         margin: 0;
         display: inline-block;
+
+        @include notdesktop {
+            display: block;
+        }
     }
 
     a {
@@ -39,10 +39,11 @@ nav.genesis-responsive-menu {
        ========================================================================== */
 
     >li {
-        display: inline-block;
         list-style: none;
         margin: 0;
         padding: 0;
+
+
 
         a {
             padding: 10px 15px;
@@ -86,7 +87,7 @@ nav.genesis-responsive-menu {
         opacity: 1;
         padding-left: 15px;
         z-index: 99;
-        position: absolute;
+
         border-top: 1px solid #eee;
 
         @include desktop {
@@ -113,7 +114,7 @@ nav.genesis-responsive-menu {
 
         .current-menu-item:focus>a,
         .current-menu-item:hover>a {
-            color: #0073e5;
+            color: $highlight;
             text-decoration: none;
         }
     }

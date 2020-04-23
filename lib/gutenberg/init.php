@@ -71,6 +71,13 @@ function genesis_sample_blocks_body_classes( $classes ) {
 	$post_object = get_post( get_the_ID() );
 	$blocks      = (array) parse_blocks( $post_object->post_content );
 
+	// foreach( $blocks as $block ) {
+	// 	echo 'Name: ' . $block['blockName'] . '<br/>';
+	// 	echo 'Alignment: ' . $block['attrs']['align'] . '<br/>';
+	// 	echo '<br/>';
+	// }
+
+	//* Output the "first" classes
 	if ( isset( $blocks[0]['blockName'] ) ) {
 		$classes[] = 'first-block-' . str_replace( '/', '-', $blocks[0]['blockName'] );
 	}
@@ -78,6 +85,25 @@ function genesis_sample_blocks_body_classes( $classes ) {
 	if ( isset( $blocks[0]['attrs']['align'] ) ) {
 		$classes[] = 'first-block-align-' . $blocks[0]['attrs']['align'];
 	}
+
+	//* Get the "last" classes
+	foreach ( $blocks as $block ) {
+		$lastclassname = null;
+		$lastclassalign = null;
+
+		if ( $block['blockName'] )
+			$lastclassname = 'last-block-' . str_replace( '/', '-', $block['blockName'] );
+		
+		if ( $block['attrs']['align'] )
+			$lastclassalign = 'last-block-align' . str_replace( '/', '-', $block['attrs']['align'] );
+	}
+
+	//* Output the "last" classes
+	if ( isset( $lastclassname ) )
+		$classes[] = $lastclassname;
+
+	if ( isset( $lastclassalign ) )
+		$classes[] = $lastclassalign;
 
 	return $classes;
 
