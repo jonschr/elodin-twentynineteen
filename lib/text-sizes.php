@@ -1,9 +1,9 @@
 <?php
 
-// -- Disable custom font sizes
+// Disable custom font sizes
 add_theme_support( 'disable-custom-font-sizes' );
 
-// -- Editor Font Sizes
+// Editor Font Sizes
 add_theme_support( 'editor-font-sizes', array(
 	array(
 		'name'      => __( 'Small', 'elodin-twentynineteen' ),
