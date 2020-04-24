@@ -71,4 +71,3 @@ add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
 
-
