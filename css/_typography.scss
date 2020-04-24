@@ -62,6 +62,12 @@ blockquote {
     margin: 30px;
 }
 
-/* ==========================================================================
-   Font sizes
-   ========================================================================== */
+.has-text-align-center,
+.has-text-align-right,
+.alignright,
+.aligncenter {
+    @include mobile {
+        float: none;
+        text-align: left;
+    }
+}

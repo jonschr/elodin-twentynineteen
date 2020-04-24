@@ -53,6 +53,9 @@ require_once  get_stylesheet_directory() . '/lib/sidebar.php';
 // Gutenberg
 require_once get_stylesheet_directory() . '/lib/gutenberg/init.php';
 
+// Text sizes
+require_once get_stylesheet_directory() . '/lib/text-sizes.php';
+
 // Adds support for HTML5 markup structure.
 add_theme_support( 'html5', genesis_get_config( 'html5' ) );
 
@@ -69,5 +72,5 @@ add_theme_support( 'custom-logo', genesis_get_config( 'custom-logo' ) );
 add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
 
 // Adds image sizes.
-add_image_size( 'sidebar-featured', 75, 75, true );
+add_image_size( 'blog', 780, 390, true );
 

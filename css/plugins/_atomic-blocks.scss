@@ -1,4 +1,16 @@
 /* ==========================================================================
+   Margin-bottom is zero
+   ========================================================================== */
+.entry-content div[class*="wp-block-atomic-blocks"] {
+    :last-child {
+        &:not(.blocks-gallery-item) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/* ==========================================================================
    Defaults: mobile padding and alignment
    ========================================================================== */
 
@@ -26,12 +38,6 @@
 
         @include mobile {
             // padding: 30px !important;
-        }
-
-        .has-text-align-center {
-            @include mobile {
-                text-align: left;
-            }
         }
     }
 }

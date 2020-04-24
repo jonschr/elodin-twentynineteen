@@ -1,12 +1,14 @@
 .wp-block-atomic-blocks-ab-container {
     &.full-height {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
+        @include desktop {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
 
-        .ab-container-content,
-        .ab-container-inside {
-            width: 100%;
+            .ab-container-content,
+            .ab-container-inside {
+                width: 100%;
+            }
         }
     }
 }
@@ -14,7 +16,9 @@
 body.admin-bar {
     .wp-block-atomic-blocks-ab-container {
         &.full-height {
-            min-height: calc(100vh - #{$adminbarheightdesktop});
+            @include desktop {
+                min-height: calc(100vh - #{$adminbarheightdesktop});
+            }
         }
     }
 }

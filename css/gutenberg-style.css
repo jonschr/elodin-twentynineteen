@@ -72,6 +72,14 @@ h6 {
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 20px; }
+  @media (max-width: 960px) {
+    h1 br,
+    h2 br,
+    h3 br,
+    h4 br,
+    h5 br,
+    h6 br {
+      display: none; } }
 
 h1 {
   font-size: 40px; }
@@ -257,9 +265,14 @@ mark {
 blockquote {
   margin: 30px; }
 
-/* ==========================================================================
-   Font sizes
-   ========================================================================== */
+@media (max-width: 600px) {
+  .has-text-align-center,
+  .has-text-align-right,
+  .alignright,
+  .aligncenter {
+    float: none;
+    text-align: left; } }
+
 /* ==========================================================================
    Section 0 treatment
    ========================================================================== */
@@ -338,6 +351,12 @@ body[class*="first-block-atomic"] .site-inner {
       margin-bottom: 5px; }
 
 /* ==========================================================================
+   Margin-bottom is zero
+   ========================================================================== */
+.entry-content div[class*="wp-block-atomic-blocks"] :last-child:not(.blocks-gallery-item) {
+  margin-bottom: 0; }
+
+/* ==========================================================================
    Defaults: mobile padding and alignment
    ========================================================================== */
 .entry-content > div[class*="wp-block-atomic-blocks"] h1:first-child,
@@ -360,12 +379,6 @@ body[class*="first-block-atomic"] .site-inner {
   .entry-content > .wp-block-atomic-blocks-ab-columns.ab-block-container,
   .entry-content > .wp-block-atomic-blocks-ab-columns.wp-block-atomic-blocks-ab-columns {
     padding: 60px !important; } }
-
-@media (max-width: 600px) {
-  .entry-content > div[class*="wp-block-atomic-blocks"].ab-block-container .has-text-align-center, .entry-content > div[class*="wp-block-atomic-blocks"].wp-block-atomic-blocks-ab-columns .has-text-align-center,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.ab-block-container .has-text-align-center,
-  .entry-content > .wp-block-atomic-blocks-ab-columns.wp-block-atomic-blocks-ab-columns .has-text-align-center {
-    text-align: left; } }
 
 /* ==========================================================================
    Spacing for columns as we collapse
@@ -404,16 +417,141 @@ body[class*="first-block-atomic-blocks"] .content > article {
   .entry-content > [class*="wp-block-atomic-blocks"] {
     padding: 30px !important; } }
 
-.wp-block-atomic-blocks-ab-container.full-height {
-  min-height: 100vh;
-  display: flex;
-  align-items: center; }
-  .wp-block-atomic-blocks-ab-container.full-height .ab-container-content,
-  .wp-block-atomic-blocks-ab-container.full-height .ab-container-inside {
-    width: 100%; }
+@media (min-width: 960px) {
+  .wp-block-atomic-blocks-ab-container.full-height {
+    min-height: 100vh;
+    display: flex;
+    align-items: center; }
+    .wp-block-atomic-blocks-ab-container.full-height .ab-container-content,
+    .wp-block-atomic-blocks-ab-container.full-height .ab-container-inside {
+      width: 100%; } }
 
-body.admin-bar .wp-block-atomic-blocks-ab-container.full-height {
-  min-height: calc(100vh - 32px); }
+@media (min-width: 960px) {
+  body.admin-bar .wp-block-atomic-blocks-ab-container.full-height {
+    min-height: calc(100vh - 32px); } }
+
+/* ==========================================================================
+   Better defaults when there's a background color on a column
+   ========================================================================== */
+.wp-block-atomic-blocks-ab-columns .ab-block-layout-column-inner {
+  position: relative;
+  z-index: 3; }
+
+.wp-block-atomic-blocks-ab-columns .ab-block-layout-column-inner.has-white-background-color {
+  background-color: #ffffff;
+  padding: 30px;
+  z-index: 2; }
+  @media (min-width: 600px) {
+    .wp-block-atomic-blocks-ab-columns .ab-block-layout-column-inner.has-white-background-color:before {
+      content: "";
+      top: -30px;
+      bottom: -30px;
+      left: -150px;
+      right: -150px;
+      position: absolute;
+      background-color: #ffffff;
+      z-index: -1; } }
+
+.wp-block-atomic-blocks-ab-columns .ab-block-layout-column-inner.has-light-background-color {
+  background-color: #f5f5f5;
+  padding: 30px;
+  z-index: 2; }
+  @media (min-width: 600px) {
+    .wp-block-atomic-blocks-ab-columns .ab-block-layout-column-inner.has-light-background-color:before {
+      content: "";
+      top: -30px;
+      bottom: -30px;
+      left: -150px;
+      right: -150px;
+      position: absolute;
+      background-color: #f5f5f5;
+      z-index: -1; } }
+
+.wp-block-atomic-blocks-ab-columns .ab-block-layout-column-inner.has-default-background-color {
+  background-color: #666;
+  padding: 30px;
+  z-index: 2; }
+  @media (min-width: 600px) {
+    .wp-block-atomic-blocks-ab-columns .ab-block-layout-column-inner.has-default-background-color:before {
+      content: "";
+      top: -30px;
+      bottom: -30px;
+      left: -150px;
+      right: -150px;
+      position: absolute;
+      background-color: #666;
+      z-index: -1; } }
+
+.wp-block-atomic-blocks-ab-columns .ab-block-layout-column-inner.has-dark-background-color {
+  background-color: #333;
+  padding: 30px;
+  z-index: 2; }
+  @media (min-width: 600px) {
+    .wp-block-atomic-blocks-ab-columns .ab-block-layout-column-inner.has-dark-background-color:before {
+      content: "";
+      top: -30px;
+      bottom: -30px;
+      left: -150px;
+      right: -150px;
+      position: absolute;
+      background-color: #333;
+      z-index: -1; } }
+
+@media (min-width: 600px) {
+  .wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:first-child .has-white-background-color {
+    padding-left: 60px; } }
+
+.wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:first-child .has-white-background-color.ab-block-layout-column-inner:before {
+  left: 0; }
+
+@media (min-width: 600px) {
+  .wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:first-child .has-light-background-color {
+    padding-left: 60px; } }
+
+.wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:first-child .has-light-background-color.ab-block-layout-column-inner:before {
+  left: 0; }
+
+@media (min-width: 600px) {
+  .wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:first-child .has-default-background-color {
+    padding-left: 60px; } }
+
+.wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:first-child .has-default-background-color.ab-block-layout-column-inner:before {
+  left: 0; }
+
+@media (min-width: 600px) {
+  .wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:first-child .has-dark-background-color {
+    padding-left: 60px; } }
+
+.wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:first-child .has-dark-background-color.ab-block-layout-column-inner:before {
+  left: 0; }
+
+@media (min-width: 600px) {
+  .wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:last-child .has-white-background-color {
+    padding-right: 60px; } }
+
+.wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:last-child .has-white-background-color.ab-block-layout-column-inner:before {
+  right: 0; }
+
+@media (min-width: 600px) {
+  .wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:last-child .has-light-background-color {
+    padding-right: 60px; } }
+
+.wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:last-child .has-light-background-color.ab-block-layout-column-inner:before {
+  right: 0; }
+
+@media (min-width: 600px) {
+  .wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:last-child .has-default-background-color {
+    padding-right: 60px; } }
+
+.wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:last-child .has-default-background-color.ab-block-layout-column-inner:before {
+  right: 0; }
+
+@media (min-width: 600px) {
+  .wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:last-child .has-dark-background-color {
+    padding-right: 60px; } }
+
+.wp-block-atomic-blocks-ab-columns .wp-block-atomic-blocks-ab-column:last-child .has-dark-background-color.ab-block-layout-column-inner:before {
+  right: 0; }
 
 /* ==========================================================================
    HR on mobile 

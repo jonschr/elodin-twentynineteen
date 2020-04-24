@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Better defaults when there's a background color on a column
+   ========================================================================== */
+
+.wp-block-atomic-blocks-ab-columns {
+
+    .ab-block-layout-column-inner {
+        position: relative;
+        z-index: 3;
+    }
+
+    @each $name,
+    $color in $colors {
+
+        .ab-block-layout-column-inner.has-#{$name}-background-color {
+            background-color: $color;
+            padding: 30px;
+            z-index: 2;
+
+            @include notmobile {
+
+                &:before {
+                    content: "";
+                    top: -30px;
+                    bottom: -30px;
+                    left: -150px;
+                    right: -150px;
+                    position: absolute;
+                    background-color: $color;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    .wp-block-atomic-blocks-ab-column:first-child {
+
+        @each $name,
+        $color in $colors {
+            .has-#{$name}-background-color {
+                @include notmobile {
+                    padding-left: 60px;
+                }
+
+                &.ab-block-layout-column-inner:before {
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .wp-block-atomic-blocks-ab-column:last-child {
+
+        @each $name,
+        $color in $colors {
+            .has-#{$name}-background-color {
+                @include notmobile {
+                    padding-right: 60px;
+                }
+
+                &.ab-block-layout-column-inner:before {
+                    right: 0;
+                }
+            }
+        }
+    }
+
+}
