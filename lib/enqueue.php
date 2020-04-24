@@ -49,8 +49,8 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
-	);
-
+    );
+    
 	// wp_enqueue_script(
 	// 	'smoothscroll',
 	// 	get_stylesheet_directory_uri() . '/js/smoothscroll.js',

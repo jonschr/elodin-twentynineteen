@@ -401,8 +401,19 @@ body[class*="first-block-atomic-blocks"] .content > article {
    Default padding on mobile 
    ========================================================================== */
 @media (max-width: 600px) {
-  .entry-content > .wp-block-atomic-blocks-ab-container {
+  .entry-content > [class*="wp-block-atomic-blocks"] {
     padding: 30px !important; } }
+
+.wp-block-atomic-blocks-ab-container.full-height {
+  min-height: 100vh;
+  display: flex;
+  align-items: center; }
+  .wp-block-atomic-blocks-ab-container.full-height .ab-container-content,
+  .wp-block-atomic-blocks-ab-container.full-height .ab-container-inside {
+    width: 100%; }
+
+body.admin-bar .wp-block-atomic-blocks-ab-container.full-height {
+  min-height: calc(100vh - 32px); }
 
 /* ==========================================================================
    HR on mobile 

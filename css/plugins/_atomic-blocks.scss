@@ -94,7 +94,7 @@ body[class*="first-block-atomic-blocks"] {
    Default padding on mobile 
    ========================================================================== */
 
-.entry-content>.wp-block-atomic-blocks-ab-container {
+.entry-content>[class*="wp-block-atomic-blocks"] {
     @include mobile {
         padding: 30px !important;
     }
