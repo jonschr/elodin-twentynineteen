@@ -1,0 +1,16 @@
+.wp-block-cover {
+    @include notdesktop {
+        min-height: auto;
+    }
+
+    .wp-block-cover__inner-container {
+        @include notdesktop {
+            width: 100%;
+            padding: 30px;
+        }
+
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+}
