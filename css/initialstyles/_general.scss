@@ -85,7 +85,19 @@ body {
 .site-inner {
     clear: both;
     margin: 0 auto;
-    margin-top: $headerheightdesktop;
+
+    @include desktop {
+        margin-top: $headerheightdesktop;
+    }
+
+    @include tablet {
+        margin-top: $headerheighttablet;
+    }
+
+    @include mobile {
+        margin-top: $headerheightmobile;
+    }
+
     max-width: calc(#{$defaultcontentwidth} + 60px);
     padding: 0 30px;
 }

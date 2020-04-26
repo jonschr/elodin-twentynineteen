@@ -58,7 +58,8 @@
    ========================================================================== */
 
 .above-footer {
-    background-color: $light;
+    border-top: 1px solid $light;
+    background-color: white;
     text-align: center;
     padding: 75px 0;
 
