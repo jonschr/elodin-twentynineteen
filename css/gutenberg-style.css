@@ -516,6 +516,12 @@ blockquote {
 .wp-block-cover .wp-block-cover__inner-container :last-child {
   margin-bottom: 0; }
 
+.wp-block-gallery ul.blocks-gallery-grid {
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 25px;
+  margin-bottom: 25px; }
+
 .wp-block-file {
   display: flex;
   align-content: center;
@@ -552,10 +558,6 @@ body.first-block-is-section .site-inner {
   body.first-block-is-section .entry-content > :first-child.gutenberg-section {
     padding-top: 15vh;
     padding-bottom: 15vh; } }
-
-.wp-block-gallery ul.blocks-gallery-grid {
-  margin-left: 0;
-  padding-left: 0; }
 
 /* ==========================================================================
    Mobile padding
