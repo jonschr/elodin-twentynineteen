@@ -37,7 +37,7 @@
 
         @each $name,
         $color in $colors {
-            .has-#{$name}-background-color {
+            >.has-#{$name}-background-color {
                 @include notmobile {
                     padding-left: 60px;
                 }
@@ -53,7 +53,7 @@
 
         @each $name,
         $color in $colors {
-            .has-#{$name}-background-color {
+            >.has-#{$name}-background-color {
                 @include notmobile {
                     padding-right: 60px;
                 }
