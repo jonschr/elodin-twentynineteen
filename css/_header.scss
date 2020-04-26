@@ -69,11 +69,12 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     padding: 0;
     transition: .3s all ease;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
 
-    @include desktop {
-        position: fixed;
-        width: 100%;
-        z-index: 9999;
+    @include notdesktop {
+        position: absolute;
     }
 
     >.wrap {
@@ -236,7 +237,9 @@
     }
 
     .title-area {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        @include desktop {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
     }
 }

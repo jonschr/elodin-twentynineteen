@@ -38,6 +38,9 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.p
 // Header customizations
 require_once get_stylesheet_directory() . '/lib/header.php';
 
+// First block customization (add body class for the first block for padding and remove the entry header)
+require_once get_stylesheet_directory() . '/lib/gutenberg-first-block-logic.php';
+
 // Footer customizations
 require_once get_stylesheet_directory() . '/lib/footer.php';
 

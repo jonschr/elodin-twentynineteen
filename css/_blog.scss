@@ -21,14 +21,6 @@ body.blog {
         }
     }
 
-    .site-inner {
-        padding: 60px 30px 30px;
-
-        @include mobile {
-            padding: 20px;
-        }
-    }
-
     .entry-footer p.entry-meta {
         display: none;
     }
@@ -67,9 +59,6 @@ body.blog {
 body.archive,
 body.category,
 body.blog {
-    .site-inner {
-        max-width: 1260px;
-    }
 
     article.post {
         padding: 30px;

@@ -82,11 +82,11 @@
    Pages shouldn't have space at the bottom by default
    ========================================================================== */
 
-body[class*="first-block-atomic-blocks"] {
-    .content>article {
-        margin-bottom: 0;
-    }
-}
+// body[class*="first-block-atomic-blocks"] {
+    //     .content>article {
+    //         margin-bottom: 0;
+    //     }
+    // }
 
 /* ==========================================================================
    Don't allow sections to overlap by default

@@ -86,12 +86,8 @@ body {
     clear: both;
     margin: 0 auto;
     margin-top: $headerheightdesktop;
-    max-width: $defaultcontentwidth;
-
-    @include notdesktop {
-        padding: 0 30px;
-        margin-top: 0;
-    }
+    max-width: calc(#{$defaultcontentwidth} + 60px);
+    padding: 0 30px;
 }
 
 @include desktop {
