@@ -58,8 +58,7 @@
    ========================================================================== */
 
 .above-footer {
-    border-top: 1px solid $light;
-    background-color: white;
+    background-color: lighten($dark, 5%);
     text-align: center;
     padding: 75px 0;
 
@@ -70,6 +69,12 @@
 
     h4.widget-title {
         @extend h2;
+
+        color: white;
+    }
+
+    p {
+        color: white;
     }
 
     .wrap {
