@@ -459,6 +459,13 @@ p.has-background.light-text a {
   .wp-block-atomic-blocks-ab-button.ab-block-button a.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.ab-button-shape-rounded.ab-button-size-medium {
     border: none !important; }
+  .wp-block-atomic-blocks-ab-button.ab-block-button a.ab-button-size-medium,
+  .wp-block-atomic-blocks-ab-button.ab-block-button span.ab-button-size-medium {
+    font-size: 14px;
+    padding: 15px 20px; }
+  .wp-block-atomic-blocks-ab-button.ab-block-button a.ab-button-size-large,
+  .wp-block-atomic-blocks-ab-button.ab-block-button span.ab-button-size-large {
+    font-size: 22px; }
   .wp-block-atomic-blocks-ab-button.ab-block-button a.has-white-color, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-color-white, .wp-block-atomic-blocks-ab-button.ab-block-button a.white,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-white-color,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-color-white,
