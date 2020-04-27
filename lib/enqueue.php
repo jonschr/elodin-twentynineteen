@@ -9,7 +9,7 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
 		array(),
 		CHILD_THEME_VERSION
 	);
-
+	
 	// Add the main stylesheet
 	wp_enqueue_style(
 		'theme-style',

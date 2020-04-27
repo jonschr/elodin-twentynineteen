@@ -1,3 +1,7 @@
+.wp-block-cover.alignfull {
+    width: 100vw;
+}
+
 .wp-block-cover {
     @include notdesktop {
         min-height: auto;

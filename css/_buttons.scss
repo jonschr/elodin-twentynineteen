@@ -1,3 +1,45 @@
+/* Buttons
+---------------------------------------------------------------------------- */
+
+.ab-block-cta .ab-button {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+}
+
+.wp-block-button .wp-block-button__link {
+    background-color: #333;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+    width: auto;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:focus,
+.wp-block-button.is-style-outline .wp-block-button__link:hover,
+.wp-block-button .wp-block-button__link:focus,
+.wp-block-button .wp-block-button__link:hover {
+    box-shadow: inset 0 0 200px rgba(230, 230, 230, 0.15);
+}
+
+/* Button Variations */
+.wp-block-button.is-style-squared .wp-block-button__link {
+    border-radius: 0;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+    background-color: transparent;
+    border: 2px solid currentColor;
+    border-radius: 0;
+    padding: 13px 28px;
+}
+
 /* ==========================================================================
    Buttons
    ========================================================================== */

@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Margin-bottom is zero
+   ========================================================================== */
+
+div[class*="wp-block-atomic-blocks"] {
+    :last-child {
+        &:not(li) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   Defaults: mobile padding and alignment
+   ========================================================================== */
+
+div[class*="wp-block-atomic-blocks"],
+.wp-block-atomic-blocks-ab-columns {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+
+    &.ab-block-container,
+    &.wp-block-atomic-blocks-ab-columns {
+        @include tablet {
+            padding: 60px !important;
+        }
+
+        @include mobile {
+            // padding: 30px !important;
+        }
+    }
+}

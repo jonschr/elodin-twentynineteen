@@ -28,6 +28,74 @@ body {
     overflow-x: hidden;
 }
 
+
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+
+.wp-block-button.alignleft,
+.wp-block-cover.alignleft,
+.wp-block-image .alignleft {
+    margin-right: 2em;
+}
+
+.wp-block-button.alignright,
+.wp-block-cover.alignright,
+.wp-block-image .alignright {
+    margin-left: 2em;
+}
+
+.wp-block-image.alignwide,
+.wp-block-image.alignfull,
+.wp-block-embed.alignwide,
+.wp-block-embed.alignfull {
+    margin-bottom: 30px;
+}
+
+.full-width-content .entry-content .alignfull {
+    margin-left: calc(-100vw / 2 + 100% / 2);
+    margin-right: calc(-100vw / 2 + 100% / 2);
+    max-width: 100vw;
+}
+
+.content-sidebar .entry-content .alignfull,
+.sidebar-content .entry-content .alignfull {
+    margin: 0 0 2em;
+    width: 100%;
+}
+
+@media only screen and (max-width: 510px) {
+    .wp-block-button.alignright {
+        float: left;
+        margin-left: 0;
+    }
+}
+
+@include desktop {
+    .full-width-content .entry-content .alignwide {
+        margin-left: -180px;
+        margin-right: -180px;
+        max-width: 1200px;
+    }
+}
+
+/* ==========================================================================
+   Columns
+   ========================================================================== */
+
+.entry-content .wp-block-columns {
+    margin-bottom: 0;
+}
+
+.entry-content .wp-block-column {
+    margin-bottom: 50px;
+}
+
+.entry-content .wp-block-columns.alignfull {
+    padding: 0 30px;
+}
+
+
 /* ==========================================================================
    Hide on size
    ========================================================================== */

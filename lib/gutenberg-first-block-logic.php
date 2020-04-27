@@ -64,7 +64,7 @@ function elodin_detect_first_block_name() {
 }
 
 /**
- * [elodin_is_first_block_section description]
+ * Figure out it the first block is a "section" type block, then return a bool true or false for that
  *
  * @param   string  $firstblock  the name of the first block
  *

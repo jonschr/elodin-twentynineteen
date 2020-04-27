@@ -23,4 +23,10 @@ add_theme_support( 'editor-font-sizes', array(
 		'size'      => 22,
 		'slug'      => 'large'
 	),
+	array(
+		'name'      => __( 'Larger', 'elodin-twentynineteen' ),
+		'shortName' => __( 'XL', 'elodin-twentynineteen' ),
+		'size'      => 26,
+		'slug'      => 'larger'
+	),
 ) );

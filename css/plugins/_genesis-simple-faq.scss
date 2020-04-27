@@ -15,7 +15,6 @@
 .gs-faq__question::after {
     content: "\f132";
     font-family: dashicons;
-    /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
     float: right;
 }
 

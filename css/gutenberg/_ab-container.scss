@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Don't allow overflow
+   ========================================================================== */
+
+.wp-block-atomic-blocks-ab-container {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Padding on mobile
+   ========================================================================== */
+
+.wp-block-atomic-blocks-ab-container {
+    @include mobile {
+        padding: 30px !important;
+    }
+}
+
+/* ==========================================================================
+   Pull left and right
+   ========================================================================== */
+
+.wp-block-atomic-blocks-ab-container {
+    &.left {
+        >.ab-container-inside {
+            >.ab-container-content {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &.right {
+        >.ab-container-inside {
+            >.ab-container-content {
+                margin-right: 0;
+            }
+        }
+    }
+}

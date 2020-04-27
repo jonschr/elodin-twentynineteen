@@ -1,0 +1,11 @@
+.wp-block-columns {
+    .wp-block-column {
+        :last-child {
+            margin-bottom: 0;
+        }
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+}
