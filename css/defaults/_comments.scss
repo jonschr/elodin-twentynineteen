@@ -4,6 +4,10 @@
     margin-bottom: 40px;
 }
 
+ul.children ul.children {
+    margin-left: 20px;
+}
+
 .comment-list {
     li {
         list-style: none;
@@ -104,7 +108,7 @@
 .comment-respond input[type="email"],
 .comment-respond input[type="text"],
 .comment-respond input[type="url"] {
-    width: 50%;
+    width: 100%;
 }
 
 .comment-respond label {
