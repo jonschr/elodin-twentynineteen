@@ -8,25 +8,6 @@
  * @link    https://www.studiopress.com/
  */
 
-// add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_gutenberg_frontend_styles' );
-/**
- * Enqueues Gutenberg front-end styles.
- *
- * @since 2.7.0
- */
-function genesis_sample_enqueue_gutenberg_frontend_styles() {
-
-	$child_theme_slug = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'genesis-sample';
-
-	wp_enqueue_style(
-		'genesis-sample-gutenberg',
-		get_stylesheet_directory_uri() . '/lib/gutenberg/front-end.css',
-		array( $child_theme_slug ),
-		CHILD_THEME_VERSION
-	);
-
-}
-
 add_action( 'enqueue_block_editor_assets', 'genesis_sample_block_editor_styles' );
 /**
  * Enqueues Gutenberg admin editor fonts and styles.
@@ -111,9 +92,6 @@ function genesis_sample_blocks_body_classes( $classes ) {
 
 // Add support for editor styles.
 add_theme_support( 'editor-styles' );
-
-// Enqueue editor styles.
-add_editor_style( '/lib/gutenberg/style-editor.css' );
 
 // Adds support for block alignments.
 add_theme_support( 'align-wide' );

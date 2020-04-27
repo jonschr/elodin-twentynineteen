@@ -54,7 +54,7 @@ require_once  get_stylesheet_directory() . '/lib/enqueue.php';
 require_once  get_stylesheet_directory() . '/lib/sidebar.php';
 
 // Gutenberg
-require_once get_stylesheet_directory() . '/lib/gutenberg/init.php';
+require_once get_stylesheet_directory() . '/lib/gutenberg-init.php';
 
 // Text sizes
 require_once get_stylesheet_directory() . '/lib/text-sizes.php';
@@ -76,4 +76,7 @@ add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
 
 // Adds image sizes.
 add_image_size( 'blog', 780, 390, true );
+
+// Remove the edit link by default on posts/pages
+add_filter ( 'genesis_edit_post_link' , '__return_false' );
 

@@ -60,9 +60,43 @@
    Includes
    ========================================================================== */
 /* ==========================================================================
+   Block width
+   ========================================================================== */
+/* Regular content width.
+/* Add 27px to match paragraph width on front-end and editor.
+---------------------------------------------------------------------------- */
+.wp-block {
+  max-width: calc(806px); }
+
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+/* Width of "wide" blocks
+/* 1062px + 30px so wide images match width in front-end and editor.
+/* 1062px = default column width of 702px + .alignwide negative margin of 360px
+---------------------------------------------------------------------------- */
+.wp-block[data-align="wide"] {
+  max-width: calc(1200px + 30px); }
+
+.wp-block[data-align="full"] {
+  max-width: none; }
+
+/* ==========================================================================
+   Captions
+   ========================================================================== */
+.wp-block-audio figcaption,
+.wp-block-embed figcaption,
+.wp-block-image figcaption {
+  color: #666;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 30px;
+  margin-top: 10px; }
+
+/* ==========================================================================
    Headings
    ========================================================================== */
-h1,
+h1, .editor-post-title__block .editor-post-title__input,
 h2,
 h3,
 h4,
@@ -73,7 +107,7 @@ h6 {
   line-height: 1.2;
   margin: 0 0 20px; }
   @media (max-width: 960px) {
-    h1 br,
+    h1 br, .editor-post-title__block .editor-post-title__input br,
     h2 br,
     h3 br,
     h4 br,
@@ -81,13 +115,13 @@ h6 {
     h6 br {
       display: none; } }
 
-h1 {
+h1, .editor-post-title__block .editor-post-title__input {
   font-size: 40px; }
   @media (min-width: 600px) and (max-width: 960px) {
-    h1 {
+    h1, .editor-post-title__block .editor-post-title__input {
       font-size: 32px; } }
   @media (max-width: 600px) {
-    h1 {
+    h1, .editor-post-title__block .editor-post-title__input {
       font-size: 24px; } }
 
 h2 {
@@ -358,10 +392,6 @@ p.has-background a:hover {
 p.has-background.light-text a {
   color: #fff;
   text-decoration: underline; }
-
-p.has-background.light-text a:focus,
-p.has-background.light-text a:hover {
-  text-decoration: none; }
 
 /* ==========================================================================
    Background colors
@@ -639,6 +669,13 @@ p.has-background.light-text a:hover {
 .wp-block-gallery:last-child ul.blocks-gallery-grid {
   margin-bottom: -16px; }
 
+.wp-block-image figcaption {
+  color: #666;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 10px; }
+
 .wp-block-latest-posts {
   clear: both;
   margin-left: 0; }
@@ -723,6 +760,42 @@ p.has-background.light-text a:hover {
   margin-bottom: 30px;
   margin-top: 10px; }
 
+.wp-block-table {
+  margin-bottom: 25px; }
+  .wp-block-table table {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+    border: none;
+    margin-bottom: 10px;
+    table-layout: fixed;
+    width: 100%; }
+    .wp-block-table table td,
+    .wp-block-table table th {
+      padding: 8px 15px;
+      border: none;
+      border-top: 1px solid rgba(102, 102, 102, 0.2);
+      border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+      color: #666;
+      line-height: 1em;
+      font-size: 18px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      max-width: 1px; }
+      @media (min-width: 600px) and (max-width: 960px) {
+        .wp-block-table table td,
+        .wp-block-table table th {
+          font-size: 15px;
+          padding: 5px; } }
+      @media (max-width: 600px) {
+        .wp-block-table table td,
+        .wp-block-table table th {
+          font-size: 15px;
+          padding: 5px; } }
+    .wp-block-table table th {
+      background-color: black;
+      color: white;
+      font-weight: bold; }
+
 /* ==========================================================================
    Margin-bottom is zero
    ========================================================================== */
@@ -732,13 +805,15 @@ div[class*="wp-block-atomic-blocks"] :last-child:not(li) {
 /* ==========================================================================
    Defaults: mobile padding and alignment
    ========================================================================== */
-div[class*="wp-block-atomic-blocks"] h1:first-child,
+div[class*="wp-block-atomic-blocks"] h1:first-child, div[class*="wp-block-atomic-blocks"] .editor-post-title__block .editor-post-title__input:first-child, .editor-post-title__block div[class*="wp-block-atomic-blocks"] .editor-post-title__input:first-child,
 div[class*="wp-block-atomic-blocks"] h2:first-child,
 div[class*="wp-block-atomic-blocks"] h3:first-child,
 div[class*="wp-block-atomic-blocks"] h4:first-child,
 div[class*="wp-block-atomic-blocks"] h5:first-child,
 div[class*="wp-block-atomic-blocks"] h6:first-child,
 .wp-block-atomic-blocks-ab-columns h1:first-child,
+.wp-block-atomic-blocks-ab-columns .editor-post-title__block .editor-post-title__input:first-child,
+.editor-post-title__block .wp-block-atomic-blocks-ab-columns .editor-post-title__input:first-child,
 .wp-block-atomic-blocks-ab-columns h2:first-child,
 .wp-block-atomic-blocks-ab-columns h3:first-child,
 .wp-block-atomic-blocks-ab-columns h4:first-child,

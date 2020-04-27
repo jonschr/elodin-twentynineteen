@@ -33,6 +33,12 @@ h1 {
     }
 }
 
+.editor-post-title__block .editor-post-title__input {
+    @extend h1;
+}
+
+
+
 h2 {
     font-size: 35px;
 
