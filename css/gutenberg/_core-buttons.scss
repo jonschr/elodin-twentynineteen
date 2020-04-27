@@ -1,7 +1,19 @@
 .wp-block-buttons {
     .wp-block-button {
+
+        @include mobile {
+            display: block;
+            width: 100%;
+        }
+
         .wp-block-button__link {
             @extend .button;
+
+            @include mobile {
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
 
             @each $name,
             $color in $colors {
@@ -16,6 +28,11 @@
                 &.background-#{$name},
                 &.#{$name}-background {
                     background-color: $color;
+
+                    &:hover {
+                        background-color: lighten($color, 7%);
+                        border-color: lighten($color, 7%);
+                    }
                 }
             }
         }

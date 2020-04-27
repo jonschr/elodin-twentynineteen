@@ -235,7 +235,6 @@ h2.entry-title {
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 0.1em;
   font-size: 14px;
-  border-radius: 3px;
   padding: 15px 20px;
   line-height: 1em;
   position: static;
@@ -243,10 +242,16 @@ h2.entry-title {
   border: 2px solid #333;
   border-radius: 3px;
   text-decoration: none !important; }
+  @media (max-width: 600px) {
+    .button, .wp-block-atomic-blocks-ab-button.ab-block-button a.ab-button-shape-rounded.ab-button-size-medium,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .wp-block-button__link, .wp-block-file .wp-block-file__button {
+      text-align: center;
+      display: block;
+      width: 100%; } }
   .button:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.ab-button-shape-rounded.ab-button-size-medium:hover,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .wp-block-button__link:hover, .wp-block-file .wp-block-file__button:hover {
-    opacity: 0.8;
-    color: white; }
+    background-color: #454545;
+    border-color: #454545; }
   .button.has-white-color, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-white-color.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-white-color.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .has-white-color.wp-block-button__link, .wp-block-file .has-white-color.wp-block-file__button, .button.has-color-white, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-color-white.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-color-white.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .has-color-white.wp-block-button__link, .wp-block-file .has-color-white.wp-block-file__button, .button.white, .wp-block-atomic-blocks-ab-button.ab-block-button a.white.ab-button-shape-rounded.ab-button-size-medium,
@@ -258,6 +263,12 @@ h2.entry-title {
   .wp-block-atomic-blocks-ab-button.ab-block-button span.white-background.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .white-background.wp-block-button__link, .wp-block-file .white-background.wp-block-file__button {
     background-color: #ffffff;
     border-color: #ffffff; }
+    .button.has-white-background-color:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-white-background-color.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.has-white-background-color.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .has-white-background-color.wp-block-button__link:hover, .wp-block-file .has-white-background-color.wp-block-file__button:hover, .button.background-white:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.background-white.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.background-white.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .background-white.wp-block-button__link:hover, .wp-block-file .background-white.wp-block-file__button:hover, .button.white-background:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.white-background.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.white-background.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .white-background.wp-block-button__link:hover, .wp-block-file .white-background.wp-block-file__button:hover {
+      background-color: white;
+      border-color: white; }
   .button.has-light-color, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-light-color.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-light-color.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .has-light-color.wp-block-button__link, .wp-block-file .has-light-color.wp-block-file__button, .button.has-color-light, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-color-light.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-color-light.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .has-color-light.wp-block-button__link, .wp-block-file .has-color-light.wp-block-file__button, .button.light, .wp-block-atomic-blocks-ab-button.ab-block-button a.light.ab-button-shape-rounded.ab-button-size-medium,
@@ -269,6 +280,12 @@ h2.entry-title {
   .wp-block-atomic-blocks-ab-button.ab-block-button span.light-background.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .light-background.wp-block-button__link, .wp-block-file .light-background.wp-block-file__button {
     background-color: #f5f5f5;
     border-color: #f5f5f5; }
+    .button.has-light-background-color:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-light-background-color.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.has-light-background-color.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .has-light-background-color.wp-block-button__link:hover, .wp-block-file .has-light-background-color.wp-block-file__button:hover, .button.background-light:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.background-light.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.background-light.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .background-light.wp-block-button__link:hover, .wp-block-file .background-light.wp-block-file__button:hover, .button.light-background:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.light-background.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.light-background.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .light-background.wp-block-button__link:hover, .wp-block-file .light-background.wp-block-file__button:hover {
+      background-color: white;
+      border-color: white; }
   .button.has-default-color, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-default-color.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-default-color.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .has-default-color.wp-block-button__link, .wp-block-file .has-default-color.wp-block-file__button, .button.has-color-default, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-color-default.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-color-default.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .has-color-default.wp-block-button__link, .wp-block-file .has-color-default.wp-block-file__button, .button.default, .wp-block-atomic-blocks-ab-button.ab-block-button a.default.ab-button-shape-rounded.ab-button-size-medium,
@@ -280,6 +297,12 @@ h2.entry-title {
   .wp-block-atomic-blocks-ab-button.ab-block-button span.default-background.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .default-background.wp-block-button__link, .wp-block-file .default-background.wp-block-file__button {
     background-color: #666;
     border-color: #666; }
+    .button.has-default-background-color:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-default-background-color.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.has-default-background-color.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .has-default-background-color.wp-block-button__link:hover, .wp-block-file .has-default-background-color.wp-block-file__button:hover, .button.background-default:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.background-default.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.background-default.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .background-default.wp-block-button__link:hover, .wp-block-file .background-default.wp-block-file__button:hover, .button.default-background:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.default-background.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.default-background.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .default-background.wp-block-button__link:hover, .wp-block-file .default-background.wp-block-file__button:hover {
+      background-color: #787878;
+      border-color: #787878; }
   .button.has-dark-color, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-dark-color.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-dark-color.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .has-dark-color.wp-block-button__link, .wp-block-file .has-dark-color.wp-block-file__button, .button.has-color-dark, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-color-dark.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-color-dark.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .has-color-dark.wp-block-button__link, .wp-block-file .has-color-dark.wp-block-file__button, .button.dark, .wp-block-atomic-blocks-ab-button.ab-block-button a.dark.ab-button-shape-rounded.ab-button-size-medium,
@@ -291,6 +314,12 @@ h2.entry-title {
   .wp-block-atomic-blocks-ab-button.ab-block-button span.dark-background.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .dark-background.wp-block-button__link, .wp-block-file .dark-background.wp-block-file__button {
     background-color: #333;
     border-color: #333; }
+    .button.has-dark-background-color:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-dark-background-color.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.has-dark-background-color.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .has-dark-background-color.wp-block-button__link:hover, .wp-block-file .has-dark-background-color.wp-block-file__button:hover, .button.background-dark:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.background-dark.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.background-dark.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .background-dark.wp-block-button__link:hover, .wp-block-file .background-dark.wp-block-file__button:hover, .button.dark-background:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.dark-background.ab-button-shape-rounded.ab-button-size-medium:hover,
+    .wp-block-atomic-blocks-ab-button.ab-block-button span.dark-background.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .dark-background.wp-block-button__link:hover, .wp-block-file .dark-background.wp-block-file__button:hover {
+      background-color: #454545;
+      border-color: #454545; }
 
 /* ==========================================================================
    Font
@@ -496,6 +525,16 @@ p.has-background.light-text a {
     margin-bottom: 30px; }
     > .ab-block-layout-column:last-child {
       margin-bottom: 0; } }
+
+/* ==========================================================================
+   Gutenberg fix for editing only
+   ========================================================================== */
+.ab-block-container .wp-block {
+  max-width: 100%; }
+
+[data-type="atomic-blocks/ab-columns"][data-align="full"] .ab-layout-column-wrap-admin > .block-editor-inner-blocks > .block-editor-block-list__layout {
+  padding-left: 0;
+  padding-right: 0; }
 
 /* ==========================================================================
    Padding on mobile
@@ -718,29 +757,52 @@ p.has-background.light-text a {
     font-style: italic;
     text-align: left; }
 
+@media (max-width: 600px) {
+  .wp-block-buttons .wp-block-button {
+    display: block;
+    width: 100%; } }
+
+@media (max-width: 600px) {
+  .wp-block-buttons .wp-block-button .wp-block-button__link {
+    text-align: center;
+    display: block;
+    width: 100%; } }
+
 .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-white, .wp-block-buttons .wp-block-button .wp-block-button__link.white {
   color: #ffffff; }
 
 .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-white, .wp-block-buttons .wp-block-button .wp-block-button__link.white-background {
   background-color: #ffffff; }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-white:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.white-background:hover {
+    background-color: white;
+    border-color: white; }
 
 .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-light, .wp-block-buttons .wp-block-button .wp-block-button__link.light {
   color: #f5f5f5; }
 
 .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-light, .wp-block-buttons .wp-block-button .wp-block-button__link.light-background {
   background-color: #f5f5f5; }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-light:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.light-background:hover {
+    background-color: white;
+    border-color: white; }
 
 .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-default, .wp-block-buttons .wp-block-button .wp-block-button__link.default {
   color: #666; }
 
 .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-default, .wp-block-buttons .wp-block-button .wp-block-button__link.default-background {
   background-color: #666; }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-default:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.default-background:hover {
+    background-color: #787878;
+    border-color: #787878; }
 
 .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-dark, .wp-block-buttons .wp-block-button .wp-block-button__link.dark {
   color: #333; }
 
 .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-dark, .wp-block-buttons .wp-block-button .wp-block-button__link.dark-background {
   background-color: #333; }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-dark:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.dark-background:hover {
+    background-color: #454545;
+    border-color: #454545; }
 
 .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link {
   background-color: transparent !important;
@@ -934,7 +996,7 @@ div[class*="wp-block-atomic-blocks"] :last-child:not(li) {
     padding: 60px !important; } }
 
 .inner-add-margin, body.first-block-is-section .entry-content > :first-child.wp-block-cover > .wp-block-cover__inner-container, body.first-block-is-section .entry-content > :first-child.gutenberg-section .content-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-container > .ab-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-columns > .ab-layout-column-wrap {
-  margin-top: 105px; }
+  margin-top: 120px; }
   @media (min-width: 600px) and (max-width: 960px) {
     .inner-add-margin, body.first-block-is-section .entry-content > :first-child.wp-block-cover > .wp-block-cover__inner-container, body.first-block-is-section .entry-content > :first-child.gutenberg-section .content-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-container > .ab-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-columns > .ab-layout-column-wrap {
       margin-top: 70px; } }
