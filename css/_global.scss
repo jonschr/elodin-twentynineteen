@@ -13,6 +13,7 @@ $highlight: red;
    ========================================================================== */
 
 $colors: ("white": $white, "light": $light, "default": $default, "dark": $dark);
+$darks: ("default": $default, "dark": $dark);
 
 /*
    Connect up the colors
@@ -31,6 +32,24 @@ $color in $colors {
     .background-#{$name},
     .#{$name}-background {
         background-color: $color;
+    }
+}
+
+/*
+   Connect up the dark ones
+   ========================================================================== */
+
+@each $name,
+$dark in $darks {
+
+    .has-#{$name}-background-color,
+    .background-#{$name},
+    .#{$name}-background {
+        color: white;
+
+        ul {
+            color: white;
+        }
     }
 }
 

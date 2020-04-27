@@ -1,0 +1,34 @@
+//* on the backend these are rendered as spans instead of links
+.wp-block-atomic-blocks-ab-button.ab-block-button {
+
+    a,
+    span {
+        font-family: "Source Sans Pro", sans-serif;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        &.ab-button-shape-rounded.ab-button-size-medium {
+            @extend .button;
+            border: none !important;
+        }
+
+        @each $name,
+        $color in $colors {
+
+            &.has-#{$name}-color,
+            &.has-color-#{$name},
+            &.#{$name} {
+                color: $color;
+            }
+
+            &.has-#{$name}-background-color,
+            &.background-#{$name},
+            &.#{$name}-background {
+
+                background-color: $color;
+                border-color: $color;
+
+            }
+        }
+    }
+}

@@ -16,9 +16,15 @@
    Padding on mobile
    ========================================================================== */
 
-.wp-block-atomic-blocks-ab-columns {
+.entry-content>.wp-block-atomic-blocks-ab-columns {
     @include mobile {
         padding: 30px !important;
+    }
+}
+
+.wp-block-atomic-blocks-ab-columns {
+    @include mobile {
+        margin-bottom: 30px;
     }
 }
 

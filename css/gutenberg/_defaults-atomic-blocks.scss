@@ -14,8 +14,8 @@ div[class*="wp-block-atomic-blocks"] {
    Defaults: mobile padding and alignment
    ========================================================================== */
 
-div[class*="wp-block-atomic-blocks"],
-.wp-block-atomic-blocks-ab-columns {
+.entry-content>div[class*="wp-block-atomic-blocks"],
+.entry-content>.wp-block-atomic-blocks-ab-columns {
 
     h1,
     h2,

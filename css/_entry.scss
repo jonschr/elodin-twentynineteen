@@ -9,7 +9,7 @@
         margin-bottom: 30px;
     }
 
-    :last-child:not(li) {
+    :last-child:not(li):not(.wp-block-button__link) {
         margin-bottom: 0;
     }
 }

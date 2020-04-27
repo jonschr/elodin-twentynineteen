@@ -1,0 +1,28 @@
+.wp-block-buttons {
+    .wp-block-button {
+        .wp-block-button__link {
+            @extend .button;
+
+            @each $name,
+            $color in $colors {
+
+                &.has-#{$name}-color,
+                &.has-color-#{$name},
+                &.#{$name} {
+                    color: $color;
+                }
+
+                &.has-#{$name}-background-color,
+                &.background-#{$name},
+                &.#{$name}-background {
+                    background-color: $color;
+                }
+            }
+        }
+
+        &.is-style-outline .wp-block-button__link {
+            background-color: transparent !important;
+            border-color: white !important;
+        }
+    }
+}
