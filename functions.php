@@ -38,6 +38,9 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.p
 // Header customizations
 require_once get_stylesheet_directory() . '/lib/header.php';
 
+// Gutenberg
+require_once get_stylesheet_directory() . '/lib/gutenberg-init.php';
+
 // First block customization (add body class for the first block for padding and remove the entry header)
 require_once get_stylesheet_directory() . '/lib/gutenberg-first-block-logic.php';
 
@@ -52,9 +55,6 @@ require_once  get_stylesheet_directory() . '/lib/enqueue.php';
 
 // Sidebar customizations (unregistering layouts, etc.)
 require_once  get_stylesheet_directory() . '/lib/sidebar.php';
-
-// Gutenberg
-require_once get_stylesheet_directory() . '/lib/gutenberg-init.php';
 
 // Text sizes
 require_once get_stylesheet_directory() . '/lib/text-sizes.php';

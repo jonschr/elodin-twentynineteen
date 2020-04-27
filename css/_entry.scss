@@ -3,7 +3,15 @@
    ========================================================================== */
 
 .entry {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    @include mobile {
+        margin-bottom: 30px;
+    }
+
+    :last-child:not(li) {
+        margin-bottom: 0;
+    }
 }
 
 .entry-content ol,
@@ -12,16 +20,16 @@
     padding-left: 40px;
 }
 
-.entry-content ol > li {
+.entry-content ol>li {
     list-style-type: decimal;
 }
 
-.entry-content ul > li {
+.entry-content ul>li {
     list-style-type: disc;
 }
 
-.entry-content ol ul > li,
-.entry-content ul ul > li {
+.entry-content ol ul>li,
+.entry-content ul ul>li {
     list-style-type: circle;
 }
 

@@ -65,6 +65,10 @@ body.blog {
         border-radius: 3px;
         background-color: white;
 
+        .entry-header {
+            margin-bottom: 25px;
+        }
+
         .entry-content img.post-image,
         .entry-content picture.entry-image>img {
             width: calc(100% + 60px);
