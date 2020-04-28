@@ -249,9 +249,12 @@ h2.entry-title {
       display: block;
       width: 100%; } }
   .button:hover, .wp-block-atomic-blocks-ab-button.ab-block-button a.ab-button-shape-rounded.ab-button-size-medium:hover,
-  .wp-block-atomic-blocks-ab-button.ab-block-button span.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .wp-block-button__link:hover, .wp-block-file .wp-block-file__button:hover {
+  .wp-block-atomic-blocks-ab-button.ab-block-button span.ab-button-shape-rounded.ab-button-size-medium:hover, .wp-block-buttons .wp-block-button .wp-block-button__link:hover, .wp-block-file .wp-block-file__button:hover, .button:focus, .wp-block-atomic-blocks-ab-button.ab-block-button a.ab-button-shape-rounded.ab-button-size-medium:focus,
+  .wp-block-atomic-blocks-ab-button.ab-block-button span.ab-button-shape-rounded.ab-button-size-medium:focus, .wp-block-buttons .wp-block-button .wp-block-button__link:focus, .wp-block-file .wp-block-file__button:focus, .button:active, .wp-block-atomic-blocks-ab-button.ab-block-button a.ab-button-shape-rounded.ab-button-size-medium:active,
+  .wp-block-atomic-blocks-ab-button.ab-block-button span.ab-button-shape-rounded.ab-button-size-medium:active, .wp-block-buttons .wp-block-button .wp-block-button__link:active, .wp-block-file .wp-block-file__button:active {
     background-color: #454545;
-    border-color: #454545; }
+    border-color: #454545;
+    color: white; }
   .button.has-white-color, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-white-color.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-white-color.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .has-white-color.wp-block-button__link, .wp-block-file .has-white-color.wp-block-file__button, .button.has-color-white, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-color-white.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-color-white.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .has-color-white.wp-block-button__link, .wp-block-file .has-color-white.wp-block-file__button, .button.white, .wp-block-atomic-blocks-ab-button.ab-block-button a.white.ab-button-shape-rounded.ab-button-size-medium,

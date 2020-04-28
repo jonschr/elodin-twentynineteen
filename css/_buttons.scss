@@ -19,9 +19,12 @@
         width: 100%;
     }
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
         background-color: lighten($dark, 7%);
         border-color: lighten($dark, 7%);
+        color: white;
     }
 
     @each $name,
