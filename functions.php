@@ -44,6 +44,9 @@ require_once get_stylesheet_directory() . '/lib/gutenberg-init.php';
 // First block customization (add body class for the first block for padding and remove the entry header)
 require_once get_stylesheet_directory() . '/lib/gutenberg-first-block-logic.php';
 
+// Last block customization (add body class for the last block for padding and remove the entry header)
+require_once get_stylesheet_directory() . '/lib/gutenberg-last-block-logic.php';
+
 // Footer customizations
 require_once get_stylesheet_directory() . '/lib/footer.php';
 

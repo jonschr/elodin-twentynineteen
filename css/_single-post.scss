@@ -17,6 +17,10 @@ body.single-post {
         margin-bottom: 20px;
     }
 
+    .content>.entry {
+        margin-bottom: 30px !important;
+    }
+
     #respond {
         @include desktop {
             padding: 30px;
