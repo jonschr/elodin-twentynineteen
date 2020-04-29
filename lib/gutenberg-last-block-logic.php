@@ -85,6 +85,8 @@ function elodin_is_last_block_section( $lastblock ) {
         'gutenberg-section',
         'atomic-blocks-ab-container',
         'atomic-blocks-ab-columns',
+        'acf-twocolumn',
+        'acf-fullwidth'
     );
 
     if ( in_array( $lastblock, $sectionblocks ) )
