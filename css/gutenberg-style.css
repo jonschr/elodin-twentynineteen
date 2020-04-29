@@ -199,6 +199,11 @@ h6 {
   .entry-content > h4:first-child {
     margin-top: 0; }
 
+.entry-content .wp-block-spacer + h2,
+.entry-content .wp-block-spacer + h3,
+.entry-content .wp-block-spacer + h4 {
+  margin-top: 0; }
+
 /* ==========================================================================
    Titles
    ========================================================================== */
@@ -940,6 +945,10 @@ p.has-background.light-text a {
 @media (max-width: 600px) {
   .wp-block-media-text > figure > img {
     width: auto; } }
+
+@media (max-width: 600px) {
+  .wp-block-spacer {
+    max-height: 30px; } }
 
 .wp-block-table {
   margin-bottom: 25px; }
