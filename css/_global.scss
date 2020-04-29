@@ -6,7 +6,7 @@ $white: #ffffff;
 $light: #f5f5f5;
 $default: #666;
 $dark: #333;
-$highlight: red;
+$highlight: #147bcd;
 
 /* ==========================================================================
    Color loop
@@ -59,14 +59,16 @@ $dark in $darks {
    ========================================================================== */
 
 $headerheightdesktop: 120px;
-$headerheighttablet: 70px;
-$headerheightmobile: 70px;
+$headerheighttablet: 42px;
+$headerheightmobile: 42px;
 
 $defaultcontentwidth: 1200px;
 $defaultblogwidth: 780px;
 
 $adminbarheightdesktop: 32px;
 $adminbarheightmobile: 46px;
+
+$boxshadow: 0 10px 30px 0 rgba(black, 0.07);
 
 /* ==========================================================================
    Queries

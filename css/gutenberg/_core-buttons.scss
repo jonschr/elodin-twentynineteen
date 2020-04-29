@@ -1,5 +1,19 @@
 .wp-block-buttons {
+
+    &.alignright {
+        .wp-block-button {
+            margin: 4px 0 0 4px;
+        }
+    }
+
+    &.aligncenter {
+        .wp-block-button {
+            margin: 4px 2px 0;
+        }
+    }
+
     .wp-block-button {
+        margin: 4px 4px 0 0;
 
         @include mobile {
             display: block;

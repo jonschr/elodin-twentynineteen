@@ -6,7 +6,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Elodin TwentyNineteen' );
 define( 'CHILD_THEME_URL', 'https://elod.in' );
-define( 'CHILD_THEME_VERSION', '0.5.0' );
+define( 'CHILD_THEME_VERSION', '0.5.1' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -79,6 +79,7 @@ add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
 
 // Adds image sizes.
 add_image_size( 'blog', 780, 390, true );
+add_image_size( 'blog-sidebar', 360, 180, true );
 
 // Remove the edit link by default on posts/pages
 add_filter ( 'genesis_edit_post_link' , '__return_false' );

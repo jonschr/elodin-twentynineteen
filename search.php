@@ -18,12 +18,13 @@ function elodin_do_search_loop() {
 
             $title = get_the_title();
             $permalink = get_the_permalink();
+            $prettylink = preg_replace( "#^[^:/.]*[:/]+#i", "", preg_replace( "{/$}", "", urldecode( $permalink ) ) ); 
 
     		do_action( 'genesis_before_entry' );
 
     		printf( '<article %s>', genesis_attr( 'entry' ) );
 
-            printf( '<a class="google-style-link" href="%s">%s</a>', $permalink, $permalink );
+            printf( '<a class="google-style-link" href="%s">%s</a>', $permalink, $prettylink );
                 printf( '<h2 class="search-heading"><a href="%s">%s</a></h2>', $permalink, $title );
                 the_excerpt();
 

@@ -3,7 +3,13 @@
    ========================================================================== */
 
 body.single-post {
-    background: $light;
+    background-color: white;
+
+    .content-sidebar-wrap {
+        >.content {
+            margin-bottom: 75px;
+        }
+    }
 
     @include mobile {
         background-color: white;

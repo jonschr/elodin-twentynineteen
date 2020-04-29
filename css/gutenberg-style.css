@@ -220,7 +220,7 @@ h2.entry-title {
 
 .entry-title a:focus,
 .entry-title a:hover {
-  color: red; }
+  color: #147bcd; }
 
 .widget-title {
   font-size: 18px;
@@ -418,13 +418,13 @@ p.has-small-font-size.has-drop-cap:not(:focus)::first-letter {
    Links
    ========================================================================== */
 a {
-  color: red;
+  color: #147bcd;
   text-decoration: underline;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
 
 a:focus,
 a:hover {
-  color: #ff1a1a; }
+  color: #1689e4; }
 
 p.has-text-color a,
 p.has-background a {
@@ -767,56 +767,54 @@ p.has-background.light-text a {
     font-style: italic;
     text-align: left; }
 
-@media (max-width: 600px) {
-  .wp-block-buttons .wp-block-button {
-    display: block;
-    width: 100%; } }
+.wp-block-buttons.alignright .wp-block-button {
+  margin: 4px 0 0 4px; }
 
-@media (max-width: 600px) {
-  .wp-block-buttons .wp-block-button .wp-block-button__link {
-    text-align: center;
-    display: block;
-    width: 100%; } }
+.wp-block-buttons.aligncenter .wp-block-button {
+  margin: 4px 2px 0; }
 
-.wp-block-buttons .wp-block-button .wp-block-button__link.has-white-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-white, .wp-block-buttons .wp-block-button .wp-block-button__link.white {
-  color: #ffffff; }
-
-.wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-white, .wp-block-buttons .wp-block-button .wp-block-button__link.white-background {
-  background-color: #ffffff; }
-  .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-white:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.white-background:hover {
-    background-color: white;
-    border-color: white; }
-
-.wp-block-buttons .wp-block-button .wp-block-button__link.has-light-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-light, .wp-block-buttons .wp-block-button .wp-block-button__link.light {
-  color: #f5f5f5; }
-
-.wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-light, .wp-block-buttons .wp-block-button .wp-block-button__link.light-background {
-  background-color: #f5f5f5; }
-  .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-light:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.light-background:hover {
-    background-color: white;
-    border-color: white; }
-
-.wp-block-buttons .wp-block-button .wp-block-button__link.has-default-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-default, .wp-block-buttons .wp-block-button .wp-block-button__link.default {
-  color: #666; }
-
-.wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-default, .wp-block-buttons .wp-block-button .wp-block-button__link.default-background {
-  background-color: #666; }
-  .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-default:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.default-background:hover {
-    background-color: #787878;
-    border-color: #787878; }
-
-.wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-dark, .wp-block-buttons .wp-block-button .wp-block-button__link.dark {
-  color: #333; }
-
-.wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-dark, .wp-block-buttons .wp-block-button .wp-block-button__link.dark-background {
-  background-color: #333; }
-  .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-dark:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.dark-background:hover {
-    background-color: #454545;
-    border-color: #454545; }
-
-.wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link {
-  background-color: transparent !important;
-  border-color: white !important; }
+.wp-block-buttons .wp-block-button {
+  margin: 4px 4px 0 0; }
+  @media (max-width: 600px) {
+    .wp-block-buttons .wp-block-button {
+      display: block;
+      width: 100%; } }
+  @media (max-width: 600px) {
+    .wp-block-buttons .wp-block-button .wp-block-button__link {
+      text-align: center;
+      display: block;
+      width: 100%; } }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-white, .wp-block-buttons .wp-block-button .wp-block-button__link.white {
+    color: #ffffff; }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-white, .wp-block-buttons .wp-block-button .wp-block-button__link.white-background {
+    background-color: #ffffff; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-white:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.white-background:hover {
+      background-color: white;
+      border-color: white; }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-light, .wp-block-buttons .wp-block-button .wp-block-button__link.light {
+    color: #f5f5f5; }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-light, .wp-block-buttons .wp-block-button .wp-block-button__link.light-background {
+    background-color: #f5f5f5; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-light:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.light-background:hover {
+      background-color: white;
+      border-color: white; }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-default, .wp-block-buttons .wp-block-button .wp-block-button__link.default {
+    color: #666; }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-default, .wp-block-buttons .wp-block-button .wp-block-button__link.default-background {
+    background-color: #666; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-default:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.default-background:hover {
+      background-color: #787878;
+      border-color: #787878; }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-dark, .wp-block-buttons .wp-block-button .wp-block-button__link.dark {
+    color: #333; }
+  .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-dark, .wp-block-buttons .wp-block-button .wp-block-button__link.dark-background {
+    background-color: #333; }
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-dark:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.dark-background:hover {
+      background-color: #454545;
+      border-color: #454545; }
+  .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link {
+    background-color: transparent !important;
+    border-color: white !important; }
 
 .wp-block-categories,
 .wp-block-categories ol,
@@ -886,24 +884,30 @@ p.has-background.light-text a {
     margin: 0 15px 0 0;
     order: 0; }
 
-.wp-block-gallery {
-  margin-bottom: 25px; }
-  .wp-block-gallery ul.blocks-gallery-grid {
-    margin-left: 0;
-    padding-left: 0;
-    padding-top: 25px;
-    margin-bottom: 0; }
-  .wp-block-gallery:first-child ul.blocks-gallery-grid {
-    padding-top: 0; }
-  .wp-block-gallery:last-child ul.blocks-gallery-grid {
-    margin-bottom: -16px; }
-  .wp-block-gallery figcaption {
-    color: #666;
-    font-size: 14px;
-    font-style: italic;
-    margin-top: -5px;
-    text-align: left;
-    display: block; }
+.wp-block-gallery ul.blocks-gallery-grid {
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+.wp-block-gallery:first-child ul.blocks-gallery-grid {
+  padding-top: 0; }
+
+.wp-block-gallery:last-child ul.blocks-gallery-grid {
+  margin-bottom: -16px; }
+
+.wp-block-gallery .blocks-gallery-item figcaption {
+  text-align: center;
+  color: white; }
+
+.wp-block-gallery figcaption {
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: -5px;
+  text-align: left;
+  display: block; }
+  .wp-block-gallery figcaption a {
+    color: white; }
 
 .wp-block-image figcaption {
   color: #666;
@@ -1009,10 +1013,10 @@ div[class*="wp-block-atomic-blocks"] :last-child:not(li) {
   margin-top: 120px; }
   @media (min-width: 600px) and (max-width: 960px) {
     .inner-add-margin, body.first-block-is-section .entry-content > :first-child.wp-block-cover > .wp-block-cover__inner-container, body.first-block-is-section .entry-content > :first-child.gutenberg-section .content-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-container > .ab-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-columns > .ab-layout-column-wrap {
-      margin-top: 70px; } }
+      margin-top: 42px; } }
   @media (max-width: 600px) {
     .inner-add-margin, body.first-block-is-section .entry-content > :first-child.wp-block-cover > .wp-block-cover__inner-container, body.first-block-is-section .entry-content > :first-child.gutenberg-section .content-wrap, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-container > .ab-container-inside, body.first-block-is-section .entry-content > :first-child.wp-block-atomic-blocks-ab-columns > .ab-layout-column-wrap {
-      margin-top: 70px; } }
+      margin-top: 42px; } }
 
 body.first-block-is-section .site-inner {
   margin-top: 0 !important; }
