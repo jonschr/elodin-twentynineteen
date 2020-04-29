@@ -62,6 +62,9 @@ require_once  get_stylesheet_directory() . '/lib/sidebar.php';
 // Text sizes
 require_once get_stylesheet_directory() . '/lib/text-sizes.php';
 
+// Disable tags
+require_once get_stylesheet_directory() . '/lib/disable-tags.php';
+
 // Adds support for HTML5 markup structure.
 add_theme_support( 'html5', genesis_get_config( 'html5' ) );
 
