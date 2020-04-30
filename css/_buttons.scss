@@ -12,6 +12,7 @@
     border: 2px solid $dark;
     border-radius: 3px;
     text-decoration: none !important;
+    display: inline-block;
 
     @include mobile {
         text-align: center;
