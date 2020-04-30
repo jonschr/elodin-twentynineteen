@@ -82,7 +82,8 @@ function elodin_is_first_block_section( $firstblock ) {
         'atomic-blocks-ab-container',
         'atomic-blocks-ab-columns',
         'acf-twocolumn',
-        'acf-fullwidth'
+        'acf-fullwidth',
+        'core-group'
     );
 
     if ( in_array( $firstblock, $sectionblocks ) )
