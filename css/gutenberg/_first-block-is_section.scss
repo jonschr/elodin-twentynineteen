@@ -56,5 +56,21 @@ body.first-block-is-section {
                 @extend .inner-add-margin;
             }
         }
+
+        //* GETWID BLOCKS SECTION
+        &.wp-block-getwid-section {
+            >.wp-block-getwid-section__wrapper {
+                >.wp-block-getwid-section__inner-wrapper {
+                    @extend .inner-add-margin;
+                }
+            }
+        }
+
+        //* ULTIMATE ADDONS SECTION
+        &.wp-block-uagb-section {
+            >.uagb-section__inner-wrap {
+                @extend .inner-add-margin;
+            }
+        }
     }
 }

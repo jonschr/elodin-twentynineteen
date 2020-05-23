@@ -87,7 +87,9 @@ function elodin_is_last_block_section( $lastblock ) {
         'atomic-blocks-ab-columns',
         'acf-twocolumn',
         'acf-fullwidth',
-        'core-group'
+        'core-group',
+        'getwid-section',
+        'uagb-section',
     );
 
     if ( in_array( $lastblock, $sectionblocks ) )
