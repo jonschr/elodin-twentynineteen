@@ -65,6 +65,9 @@ require_once get_stylesheet_directory() . '/lib/text-sizes.php';
 // Disable tags
 require_once get_stylesheet_directory() . '/lib/disable-tags.php';
 
+// Body classes for login state
+require_once get_stylesheet_directory() . '/lib/body-class-logged-in-out.php';
+
 // Adds support for HTML5 markup structure.
 add_theme_support( 'html5', genesis_get_config( 'html5' ) );
 
