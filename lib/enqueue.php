@@ -5,7 +5,7 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
 
 	wp_enqueue_style(
 		'genesis-sample-fonts',
-		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
+		'//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap',
 		array(),
 		CHILD_THEME_VERSION
 	);
