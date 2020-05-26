@@ -149,7 +149,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 20px; }
@@ -163,8 +163,7 @@ h6 {
       display: none; } }
 
 h1, .editor-post-title__block .editor-post-title__input {
-  font-size: 60px;
-  text-transform: uppercase; }
+  font-size: 40px; }
   @media (min-width: 600px) and (max-width: 960px) {
     h1, .editor-post-title__block .editor-post-title__input {
       font-size: 32px; } }
@@ -173,8 +172,7 @@ h1, .editor-post-title__block .editor-post-title__input {
       font-size: 24px; } }
 
 h2 {
-  font-size: 40px;
-  text-transform: uppercase; }
+  font-size: 35px; }
   @media (min-width: 600px) and (max-width: 960px) {
     h2 {
       font-size: 25px; } }
@@ -183,16 +181,13 @@ h2 {
       font-size: 20px; } }
 
 h3 {
-  font-size: 21px;
-  font-weight: 600; }
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px; }
 
 h4 {
   font-size: 20px; }
-  h4:first-child {
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 400; }
 
 h5 {
   font-size: 18px; }
@@ -270,7 +265,7 @@ h2.entry-title {
   color: white;
   text-transform: uppercase;
   background-color: #403F3E;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'rat', sans-serif;
   letter-spacing: 0.1em;
   font-size: 14px;
   padding: 15px 20px;
@@ -826,7 +821,7 @@ h2.entry-title {
    ========================================================================== */
 p,
 ul {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
 
 /* ==========================================================================
    General typeography
@@ -953,7 +948,7 @@ p.has-background.light-text a {
 
 .wp-block-atomic-blocks-ab-button.ab-block-button a,
 .wp-block-atomic-blocks-ab-button.ab-block-button span {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 0.05em;
   text-transform: uppercase; }
   .wp-block-atomic-blocks-ab-button.ab-block-button a.ab-button-shape-rounded.ab-button-size-medium,
@@ -1281,7 +1276,7 @@ p.has-background.light-text a {
   .wp-block-quote cite {
     color: #403F3E;
     display: block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     margin-top: 10px;
     font-style: italic;
@@ -1298,7 +1293,7 @@ p.has-background.light-text a {
   .wp-block-quote.is-style-large cite {
     color: #403F3E;
     display: block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     margin-top: 10px;
     font-style: italic;

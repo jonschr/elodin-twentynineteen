@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     line-height: 1.2;
     margin: 0 0 20px;
@@ -21,8 +21,7 @@ h6 {
 }
 
 h1 {
-    font-size: 60px;
-    text-transform: uppercase;
+    font-size: 40px;
 
     @include tablet {
         font-size: 32px;
@@ -41,8 +40,7 @@ h1 {
 
 
 h2 {
-    font-size: 40px;
-    text-transform: uppercase;
+    font-size: 35px;
 
     @include tablet {
         font-size: 25px;
@@ -55,19 +53,14 @@ h2 {
 }
 
 h3 {
-    font-size: 21px;
-    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 h4 {
     font-size: 20px;
-
-    &:first-child {
-        font-size: 14px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        font-weight: 400;
-    }
 }
 
 h5 {

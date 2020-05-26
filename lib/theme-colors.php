@@ -20,18 +20,18 @@ function elodin_register_colors() {
             array(
 				'name'  => esc_html__( 'Default', 'elodin_twentynineteen' ),
 				'slug' => 'default',
-				'color' => '#403F3E',
+				'color' => '#666',
+            ),
+            array(
+				'name'  => esc_html__( 'Dark', 'elodin_twentynineteen' ),
+				'slug' => 'dark',
+				'color' => '#333',
 			),
 			array(
-				'name'  => esc_html__( 'Blue', 'elodin_twentynineteen' ),
-				'slug' => 'blue',
-				'color' => '#42676F',
-			),
-			array(
-				'name'  => esc_html__( 'Red', 'elodin_twentynineteen' ),
-				'slug' => 'red',
-				'color' => '#690e0e',
-			),			
+				'name'  => esc_html__( 'Highlight', 'elodin_twentynineteen' ),
+				'slug' => 'highlight',
+				'color' => '#147bcd',
+            ),
 		)
 	);
 }
