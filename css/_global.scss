@@ -2,18 +2,22 @@
    Colors
    ========================================================================== */
 
+
 $white: #ffffff;
 $light: #f5f5f5;
-$default: #666;
-$dark: #333;
-$highlight: #147bcd;
+$default: #403F3E;
+$blue: #42676F;
+$red: #690e0e;
+
+$highlight: $red;
+$dark: $default;
 
 /* ==========================================================================
    Color loop
    ========================================================================== */
 
-$colors: ("white": $white, "light": $light, "default": $default, "dark": $dark, "highlight": $highlight);
-$darks: ("default": $default, "dark": $dark);
+$colors: ("white": $white, "light": $light, "default": $default, "blue": $blue, "highlight": $highlight);
+$darks: ("default": $default, "blue": $blue, "highlight": $highlight);
 
 /*
    Connect up the colors
