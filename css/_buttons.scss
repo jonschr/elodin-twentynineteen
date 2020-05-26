@@ -3,7 +3,7 @@
     color: white;
     text-transform: uppercase;
     background-color: $dark;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.1em;
     font-size: 14px;
     padding: 15px 20px;
@@ -50,115 +50,4 @@
             }
         }
     }
-
 }
-
-
-// /* Buttons
-// ---------------------------------------------------------------------------- */
-
-// .ab-block-cta .ab-button {
-//     font-family: "Source Sans Pro", sans-serif;
-//     font-weight: 600;
-// }
-
-// .wp-block-button .wp-block-button__link {
-//     background-color: #333;
-//     border: 0;
-//     border-radius: 5px;
-//     color: #fff;
-//     cursor: pointer;
-//     font-size: 16px;
-//     font-weight: 600;
-//     padding: 15px 30px;
-//     text-align: center;
-//     text-decoration: none;
-//     white-space: normal;
-//     width: auto;
-// }
-
-// .wp-block-button.is-style-outline .wp-block-button__link:focus,
-// .wp-block-button.is-style-outline .wp-block-button__link:hover,
-// .wp-block-button .wp-block-button__link:focus,
-// .wp-block-button .wp-block-button__link:hover {
-//     box-shadow: inset 0 0 200px rgba(230, 230, 230, 0.15);
-// }
-
-// /* Button Variations */
-// .wp-block-button.is-style-squared .wp-block-button__link {
-//     border-radius: 0;
-// }
-
-// .wp-block-button.is-style-outline .wp-block-button__link {
-//     background-color: transparent;
-//     border: 2px solid currentColor;
-//     border-radius: 0;
-//     padding: 13px 28px;
-// }
-
-// /* ==========================================================================
-//    Buttons
-//    ========================================================================== */
-
-// .button {
-//     background-color: $highlight;
-//     box-shadow: none;
-//     color: #fff;
-//     cursor: pointer;
-//     font-size: 16px !important;
-//     font-weight: 600;
-//     padding: 15px 30px;
-//     display: inline-block;
-//     line-height: 1em;
-//     text-align: center;
-//     text-decoration: none;
-//     text-transform: uppercase;
-//     height: auto;
-//     border-radius: 3px;
-//     margin-right: 5px;
-//     border: 2px solid $highlight;
-//     transitioN: .3s all ease;
-
-//     &:focus,
-//     &:hover {
-//         color: #fff;
-//         background-color: lighten($highlight, 10%);
-//         border-color: lighten($highlight, 10%);
-//     }
-
-//     &.button-small {
-//         padding: 5px 20px;
-//         height: auto;
-//     }
-
-//     &.button-outline {
-//         background-color: transparent;
-//         border: 2px solid white;
-//         color: white;
-
-//         &:focus,
-//         &:hover {
-//             color: #fff;
-//             background-color: lighten($highlight, 10%);
-//             border-color: lighten($highlight, 10%);
-//         }
-//     }
-// }
-
-// .site-container,
-// .acf-block-preview,
-// .lity {
-//     .button {
-//         @extend .button;
-//     }
-// }
-
-// .ab-button {
-//     background-color: $highlight;
-//     text-transform: uppercase;
-//     font-size: 16px;
-//     letter-spacing: 1px;
-//     font-weight: 600;
-//     border-radius: 3px;
-//     padding: 15px 20px;
-// }
