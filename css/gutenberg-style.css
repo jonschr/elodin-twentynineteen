@@ -1247,7 +1247,7 @@ p.has-background.light-text a {
    Padding on mobile
    ========================================================================== */
 @media (max-width: 600px) {
-  .wp-block-atomic-blocks-ab-container {
+  .entry-content > .wp-block-atomic-blocks-ab-container {
     padding: 30px !important; } }
 
 /* ==========================================================================
@@ -1398,6 +1398,14 @@ p.has-background.light-text a {
 .wp-block-columns {
   margin-bottom: -50px;
   text-align: center; }
+  @media (max-width: 600px) {
+    .wp-block-columns {
+      margin-bottom: 0; } }
+  .wp-block-columns:last-child {
+    margin-bottom: -50px; }
+    @media (max-width: 600px) {
+      .wp-block-columns:last-child {
+        margin-bottom: 0; } }
   @media (max-width: 600px) {
     .wp-block-columns {
       text-align: left; } }

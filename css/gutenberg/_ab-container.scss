@@ -10,7 +10,7 @@
    Padding on mobile
    ========================================================================== */
 
-.wp-block-atomic-blocks-ab-container {
+.entry-content>.wp-block-atomic-blocks-ab-container {
     @include mobile {
         padding: 30px !important;
     }

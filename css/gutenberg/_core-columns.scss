@@ -3,6 +3,18 @@
     text-align: center;
 
     @include mobile {
+        margin-bottom: 0;
+    }
+
+    &:last-child {
+        margin-bottom: -50px;
+
+        @include mobile {
+            margin-bottom: 0;
+        }
+    }
+
+    @include mobile {
         text-align: left;
     }
 

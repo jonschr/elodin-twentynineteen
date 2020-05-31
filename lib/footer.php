@@ -13,8 +13,10 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 
 //* Register the widget area
 genesis_register_sidebar( array(
-	'id'		=> 'above-footer',
-	'name'		=> __( 'Above footer', 'elodin' ),
+	'id'			=> 'above-footer',
+	'name'			=> __( 'Above footer', 'elodin' ),
+	'before_title' 	=> '<h2>',
+	'after_title'	=>  '</h2>'
 ) );
 
 //* Display the widget area
