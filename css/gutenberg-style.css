@@ -1050,6 +1050,31 @@ p.has-background.light-text a {
   padding-right: 0; }
 
 /* ==========================================================================
+   Center alignment default for 3+ columns on desktop, left on mobile
+   ========================================================================== */
+.ab-layout-columns-3,
+.ab-layout-columns-4,
+.ab-layout-columns-5,
+.ab-layout-columns-6 {
+  text-align: center; }
+  @media (max-width: 600px) {
+    .ab-layout-columns-3,
+    .ab-layout-columns-4,
+    .ab-layout-columns-5,
+    .ab-layout-columns-6 {
+      text-align: left; } }
+
+/* ==========================================================================
+   Image alignment defaults
+   ========================================================================== */
+.wp-block-atomic-blocks-ab-columns .wp-block-image {
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 600px) {
+    .wp-block-atomic-blocks-ab-columns .wp-block-image {
+      margin-left: 0; } }
+
+/* ==========================================================================
    Padding on mobile
    ========================================================================== */
 @media (max-width: 600px) {
@@ -1371,12 +1396,26 @@ p.has-background.light-text a {
   padding: 0 30px; }
 
 .wp-block-columns {
-  margin-bottom: -50px; }
+  margin-bottom: -50px;
+  text-align: center; }
+  @media (max-width: 600px) {
+    .wp-block-columns {
+      text-align: left; } }
   .wp-block-columns .wp-block-column :last-child {
     margin-bottom: 0; }
   @media (max-width: 600px) {
     .wp-block-columns .wp-block-column {
       margin-bottom: 30px; } }
+
+/* ==========================================================================
+   Image alignment defaults
+   ========================================================================== */
+.wp-block-columns .wp-block-image {
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 600px) {
+    .wp-block-columns .wp-block-image {
+      margin-left: 0; } }
 
 /* ==========================================================================
    Align full
