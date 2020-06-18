@@ -1,5 +1,6 @@
-<?php add_action('wp_enqueue_scripts', 'elodin_twentynineteen_enqueue_scripts_styles');
+<?php 
 
+add_action('wp_enqueue_scripts', 'elodin_twentynineteen_enqueue_scripts_styles');
 function elodin_twentynineteen_enqueue_scripts_styles() {
 
     wp_enqueue_style('genesis-sample-fonts',
