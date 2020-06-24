@@ -9,10 +9,10 @@
    ========================================================================== */
 
 //* Defaults
-@import 'editor-defaults';
-@import "headings";
-@import "buttons";
-@import "typography";
+@import "template/editor-defaults";
+@import "template/headings";
+@import "template/buttons";
+@import "template/typography";
 
 //* Gutenberg
 @import "gutenberg/*";
