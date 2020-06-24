@@ -3,13 +3,13 @@
    ========================================================================== */
 
 @import "global";
+@import "editor-defaults";
 
 /* ==========================================================================
    Includes
    ========================================================================== */
 
-//* Defaults
-@import "template/editor-defaults";
+//* Base styles
 @import "template/headings";
 @import "template/buttons";
 @import "template/typography";

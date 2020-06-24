@@ -97,9 +97,6 @@
    Queries
    ========================================================================== */
 /* ==========================================================================
-   Includes
-   ========================================================================== */
-/* ==========================================================================
    Block width
    ========================================================================== */
 /* Regular content width.
@@ -140,6 +137,9 @@ ul.rich-text,
 ol.rich-text {
   padding-left: 40px; }
 
+/* ==========================================================================
+   Includes
+   ========================================================================== */
 /* ==========================================================================
    Headings
    ========================================================================== */
@@ -1471,30 +1471,26 @@ p.has-background.light-text a {
     margin: 0 15px 0 0;
     order: 0; }
 
-.wp-block-gallery ul.blocks-gallery-grid {
-  margin-left: 0;
-  padding-left: 0;
-  margin-bottom: 0; }
-
-.wp-block-gallery:first-child ul.blocks-gallery-grid {
-  padding-top: 0; }
-
-.wp-block-gallery:last-child ul.blocks-gallery-grid {
-  margin-bottom: -16px; }
-
-.wp-block-gallery .blocks-gallery-item figcaption {
-  text-align: center;
-  color: white; }
-
-.wp-block-gallery figcaption {
-  color: #666;
-  font-size: 14px;
-  font-style: italic;
-  margin-top: -5px;
-  text-align: left;
-  display: block; }
-  .wp-block-gallery figcaption a {
+.wp-block-gallery {
+  margin-bottom: 15px; }
+  .wp-block-gallery ul.blocks-gallery-grid {
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0; }
+  .wp-block-gallery:first-child ul.blocks-gallery-grid {
+    padding-top: 0; }
+  .wp-block-gallery .blocks-gallery-item figcaption {
+    text-align: center;
     color: white; }
+  .wp-block-gallery figcaption {
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -5px;
+    text-align: left;
+    display: block; }
+    .wp-block-gallery figcaption a {
+      color: white; }
 
 .wp-block-image figcaption {
   color: #666;
