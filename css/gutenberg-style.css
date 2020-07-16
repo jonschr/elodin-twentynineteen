@@ -1250,6 +1250,23 @@ p.has-background.light-text a {
   .entry-content > .wp-block-atomic-blocks-ab-container {
     padding: 30px !important; } }
 
+/*
+Frontend
+========================================================================== */
+@media (min-width: 600px) {
+  .entry-content > .wp-block-atomic-blocks-ab-container.alignfull {
+    padding: 10% 5%; }
+    .entry-content > .wp-block-atomic-blocks-ab-container.alignfull .ab-container-inside {
+      max-width: 1200px; } }
+
+/*
+   Backend
+   ========================================================================== */
+.block-editor-block-list__layout > .wp-block[data-align="full"] .wp-block-atomic-blocks-ab-container {
+  padding: 10% 5%; }
+  .block-editor-block-list__layout > .wp-block[data-align="full"] .wp-block-atomic-blocks-ab-container .ab-container-inside {
+    max-width: 1200px; }
+
 /* ==========================================================================
    Pull left and right
    ========================================================================== */
