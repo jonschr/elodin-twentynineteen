@@ -149,10 +149,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.2;
-  margin: 0 0 20px; }
+  margin: 0 0 20px;
+  clear: both;
+  font-family: "Source Sans Pro", sans-serif; }
   @media (max-width: 960px) {
     h1 br, .editor-post-title__block .editor-post-title__input br,
     h2 br,
@@ -263,9 +264,9 @@ h2.entry-title {
 .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button,
 .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button {
   color: white;
+  font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
   background-color: #403F3E;
-  font-family: 'rat', sans-serif;
   letter-spacing: 0.1em;
   font-size: 14px;
   padding: 15px 20px;
@@ -827,7 +828,8 @@ ul {
    General typeography
    ========================================================================== */
 li {
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: "Source Sans Pro", sans-serif; }
   @media (max-width: 600px) {
     li {
       font-size: 16px; } }
@@ -948,7 +950,6 @@ p.has-background.light-text a {
 
 .wp-block-atomic-blocks-ab-button.ab-block-button a,
 .wp-block-atomic-blocks-ab-button.ab-block-button span {
-  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 0.05em;
   text-transform: uppercase; }
   .wp-block-atomic-blocks-ab-button.ab-block-button a.ab-button-shape-rounded.ab-button-size-medium,
@@ -1509,6 +1510,9 @@ Frontend
     .wp-block-gallery figcaption a {
       color: white; }
 
+.wp-block[data-type="core/heading"] {
+  clear: both; }
+
 .wp-block-image {
   margin-bottom: 0; }
   .wp-block-image figure {
@@ -1518,6 +1522,7 @@ Frontend
     font-size: 14px;
     font-style: italic;
     margin-top: 10px;
+    margin-bottom: 0;
     text-align: left; }
 
 /* ==========================================================================
@@ -1612,6 +1617,9 @@ hr.wp-block-separator {
 /* ==========================================================================
    Margin-bottom is zero
    ========================================================================== */
+div[class*="wp-block-atomic-blocks"] .wp-block-buttons:last-child {
+  margin-bottom: 0; }
+
 div[class*="wp-block-atomic-blocks"] .ab-block-layout-column-inner > p:last-child,
 div[class*="wp-block-atomic-blocks"] .ab-block-layout-column-inner > ul:last-child {
   margin-bottom: 0; }

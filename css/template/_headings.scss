@@ -8,10 +8,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     line-height: 1.2;
     margin: 0 0 20px;
+    clear: both;
+    font-family: "Source Sans Pro", sans-serif;
 
     br {
         @include notdesktop {
