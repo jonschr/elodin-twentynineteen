@@ -1262,9 +1262,9 @@ Frontend
 /*
    Backend
    ========================================================================== */
-.block-editor-block-list__layout > .wp-block[data-align="full"] .wp-block-atomic-blocks-ab-container {
+.block-editor-block-list__layout > .wp-block[data-align="full"] > .is-block-content > .wp-block-atomic-blocks-ab-container {
   padding: 10% 5%; }
-  .block-editor-block-list__layout > .wp-block[data-align="full"] .wp-block-atomic-blocks-ab-container .ab-container-inside {
+  .block-editor-block-list__layout > .wp-block[data-align="full"] > .is-block-content > .wp-block-atomic-blocks-ab-container .ab-container-inside {
     max-width: 1200px; }
 
 /* ==========================================================================
@@ -1509,12 +1509,35 @@ Frontend
     .wp-block-gallery figcaption a {
       color: white; }
 
-.wp-block-image figcaption {
-  color: #666;
-  font-size: 14px;
-  font-style: italic;
-  margin-top: 10px;
-  text-align: left; }
+.wp-block-image {
+  margin-bottom: 0; }
+  .wp-block-image figure {
+    margin-bottom: 1.2em; }
+  .wp-block-image figcaption {
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+    text-align: left; }
+
+/* ==========================================================================
+   Padding top so that it better lines up with text in alignleft and alignright situations
+   ========================================================================== */
+.entry-content > .wp-block-image figure.alignleft,
+.entry-content > .wp-block-image figure.alignright {
+  padding-top: 0.4em; }
+  @media (min-width: 600px) and (max-width: 960px) {
+    .entry-content > .wp-block-image figure.alignleft,
+    .entry-content > .wp-block-image figure.alignright {
+      max-width: 50%;
+      height: auto !important; } }
+  @media (max-width: 600px) {
+    .entry-content > .wp-block-image figure.alignleft,
+    .entry-content > .wp-block-image figure.alignright {
+      width: 100%; }
+      .entry-content > .wp-block-image figure.alignleft img,
+      .entry-content > .wp-block-image figure.alignright img {
+        width: 100%; } }
 
 .wp-block-latest-posts {
   clear: both;
@@ -1589,7 +1612,8 @@ hr.wp-block-separator {
 /* ==========================================================================
    Margin-bottom is zero
    ========================================================================== */
-div[class*="wp-block-atomic-blocks"] :last-child:not(li):not(hr) {
+div[class*="wp-block-atomic-blocks"] .ab-block-layout-column-inner > p:last-child,
+div[class*="wp-block-atomic-blocks"] .ab-block-layout-column-inner > ul:last-child {
   margin-bottom: 0; }
 
 /* ==========================================================================

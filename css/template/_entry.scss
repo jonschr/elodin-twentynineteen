@@ -8,8 +8,10 @@
     @include mobile {
         margin-bottom: 30px;
     }
+}
 
-    :last-child:not(li):not(.wp-block-button__link) {
+.entry-content {
+    >*+p:last-child {
         margin-bottom: 0;
     }
 }

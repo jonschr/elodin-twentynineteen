@@ -1,9 +1,42 @@
 .wp-block-image {
+    margin-bottom: 0;
+
+    figure {
+        margin-bottom: 1.2em;
+    }
+
     figcaption {
         color: #666;
         font-size: 14px;
         font-style: italic;
         margin-top: 10px;
         text-align: left;
+    }
+}
+
+/* ==========================================================================
+   Padding top so that it better lines up with text in alignleft and alignright situations
+   ========================================================================== */
+
+.entry-content {
+    >.wp-block-image {
+
+        figure.alignleft,
+        figure.alignright {
+            padding-top: 0.4em;
+
+            @include tablet {
+                max-width: 50%;
+                height: auto !important;
+            }
+
+            @include mobile {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
 }

@@ -51,6 +51,23 @@
         }
     }
 
+    @include desktop {
+        >li.highlight {
+            margin-left: 10px;
+
+            a {
+                background-color: $highlight;
+                border-radius: 3px;
+                color: white;
+
+                &:hover {
+                    color: white;
+                    background-color: lighten($highlight, 5%);
+                }
+            }
+        }
+    }
+
     /*
        Hover and current
        ========================================================================== */

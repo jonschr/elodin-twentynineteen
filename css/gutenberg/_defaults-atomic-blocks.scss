@@ -3,9 +3,19 @@
    ========================================================================== */
 
 div[class*="wp-block-atomic-blocks"] {
-    :last-child {
-        &:not(li):not(hr) {
-            margin-bottom: 0;
+    // :last-child {
+    //     &:not(li):not(hr) {
+    //         margin-bottom: 0;
+    //     }
+    // }
+
+    .ab-block-layout-column-inner {
+
+        >p,
+        >ul {
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }
