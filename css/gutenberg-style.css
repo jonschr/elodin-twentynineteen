@@ -1071,6 +1071,8 @@ p.has-background.light-text a {
 .wp-block-atomic-blocks-ab-columns .wp-block-image {
   margin-left: auto;
   margin-right: auto; }
+  .wp-block-atomic-blocks-ab-columns .wp-block-image:last-child {
+    margin-bottom: 0; }
   @media (max-width: 600px) {
     .wp-block-atomic-blocks-ab-columns .wp-block-image {
       margin-left: 0; } }
@@ -1245,6 +1247,17 @@ p.has-background.light-text a {
   overflow: hidden; }
 
 /* ==========================================================================
+   Last child margin bottom
+   ========================================================================== */
+.wp-block-atomic-blocks-ab-container h1:last-child, .wp-block-atomic-blocks-ab-container .editor-post-title__block .editor-post-title__input:last-child, .editor-post-title__block .wp-block-atomic-blocks-ab-container .editor-post-title__input:last-child,
+.wp-block-atomic-blocks-ab-container h2:last-child,
+.wp-block-atomic-blocks-ab-container h3:last-child,
+.wp-block-atomic-blocks-ab-container h4:last-child,
+.wp-block-atomic-blocks-ab-container p:last-child,
+.wp-block-atomic-blocks-ab-container ul:last-child {
+  margin-bottom: 0; }
+
+/* ==========================================================================
    Padding on mobile
    ========================================================================== */
 @media (max-width: 600px) {
@@ -1266,7 +1279,9 @@ Frontend
 .block-editor-block-list__layout > .wp-block[data-align="full"] > .is-block-content > .wp-block-atomic-blocks-ab-container {
   padding: 10% 5%; }
   .block-editor-block-list__layout > .wp-block[data-align="full"] > .is-block-content > .wp-block-atomic-blocks-ab-container .ab-container-inside {
-    max-width: 1200px; }
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
 
 /* ==========================================================================
    Pull left and right
