@@ -15,8 +15,8 @@ $dark: $default;
    Color loop
    ========================================================================== */
 
-$colors: ("white": $white, "light": $light, "default": $default, "blue": $blue, "highlight": $highlight);
-$darks: ("default": $default, "blue": $blue, "highlight": $highlight);
+$colors: ("white": $white, "light": $light, "default": $default, "dark": $dark, "blue": $blue, "highlight": $highlight);
+$darks: ("default": $default, "dark": $dark, "blue": $blue, "highlight": $highlight);
 
 /*
    Connect up the colors
