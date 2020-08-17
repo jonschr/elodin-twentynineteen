@@ -1,8 +1,8 @@
-.wp-block-image {
-    margin-bottom: 0;
+figure.wp-block-image {
+    margin-bottom: 1.2em;
 
-    figure {
-        margin-bottom: 1.2em;
+    &:last-child {
+        margin-bottom: 0;
     }
 
     figcaption {

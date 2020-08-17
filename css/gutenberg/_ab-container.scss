@@ -49,19 +49,46 @@ Frontend
     }
 }
 
-/*
-   Backend
+/* ==========================================================================
+   WordPress (WordPress 5.4-)
    ========================================================================== */
 
-.block-editor-block-list__layout>.wp-block[data-align="full"] {
+.block-editor-block-list__layout {
 
-    >.is-block-content>.wp-block-atomic-blocks-ab-container {
-        padding: 10% 5%;
+    >.wp-block[data-align="full"] {
 
-        .ab-container-inside {
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
+        >.is-block-content>.wp-block-atomic-blocks-ab-container {
+            padding: 10% 5%;
+
+            .ab-container-inside {
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+/*
+   Backend (WordPress 5.5)
+   ========================================================================== */
+
+.is-root-container {
+
+    >[data-type="atomic-blocks/ab-container"] {
+
+        >.wp-block[data-align="full"] {
+
+            >.ab-block-container {
+                padding: 10% 5%;
+
+                >.ab-container-inside {
+
+                    max-width: 1200px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
         }
     }
 }
