@@ -26,6 +26,10 @@ function elodin_add_page_content() {
 	//* Bail if we're on the contact page
 	if ( is_page( 'contact' ) )
 		return;
+	
+	//* Bail if we're on the quote page
+	if ( is_page( 'quote' ) )
+		return;
 
 	genesis_widget_area ( 'above-footer', array(
         'before' => '<div class="above-footer"><div class="wrap">',
