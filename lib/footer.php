@@ -20,7 +20,7 @@ genesis_register_sidebar( array(
 ) );
 
 //* Display the widget area
-add_action( 'genesis_before_footer', 'elodin_add_page_content' );
+add_action( 'genesis_before_footer', 'elodin_add_page_content', 5 );
 function elodin_add_page_content() {
 	
 	//* Bail if we're on the contact page
@@ -39,7 +39,7 @@ function elodin_add_page_content() {
 
 // Repositions the secondary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-add_action( 'genesis_footer', 'genesis_do_subnav', 10 );
+add_action( 'genesis_footer', 'genesis_do_subnav', 0 );
 
 // Make the secondary nav only have one level of depth
 add_filter( 'wp_nav_menu_args', 'genesis_sample_secondary_menu_args' );

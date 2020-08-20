@@ -115,20 +115,11 @@
    Footer nav
    ========================================================================== */
 
+
 .nav-secondary {
-    margin-top: 10px;
-}
+    text-align: center;
 
-.nav-secondary .genesis-nav-menu {
-    line-height: 1.5;
-}
-
-.nav-secondary .menu-item {
-    display: inline-block;
-}
-
-.nav-secondary a {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 0;
+    .menu-item {
+        display: inline-block;
+    }
 }
