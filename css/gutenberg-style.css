@@ -1611,24 +1611,22 @@ Frontend
   padding: 0 30px; }
 
 .wp-block-columns {
-  margin-bottom: -50px;
   text-align: center; }
   @media (max-width: 600px) {
     .wp-block-columns {
-      margin-bottom: 0; } }
-  .wp-block-columns:last-child {
-    margin-bottom: -50px; }
-    @media (max-width: 600px) {
-      .wp-block-columns:last-child {
-        margin-bottom: 0; } }
-  @media (max-width: 600px) {
-    .wp-block-columns {
+      margin-bottom: 0;
       text-align: left; } }
   .wp-block-columns .wp-block-column :last-child {
     margin-bottom: 0; }
   @media (max-width: 600px) {
     .wp-block-columns .wp-block-column {
       margin-bottom: 30px; } }
+
+.entry-content .wp-block-columns:last-child {
+  margin-bottom: -50px; }
+  @media (max-width: 600px) {
+    .entry-content .wp-block-columns:last-child {
+      margin-bottom: 0; } }
 
 /* ==========================================================================
    Image alignment defaults
