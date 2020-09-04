@@ -73,7 +73,7 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
     // 	true
     // );
 
-    wp_register_script( 'slick-main-theme',
+    wp_register_script( 'slick-main-script',
         get_stylesheet_directory_uri() . '/vendor/slick/slick.min.js',
         array('jquery'),
         CHILD_THEME_VERSION,
@@ -86,7 +86,7 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
         CHILD_THEME_VERSION
     );
 
-    wp_register_style( 'slick-main-styles',
+    wp_register_style( 'slick-main-theme',
         get_stylesheet_directory_uri() . '/vendor/slick/slick-theme.css',
         array(),
         CHILD_THEME_VERSION

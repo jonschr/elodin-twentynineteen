@@ -1,4 +1,10 @@
-input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
 select,
 textarea {
     background-color: #fff;
@@ -9,7 +15,13 @@ textarea {
     width: 100%;
 }
 
-input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
 select {
     padding-left: 15px;
     min-height: 50px;
@@ -19,10 +31,18 @@ textarea {
     padding: 15px;
 }
 
-input:focus,
-textarea:focus {
-    border: 1px solid #999;
-    outline: none;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
+textarea {
+    &:focus {
+        border: 1px solid #999;
+        outline: none;
+    }
 }
 
 input[type="checkbox"],
