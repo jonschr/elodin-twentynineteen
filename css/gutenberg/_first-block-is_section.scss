@@ -26,6 +26,13 @@ body.first-block-is-section {
             }
         }
 
+        //* ELODIN SECTION
+        &.elodin-section {
+            >.section-content {
+                @extend .inner-add-margin;
+            }
+        }
+
         //* GUTENBERG SECTIONS
         &.gutenberg-section {
             @include desktop {

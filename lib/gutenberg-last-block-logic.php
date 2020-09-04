@@ -84,6 +84,7 @@ function elodin_is_last_block_section( $lastblock ) {
         'core-group',
         'getwid-section',
         'uagb-section',
+        'acf-section',
     );
 
     if ( in_array( $lastblock, $sectionblocks ) )

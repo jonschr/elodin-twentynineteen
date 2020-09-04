@@ -58,7 +58,7 @@ function elodin_detect_first_block_name() {
 
     // get the name of the block
     $firstblockname = str_replace( '/', '-', $blocks[0]['blockName'] );
-
+    
     return $firstblockname;
     
 }
@@ -86,6 +86,7 @@ function elodin_is_first_block_section( $firstblock ) {
         'core-group',
         'getwid-section',
         'uagb-section',
+        'acf-section',
     );
 
     if ( in_array( $firstblock, $sectionblocks ) )
