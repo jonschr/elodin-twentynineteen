@@ -22,7 +22,9 @@ input[type="date"],
 input[type="number"],
 input[type="password"],
 input[type="url"],
+input[type="search"],
 select {
+    border: 1px solid #ddd;
     padding-left: 15px;
     min-height: 50px;
 }
@@ -38,6 +40,7 @@ input[type="date"],
 input[type="number"],
 input[type="password"],
 input[type="url"],
+input[type="search"],
 textarea {
     &:focus {
         border: 1px solid #999;
@@ -65,3 +68,21 @@ input[type="radio"] {
     color: #333;
     opacity: 1;
 }
+// body .gform_wrapper {
+
+//     input[type="text"],
+//     input[type="email"],
+//     input[type="tel"],
+//     input[type="date"],
+//     input[type="number"],
+//     input[type="password"],
+//     input[type="url"],
+//     input[type="search"],
+//     textarea {
+//         border: 1px solid #ddd !important;
+
+//         &:focus {
+//             border: 1px solid #333 !important;
+//         }
+//     }
+// }

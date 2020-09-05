@@ -1,12 +1,17 @@
 .wp-block-columns {
-    text-align: center;
+
+    &:last-child {
+        >.wp-block-column {
+            margin-bottom: 0;
+        }
+    }
 
     @include mobile {
         margin-bottom: 0;
-        text-align: left;
     }
 
     .wp-block-column {
+
         :last-child {
             margin-bottom: 0;
         }
@@ -24,6 +29,12 @@
         @include mobile {
             margin-bottom: 0;
         }
+    }
+}
+
+@include desktop {
+    .wp-block-column:not(:first-child) {
+        margin-left: 60px;
     }
 }
 

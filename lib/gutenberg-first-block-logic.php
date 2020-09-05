@@ -87,6 +87,7 @@ function elodin_is_first_block_section( $firstblock ) {
         'getwid-section',
         'uagb-section',
         'acf-section',
+        'acf-checkerboard',
     );
 
     if ( in_array( $firstblock, $sectionblocks ) )

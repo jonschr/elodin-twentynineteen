@@ -4,6 +4,12 @@
 p,
 ul {
     font-family: "Source Sans Pro", sans-serif;
+
+    br {
+        @include mobile {
+            display: none;
+        }
+    }
 }
 
 

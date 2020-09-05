@@ -54,6 +54,24 @@
         }
     }
 
+    .widget.simple-social-icons {
+        ul {
+            li {
+                margin: 4px 2px 0 !important;
+
+                a {
+                    padding: 3px !important;
+                    display: inline-block !important;
+                    font-size: 18px !important;
+                    border-radius: 0 !important;
+                    line-height: 1em !important;
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+
+
     .widget_text {
         padding: 5px 0;
     }

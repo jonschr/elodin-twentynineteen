@@ -69,7 +69,7 @@ function elodin_detect_last_block_name() {
  * @return  bool    false by default, true if the last block is a section block
  */
 function elodin_is_last_block_section( $lastblock ) {
-
+    
     // if there's no block, then just return false, no need to go further
     if ( !$lastblock )
         return false;
@@ -85,6 +85,7 @@ function elodin_is_last_block_section( $lastblock ) {
         'getwid-section',
         'uagb-section',
         'acf-section',
+        'acf-checkerboard',
     );
 
     if ( in_array( $lastblock, $sectionblocks ) )
