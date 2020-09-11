@@ -1416,7 +1416,7 @@ Frontend
 @media (min-width: 600px) {
   .entry-content > .wp-block-atomic-blocks-ab-container.alignfull {
     padding: 10% 5%; }
-    .entry-content > .wp-block-atomic-blocks-ab-container.alignfull .ab-container-inside {
+    .entry-content > .wp-block-atomic-blocks-ab-container.alignfull .ab-container-content {
       max-width: 1200px; } }
 
 /* ==========================================================================
