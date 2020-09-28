@@ -92,8 +92,8 @@
     padding: 0;
     transition: .3s all ease;
     width: 100%;
-    z-index: 9999;
     position: fixed;
+    z-index: 50;
 
     @include notdesktop {
         position: absolute;

@@ -1767,6 +1767,22 @@ figure.wp-block-image {
 .wp-block-latest-posts.alignfull {
   padding: 0 30px; }
 
+.entry-content ol:not([class]):not([class=""]),
+.entry-content ul:not([class]):not([class=""]),
+.block-editor-block-list__layout ol:not([class]):not([class=""]),
+.block-editor-block-list__layout ul:not([class]):not([class=""]) {
+  margin-bottom: 20px;
+  padding-left: 40px; }
+  .entry-content ol:not([class]):not([class=""]) ol,
+  .entry-content ol:not([class]):not([class=""]) ul,
+  .entry-content ul:not([class]):not([class=""]) ol,
+  .entry-content ul:not([class]):not([class=""]) ul,
+  .block-editor-block-list__layout ol:not([class]):not([class=""]) ol,
+  .block-editor-block-list__layout ol:not([class]):not([class=""]) ul,
+  .block-editor-block-list__layout ul:not([class]):not([class=""]) ol,
+  .block-editor-block-list__layout ul:not([class]):not([class=""]) ul {
+    margin-bottom: 0; }
+
 /* ==========================================================================
    Mobile padding
    ========================================================================== */
