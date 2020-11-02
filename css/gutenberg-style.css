@@ -264,14 +264,14 @@ h2.entry-title {
   color: white;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
-  background-color: #403F3E;
+  background-color: #147bcd;
   letter-spacing: 0.1em;
   font-size: 14px;
   padding: 15px 20px;
   line-height: 1em;
   position: static;
   transition: .3s all ease;
-  border: 2px solid #403F3E;
+  border: 2px solid #147bcd;
   border-radius: 3px;
   text-decoration: none !important;
   display: inline-block; }
@@ -321,8 +321,8 @@ h2.entry-title {
   .wp-block-buttons .wp-block-button .gform_wrapper .gform_footer .gform_button.wp-block-button__link:active,
   .gform_wrapper .gform_footer .wp-block-file .gform_button.wp-block-file__button:active,
   .wp-block-file .gform_wrapper .gform_footer .gform_button.wp-block-file__button:active {
-    background-color: #525150;
-    border-color: #525150;
+    background-color: #1c8ee9;
+    border-color: #1c8ee9;
     color: white; }
   .button.has-white-color, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-white-color.ab-button-shape-rounded.ab-button-size-medium,
   .wp-block-atomic-blocks-ab-button.ab-block-button span.has-white-color.ab-button-shape-rounded.ab-button-size-medium, .wp-block-buttons .wp-block-button .has-white-color.wp-block-button__link, .wp-block-file .has-white-color.wp-block-file__button, .button.has-color-white, .wp-block-atomic-blocks-ab-button.ab-block-button a.has-color-white.ab-button-shape-rounded.ab-button-size-medium,
@@ -1038,7 +1038,7 @@ p.has-background.light-text a {
 /* ==========================================================================
    Background colors
    ========================================================================== */
-.has-background {
+.has-background:not(.block-editor-rich-text__editable) {
   padding: 25px 30px;
   margin-bottom: 20px; }
 
@@ -1513,16 +1513,27 @@ Frontend
     font-style: italic;
     text-align: left; }
 
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+.wp-block[data-align="center"] .wp-block-buttons .wp-block-button {
+  margin: 4px; }
+
+.wp-block[data-align="right"] .wp-block-buttons .wp-block-button {
+  margin: 4px 0 4px 4px; }
+
+.wp-block[data-align="left"] .wp-block-buttons .wp-block-button {
+  margin: 4px 4px 4px 0; }
+
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
 .wp-block-buttons {
   margin-bottom: 20px; }
   .wp-block-buttons:last-child {
     margin-bottom: 0; }
-  .wp-block-buttons.alignright .wp-block-button {
-    margin: 4px 0 0 4px; }
-  .wp-block-buttons.aligncenter .wp-block-button {
-    margin: 4px 2px 0; }
   .wp-block-buttons .wp-block-button {
-    margin: 4px 4px 0 0; }
+    margin: 4px 4px 4px 0; }
     @media (max-width: 600px) {
       .wp-block-buttons .wp-block-button {
         display: block;
@@ -1532,51 +1543,106 @@ Frontend
         text-align: center;
         display: block;
         width: 100%; } }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-white, .wp-block-buttons .wp-block-button .wp-block-button__link.white {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-color {
       color: #ffffff; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-white, .wp-block-buttons .wp-block-button .wp-block-button__link.white-background {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color {
       background-color: #ffffff; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-white:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.white-background:hover {
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-white-background-color:hover {
         background-color: white;
         border-color: white; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-light, .wp-block-buttons .wp-block-button .wp-block-button__link.light {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-color {
       color: #f5f5f5; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-light, .wp-block-buttons .wp-block-button .wp-block-button__link.light-background {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color {
       background-color: #f5f5f5; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-light:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.light-background:hover {
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-light-background-color:hover {
         background-color: white;
         border-color: white; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-default, .wp-block-buttons .wp-block-button .wp-block-button__link.default {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-color {
       color: #403F3E; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-default, .wp-block-buttons .wp-block-button .wp-block-button__link.default-background {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color {
       background-color: #403F3E; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-default:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.default-background:hover {
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-default-background-color:hover {
         background-color: #525150;
         border-color: #525150; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-dark, .wp-block-buttons .wp-block-button .wp-block-button__link.dark {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-color {
       color: #403F3E; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-dark, .wp-block-buttons .wp-block-button .wp-block-button__link.dark-background {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color {
       background-color: #403F3E; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-dark:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.dark-background:hover {
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-dark-background-color:hover {
         background-color: #525150;
         border-color: #525150; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-blue, .wp-block-buttons .wp-block-button .wp-block-button__link.blue {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-color {
       color: #42676F; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-blue, .wp-block-buttons .wp-block-button .wp-block-button__link.blue-background {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-background-color {
       background-color: #42676F; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-blue:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.blue-background:hover {
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-blue-background-color:hover {
         background-color: #4f7c85;
         border-color: #4f7c85; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-color, .wp-block-buttons .wp-block-button .wp-block-button__link.has-color-highlight, .wp-block-buttons .wp-block-button .wp-block-button__link.highlight {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-color {
       color: #147bcd; }
-    .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-background-color, .wp-block-buttons .wp-block-button .wp-block-button__link.background-highlight, .wp-block-buttons .wp-block-button .wp-block-button__link.highlight-background {
+    .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-background-color {
       background-color: #147bcd; }
-      .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-background-color:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.background-highlight:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.highlight-background:hover {
+      .wp-block-buttons .wp-block-button .wp-block-button__link.has-highlight-background-color:hover {
         background-color: #1c8ee9;
         border-color: #1c8ee9; }
     .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link {
       background-color: transparent !important;
-      border-color: white !important; }
+      border-color: white !important;
+      color: white; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-white-color {
+        color: #ffffff; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-white-background-color {
+        border-color: #ffffff !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-white-background-color:hover {
+          background-color: white !important;
+          border-color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-light-color {
+        color: #f5f5f5; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-light-background-color {
+        border-color: #f5f5f5 !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-light-background-color:hover {
+          background-color: white !important;
+          border-color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-default-color {
+        color: #403F3E; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-default-background-color {
+        border-color: #403F3E !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-default-background-color:hover {
+          background-color: #525150 !important;
+          border-color: #525150 !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-dark-color {
+        color: #403F3E; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-dark-background-color {
+        border-color: #403F3E !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-dark-background-color:hover {
+          background-color: #525150 !important;
+          border-color: #525150 !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-blue-color {
+        color: #42676F; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-blue-background-color {
+        border-color: #42676F !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-blue-background-color:hover {
+          background-color: #4f7c85 !important;
+          border-color: #4f7c85 !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-highlight-color {
+        color: #147bcd; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-highlight-background-color {
+        border-color: #147bcd !important; }
+        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.has-highlight-background-color:hover {
+          background-color: #1c8ee9 !important;
+          border-color: #1c8ee9 !important; }
+      .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:not(.has-white-background-color):hover {
+        color: white !important; }
 
 .wp-block-categories,
 .wp-block-categories ol,
@@ -1600,7 +1666,7 @@ Frontend
   .wp-block-columns {
     margin-bottom: 0; } }
 
-.wp-block-columns .wp-block-column :last-child {
+.wp-block-columns .wp-block-column > :last-child:not(.block-list-appender) {
   margin-bottom: 0; }
 
 @media (max-width: 600px) {
@@ -1782,6 +1848,9 @@ figure.wp-block-image {
   .block-editor-block-list__layout ul:not([class]):not([class=""]) ol,
   .block-editor-block-list__layout ul:not([class]):not([class=""]) ul {
     margin-bottom: 0; }
+
+.block-editor-block-list__block {
+  margin-bottom: 20px; }
 
 /* ==========================================================================
    Mobile padding

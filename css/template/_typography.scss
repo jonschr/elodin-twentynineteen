@@ -159,7 +159,7 @@ p.has-background.light-text a {
    Background colors
    ========================================================================== */
 
-.has-background {
+.has-background:not(.block-editor-rich-text__editable) {
     padding: 25px 30px;
     margin-bottom: 20px;
 }
