@@ -1239,7 +1239,8 @@ hr {
   border-collapse: collapse;
   border-top: 1px solid #eee;
   clear: both;
-  margin: 30px 0; }
+  margin: 30px auto;
+  width: 100%; }
 
 b,
 strong {
@@ -2127,6 +2128,9 @@ div[class*="wp-block-atomic-blocks"] .ab-block-layout-column-inner > ul:last-chi
 .block-editor-block-list__layout.is-root-container .wp-block-spacer + h4 {
   margin-top: 0; }
 
+.wp-block-separator.is-style-default {
+  max-width: 100px; }
+
 figure.wp-block-image {
   margin-bottom: 1.2em; }
   figure.wp-block-image:last-child {
@@ -2202,10 +2206,8 @@ figure.wp-block-image {
   .wp-block-media-text > figure > img {
     width: auto; } }
 
-hr.wp-block-separator {
-  margin: 55px auto 35px !important;
-  width: 100%;
-  max-width: 200px; }
+[data-type="core/spacer"] {
+  background-color: #f0f0f0; }
 
 @media (max-width: 600px) {
   .wp-block-spacer {
