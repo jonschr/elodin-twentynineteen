@@ -50,6 +50,20 @@ body.first-block-is-section {
             }
         }
 
+        //*  GENESIS BLOCKS CONTAINER 
+        &.wp-block-genesis-blocks-gb-container {
+            >.gb-container-inside {
+                @extend .inner-add-margin;
+            }
+        }
+
+        //* GENESIS BLOCKS COLUMNS
+        &.wp-block-genesis-blocks-gb-columns {
+            >.gb-layout-column-wrap {
+                @extend .inner-add-margin;
+            }
+        }
+
         //*  ATOMIC BLOCKS CONTAINER 
         &.wp-block-atomic-blocks-ab-container {
             >.ab-container-inside {
