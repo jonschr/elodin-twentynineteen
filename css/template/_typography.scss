@@ -38,8 +38,7 @@ hr {
     border-collapse: collapse;
     border-top: 1px solid #eee;
     clear: both;
-    margin: 30px auto;
-    width: 100%;
+    margin: 30px 0;
 }
 
 b,
@@ -160,7 +159,7 @@ p.has-background.light-text a {
    Background colors
    ========================================================================== */
 
-.has-background:not(.block-editor-rich-text__editable) {
+.has-background {
     padding: 25px 30px;
     margin-bottom: 20px;
 }
