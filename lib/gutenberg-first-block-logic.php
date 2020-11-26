@@ -79,6 +79,8 @@ function elodin_is_first_block_section( $firstblock ) {
     $sectionblocks = array(
         'core-cover',
         'gutenberg-section',
+        'genesis-blocks-gb-container',
+        'genesis-blocks-gb-columns',
         'atomic-blocks-ab-container',
         'atomic-blocks-ab-columns',
         'acf-twocolumn',

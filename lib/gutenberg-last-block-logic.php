@@ -77,6 +77,8 @@ function elodin_is_last_block_section( $lastblock ) {
     $sectionblocks = array(
         'core-cover',
         'gutenberg-section',
+        'genesis-blocks-gb-container',
+        'genesis-blocks-gb-columns',
         'atomic-blocks-ab-container',
         'atomic-blocks-ab-columns',
         'acf-twocolumn',

@@ -3,14 +3,14 @@
     color: white;
     font-family: "Source Sans Pro", sans-serif;
     text-transform: uppercase;
-    background-color: $dark;
+    background-color: $highlight;
     letter-spacing: 0.1em;
     font-size: 14px;
     padding: 15px 20px;
     line-height: 1em;
     position: static;
     transition: .3s all ease;
-    border: 2px solid $dark;
+    border: 2px solid $highlight;
     border-radius: 3px;
     text-decoration: none !important;
     display: inline-block;
@@ -24,8 +24,8 @@
     &:hover,
     &:focus,
     &:active {
-        background-color: lighten($dark, 7%);
-        border-color: lighten($dark, 7%);
+        background-color: lighten($highlight, 7%);
+        border-color: lighten($highlight, 7%);
         color: white;
     }
 
