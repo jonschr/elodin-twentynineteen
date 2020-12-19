@@ -72,10 +72,10 @@ function genesis_sample_blocks_body_classes( $classes ) {
 		$lastclassname = null;
 		$lastclassalign = null;
 
-		if ( $block['blockName'] )
+		if ( isset( $block['blockName'] ) )
 			$lastclassname = 'last-block-' . str_replace( '/', '-', $block['blockName'] );
 		
-		if ( $block['attrs']['align'] )
+		if ( isset( $block['attrs']['align'] ) )
 			$lastclassalign = 'last-block-align' . str_replace( '/', '-', $block['attrs']['align'] );
 	}
 
