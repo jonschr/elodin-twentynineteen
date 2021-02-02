@@ -33,6 +33,25 @@ body.first-block-is-section {
             }
         }
 
+        //* CHECKERBOARD
+        &.checkerboard {
+            >.checkerboard-content {
+
+                // this type of section needs the padding applied differently on mobile and desktop
+                @include desktop {
+                    margin-top: $headerheightdesktop;
+                }
+            }
+
+            @include tablet {
+                margin-top: $headerheighttablet;
+            }
+
+            @include mobile {
+                margin-top: $headerheightmobile;
+            }
+        }
+
         //* GUTENBERG SECTIONS
         &.gutenberg-section {
             @include desktop {

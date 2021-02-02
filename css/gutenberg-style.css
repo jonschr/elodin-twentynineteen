@@ -2262,6 +2262,18 @@ body.first-block-is-section .site-inner {
   margin-top: 0 !important; }
 
 @media (min-width: 960px) {
+  body.first-block-is-section .entry-content > :first-child.checkerboard > .checkerboard-content {
+    margin-top: 110px; } }
+
+@media (min-width: 600px) and (max-width: 960px) {
+  body.first-block-is-section .entry-content > :first-child.checkerboard {
+    margin-top: 70px; } }
+
+@media (max-width: 600px) {
+  body.first-block-is-section .entry-content > :first-child.checkerboard {
+    margin-top: 70px; } }
+
+@media (min-width: 960px) {
   body.first-block-is-section .entry-content > :first-child.gutenberg-section {
     padding-top: 10vh;
     padding-bottom: 10vh; } }
