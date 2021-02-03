@@ -6,10 +6,10 @@
 $white: #ffffff;
 $light: #f5f5f5;
 $default: #403F3E;
-$blue: #42676F;
+$blue: #147bcd;
 
 $highlight: #147bcd;
-$dark: $default;
+$dark: #333333;
 
 /* ==========================================================================
    Color loop
@@ -25,15 +25,11 @@ $darks: ("default": $default, "dark": $dark, "blue": $blue, "highlight": $highli
 @each $name,
 $color in $colors {
 
-    .has-#{$name}-color,
-    .has-color-#{$name},
-    .#{$name} {
+    .has-#{$name}-color {
         color: $color;
     }
 
-    .has-#{$name}-background-color,
-    .background-#{$name},
-    .#{$name}-background {
+    .has-#{$name}-background-color {
         background-color: $color;
     }
 }
@@ -45,9 +41,7 @@ $color in $colors {
 @each $name,
 $dark in $darks {
 
-    .has-#{$name}-background-color,
-    .background-#{$name},
-    .#{$name}-background {
+    .has-#{$name}-background-color {
         color: white;
 
         ul {
@@ -55,7 +49,6 @@ $dark in $darks {
         }
     }
 }
-
 
 /* ==========================================================================
    Vars

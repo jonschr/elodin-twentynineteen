@@ -6,7 +6,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Elodin TwentyNineteen' );
 define( 'CHILD_THEME_URL', 'https://elod.in' );
-define( 'CHILD_THEME_VERSION', '0.7.11' );
+define( 'CHILD_THEME_VERSION', '0.8.0' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';

@@ -28,6 +28,11 @@ function elodin_register_colors() {
 				'color' => '#333',
 			),
 			array(
+				'name'  => esc_html__( 'Blue', 'elodin_twentynineteen' ),
+				'slug' => 'blue',
+				'color' => '#147bcd',
+            ),
+			array(
 				'name'  => esc_html__( 'Highlight', 'elodin_twentynineteen' ),
 				'slug' => 'highlight',
 				'color' => '#147bcd',
