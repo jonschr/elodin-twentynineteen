@@ -1,0 +1,57 @@
+.wp-block-pb-accordion-item {
+    border-bottom: 1px solid $light;
+    padding: 0;
+
+    &:last-of-type {
+        border: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @extend h3;
+        text-transform: none;
+        font-weight: normal;
+        // font-family: 'Archivo Narrow', sans-serif;
+        padding: 20px 50px 20px 0;
+        margin-bottom: 0;
+        letter-spacing: 0;
+        transition: .3s all ease;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .c-accordion__content {
+        background-color: $light;
+        padding: 40px;
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .c-accordion__title:after {
+        content: "\f347";
+        font-family: 'dashicons';
+        // color: $gold;
+        transition: .3s all ease;
+        margin-top: 7px;
+    }
+
+    &.is-open {
+        .c-accordion__title:after {
+            transform: rotate(180deg) translateY(50%);
+
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            // color: $gold;
+        }
+    }
+}

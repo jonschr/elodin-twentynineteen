@@ -12,7 +12,7 @@
  */
 return array(
 	'height'      => 120,
-	'width'       => 700,
+	'width'       => 300,
 	'flex-height' => true,
 	'flex-width'  => true,
 );
