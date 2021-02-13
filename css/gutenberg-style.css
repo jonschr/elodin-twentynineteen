@@ -953,6 +953,10 @@ p.has-background.light-text a {
 .wp-block-categories-list.alignfull {
   padding: 0 30px; }
 
+@media (min-width: 600px) {
+  .wp-block-columns:last-child > .wp-block-column {
+    margin-bottom: 0; } }
+
 .wp-block-columns:last-child > .wp-block-column:last-child {
   margin-bottom: 0; }
 

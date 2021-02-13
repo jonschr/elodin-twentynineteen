@@ -1,6 +1,15 @@
 .wp-block-columns {
 
     &:last-child {
+
+        // on desktop, when a column group is the last thing, then we want all of the columns to have a margin of 0
+        @include notmobile {
+            >.wp-block-column {
+                margin-bottom: 0;
+            }
+        }
+
+        // on both desktop and mobile, the last column in the column group should have a margin of 0
         >.wp-block-column:last-child {
             margin-bottom: 0;
         }
