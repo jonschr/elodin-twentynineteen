@@ -130,6 +130,7 @@ body .gform_wrapper {
 body .gform_wrapper.dark_wrapper {
     padding: 30px !important;
     background-color: $dark;
+    border-radius: 3px;
 
     .gsection {
         border: none !important;

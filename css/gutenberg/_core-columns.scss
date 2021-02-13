@@ -1,7 +1,7 @@
 .wp-block-columns {
 
     &:last-child {
-        >.wp-block-column {
+        >.wp-block-column:last-child {
             margin-bottom: 0;
         }
     }

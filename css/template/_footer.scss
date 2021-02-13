@@ -16,6 +16,9 @@
         margin: 30px 0;
     }
 
+    .widget-title {
+        @extend h3;
+    }
 
     >.wrap {
         margin: 0 auto;

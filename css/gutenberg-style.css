@@ -135,7 +135,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.2em;
   margin: 0 0 20px;
   clear: both;
   font-family: "Source Sans Pro", sans-serif; }
@@ -155,22 +155,22 @@ h6 {
       display: none; } }
 
 h1, .editor-post-title__block .editor-post-title__input {
-  font-size: 40px; }
+  font-size: 50px; }
   @media (min-width: 600px) and (max-width: 960px) {
     h1, .editor-post-title__block .editor-post-title__input {
-      font-size: 32px; } }
+      font-size: 35px; } }
   @media (max-width: 600px) {
     h1, .editor-post-title__block .editor-post-title__input {
-      font-size: 24px; } }
+      font-size: 30px; } }
 
 h2 {
-  font-size: 35px; }
+  font-size: 40px; }
   @media (min-width: 600px) and (max-width: 960px) {
     h2 {
-      font-size: 25px; } }
+      font-size: 30px; } }
   @media (max-width: 600px) {
     h2 {
-      font-size: 20px; } }
+      font-size: 30px; } }
 
 
 h3,
@@ -180,13 +180,14 @@ h3,
 .wp-block-pb-accordion-item h2,
 .wp-block-pb-accordion-item h3,
 .wp-block-pb-accordion-item h4 {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 2px; }
+  font-size: 25px;
+  font-weight: 400; }
 
 h4 {
-  font-size: 20px; }
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px; }
 
 h5 {
   font-size: 18px; }
@@ -939,7 +940,7 @@ p.has-background.light-text a {
 .wp-block-categories-list.alignfull {
   padding: 0 30px; }
 
-.wp-block-columns:last-child > .wp-block-column {
+.wp-block-columns:last-child > .wp-block-column:last-child {
   margin-bottom: 0; }
 
 @media (max-width: 600px) {
