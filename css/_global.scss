@@ -6,10 +6,10 @@
 $white: #ffffff;
 $light: #f5f5f5;
 $default: #403F3E;
-$blue: #147bcd;
+$blue: #0f5790;
 
 $highlight: #147bcd;
-$dark: #333333;
+$dark: #111111;
 
 /* ==========================================================================
    Color loop
@@ -44,6 +44,11 @@ $dark in $darks {
     .has-#{$name}-background-color {
         color: white;
 
+        h1,
+        h2 {
+            color: white;
+        }
+
         ul {
             color: white;
         }
@@ -54,7 +59,7 @@ $dark in $darks {
    Vars
    ========================================================================== */
 
-$headerheightdesktop: 110px;
+$headerheightdesktop: 76px;
 $headerheighttablet: 70px;
 $headerheightmobile: 70px;
 

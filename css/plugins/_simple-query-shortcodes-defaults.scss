@@ -2,6 +2,11 @@ body .loop-container .entry {
     padding: 20px;
     background-color: white;
     border-radius: 3px;
+    color: $dark;
+
+    p {
+        color: $default;
+    }
 
     :last-child {
         margin-bottom: 0;

@@ -7,13 +7,13 @@ add_action( 'after_setup_theme', 'gutenberg_editor_style_setup' );
 function gutenberg_editor_style_setup() {
 
     // Add support for editor styles
-    add_theme_support('editor-styles');
+    add_theme_support( 'editor-styles' );
 
     // Enqueue editor styles
-    add_editor_style("/css/gutenberg-style.css");
+    add_editor_style( "/css/gutenberg-style.css" );
     
     // Google fonts
-    add_editor_style( '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap' );
+    add_editor_style( 'https://fonts.googleapis.com/css?family=Source+Sans+Pro' );
 }
 
 /**
@@ -22,8 +22,8 @@ function gutenberg_editor_style_setup() {
 add_action( 'wp_enqueue_scripts', 'elodin_twentynineteen_enqueue_scripts_styles' );
 function elodin_twentynineteen_enqueue_scripts_styles() {
 
-    wp_enqueue_style( 'genesis-sample-fonts',
-        '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
+    wp_enqueue_style( 'gfont-source-sans',
+        'https://fonts.googleapis.com/css?family=Source+Sans+Pro',
         array(),
         CHILD_THEME_VERSION
     );
