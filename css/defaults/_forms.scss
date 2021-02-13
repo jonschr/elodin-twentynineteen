@@ -68,21 +68,96 @@ input[type="radio"] {
     color: #333;
     opacity: 1;
 }
-// body .gform_wrapper {
 
-//     input[type="text"],
-//     input[type="email"],
-//     input[type="tel"],
-//     input[type="date"],
-//     input[type="number"],
-//     input[type="password"],
-//     input[type="url"],
-//     input[type="search"],
-//     textarea {
-//         border: 1px solid #ddd !important;
+body .gform_wrapper {
 
-//         &:focus {
-//             border: 1px solid #333 !important;
-//         }
-//     }
-// }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    input[type="password"],
+    input[type="url"],
+    input[type="search"],
+    textarea {
+        border: 1px solid #ddd !important;
+
+        &:focus {
+            border: 1px solid #333 !important;
+        }
+    }
+
+    .gform_footer {
+        .gform_button {
+            width: 100% !important;
+            display: block !important;
+        }
+    }
+
+    .gfield:not(.hidden_label) {
+        margin-top: 15px;
+    }
+
+    .gsection {
+        padding-top: 5px !important;
+        border: none !important;
+        margin-bottom: 15px !important;
+        padding-bottom: 0 !important;
+
+        .gsection_title {
+            @extend h3;
+            padding-bottom: 5px;
+            margin-bottom: 5px !important;
+            border-bottom: 2px solid rgba($dark, 0.1);
+        }
+
+        .gsection_description {
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        > :last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .charleft.ginput_counter {
+        font-style: italic;
+        font-size: 13px;
+    }
+}
+
+body .gform_wrapper.dark_wrapper {
+    padding: 30px !important;
+    background-color: $dark;
+
+    .gsection {
+        border: none !important;
+
+        .gsection_title {
+            @extend h3;
+            color: white;
+            border-bottom: 2px solid rgba(white, 0.1);
+
+        }
+
+        .gsection_description {
+            color: white;
+        }
+    }
+
+    .gfield:not(.hidden_label) {
+
+        .gfield_label {
+            color: white;
+        }
+
+        .ginput_container label {
+            color: white;
+        }
+    }
+
+    .charleft.ginput_counter {
+        color: white;
+    }
+}

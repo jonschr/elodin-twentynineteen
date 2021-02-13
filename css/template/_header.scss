@@ -96,7 +96,7 @@
     z-index: 50;
 
     @include notdesktop {
-        &:not('.header-at-top') {
+        &:not(.header-at-top) {
             top: 0;
         }
     }
