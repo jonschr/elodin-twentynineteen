@@ -6,7 +6,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Elodin TwentyNineteen' );
 define( 'CHILD_THEME_URL', 'https://elod.in' );
-define( 'CHILD_THEME_VERSION', '0.8.0' );
+define( 'CHILD_THEME_VERSION', '0.8.1' );
 
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
@@ -94,3 +94,24 @@ add_filter ( 'genesis_edit_post_link' , '__return_false' );
 remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_open', 5 );
 remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 );
+
+//* Disable fullscreen mode
+add_action( 'enqueue_block_editor_assets', 'elodin_disable_fullscreen_mode' );
+function elodin_disable_fullscreen_mode() {
+	
+	if ( !is_admin() )
+		return;
+		
+	$script = "
+		jQuery( window ).load(function() { 
+			const isFullscreenMode = wp.data.select( 'core/edit-post' ).isFeatureActive( 'fullscreenMode' ); 
+			if ( isFullscreenMode ) { 
+				wp.data.dispatch( 'core/edit-post' ).toggleFeature( 'fullscreenMode' ); 
+			} 
+		});
+	";
+	
+	wp_add_inline_script( 'wp-blocks', $script );
+	
+}
+
