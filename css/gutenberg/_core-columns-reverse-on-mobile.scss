@@ -1,0 +1,13 @@
+.wp-block-columns.reverse-order-on-mobile {
+    @media(max-width: 600px) {
+        .wp-block-column:first-child {
+            order: 2;
+            margin-bottom: 0 !important;
+        }
+
+        .wp-block-column:last-child {
+            order: 1;
+            margin-bottom: 30px !important;
+        }
+    }
+}

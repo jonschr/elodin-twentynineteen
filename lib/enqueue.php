@@ -91,6 +91,13 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
         array(),
         CHILD_THEME_VERSION
     );
+    
+    wp_enqueue_script( 'reverse-columns-mobile',
+        get_stylesheet_directory_uri() . '/js/reverse-columns-mobile.js',
+        array('jquery'),
+        CHILD_THEME_VERSION,
+        true
+    );
 
 }
 

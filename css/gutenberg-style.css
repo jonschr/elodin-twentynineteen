@@ -953,6 +953,14 @@ p.has-background.light-text a {
 .wp-block-categories-list.alignfull {
   padding: 0 30px; }
 
+@media (max-width: 600px) {
+  .wp-block-columns.reverse-order-on-mobile .wp-block-column:first-child {
+    order: 2;
+    margin-bottom: 0 !important; }
+  .wp-block-columns.reverse-order-on-mobile .wp-block-column:last-child {
+    order: 1;
+    margin-bottom: 30px !important; } }
+
 @media (min-width: 600px) {
   .wp-block-columns:last-child > .wp-block-column {
     margin-bottom: 0; } }
