@@ -1,0 +1,10 @@
+body.content-sidebar,
+body.sidebar-content {
+    background-color: $light;
+
+    article.page>.entry-content {
+        box-shadow: 0 10px 30px 0 rgba(black, 0.07);
+        padding: 30px;
+        background-color: white;
+    }
+}
