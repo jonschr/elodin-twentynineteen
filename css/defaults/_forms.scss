@@ -88,14 +88,17 @@ body .gform_wrapper {
     }
 
     .gform_footer {
+        margin-bottom: 0 !important;
+
         .gform_button {
             width: 100% !important;
             display: block !important;
+            margin-bottom: 0 !important
         }
     }
 
     .gfield:not(.hidden_label) {
-        margin-top: 15px;
+        // margin-top: 15px;
     }
 
     .gsection {
@@ -156,6 +159,10 @@ body .gform_wrapper.dark_wrapper {
         .ginput_container label {
             color: white;
         }
+    }
+
+    .gform_footer {
+        padding: 0 !important;
     }
 
     .charleft.ginput_counter {
