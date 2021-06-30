@@ -16,7 +16,6 @@ $dark: #111111;
    ========================================================================== */
 
 $colors: ("white": $white, "light": $light, "default": $default, "dark": $dark, "blue": $blue, "highlight": $highlight);
-$darks: ("default": $default, "dark": $dark, "blue": $blue, "highlight": $highlight);
 
 /*
    Connect up the colors
@@ -31,27 +30,6 @@ $color in $colors {
 
     .has-#{$name}-background-color {
         background-color: $color;
-    }
-}
-
-/*
-   Connect up the dark ones
-   ========================================================================== */
-
-@each $name,
-$dark in $darks {
-
-    .has-#{$name}-background-color {
-        color: white;
-
-        h1,
-        h2 {
-            color: white;
-        }
-
-        ul {
-            color: white;
-        }
     }
 }
 

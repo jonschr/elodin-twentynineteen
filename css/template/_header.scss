@@ -187,7 +187,8 @@
             display: block;
 
             @include notdesktop {
-                max-height: 66px;
+                height: 58px;
+                width: auto !important;
                 margin-left: 0;
                 text-align: left;
             }

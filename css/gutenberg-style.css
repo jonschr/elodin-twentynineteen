@@ -46,41 +46,6 @@
 .has-highlight-background-color {
   background-color: #147bcd; }
 
-/*
-   Connect up the dark ones
-   ========================================================================== */
-.has-default-background-color {
-  color: white; }
-  .has-default-background-color h1, .has-default-background-color .editor-post-title__block .editor-post-title__input, .editor-post-title__block .has-default-background-color .editor-post-title__input,
-  .has-default-background-color h2 {
-    color: white; }
-  .has-default-background-color ul {
-    color: white; }
-
-.has-dark-background-color {
-  color: white; }
-  .has-dark-background-color h1, .has-dark-background-color .editor-post-title__block .editor-post-title__input, .editor-post-title__block .has-dark-background-color .editor-post-title__input,
-  .has-dark-background-color h2 {
-    color: white; }
-  .has-dark-background-color ul {
-    color: white; }
-
-.has-blue-background-color {
-  color: white; }
-  .has-blue-background-color h1, .has-blue-background-color .editor-post-title__block .editor-post-title__input, .editor-post-title__block .has-blue-background-color .editor-post-title__input,
-  .has-blue-background-color h2 {
-    color: white; }
-  .has-blue-background-color ul {
-    color: white; }
-
-.has-highlight-background-color {
-  color: white; }
-  .has-highlight-background-color h1, .has-highlight-background-color .editor-post-title__block .editor-post-title__input, .editor-post-title__block .has-highlight-background-color .editor-post-title__input,
-  .has-highlight-background-color h2 {
-    color: white; }
-  .has-highlight-background-color ul {
-    color: white; }
-
 /* ==========================================================================
    Vars
    ========================================================================== */

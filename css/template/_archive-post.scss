@@ -1,86 +1,111 @@
-/* ==========================================================================
-   Archives
-   ========================================================================== */
+body.blog.full-width-content,
+body.archive.full-width-content {
+    .content {
+        width: $defaultcontentwidth;
+        max-width: 100%;
 
-.archive-description {
-    background: transparent;
-    padding: 0 0 20px;
-    margin-bottom: 30px;
+        .archive-description {
+            display: none;
+        }
 
-    @include notdesktop {
-        margin-bottom: 0;
+        .content-sidebar-wrap {
+            @include desktop {
+                padding-top: 2vw;
+            }
+
+            @include notdesktop {
+                padding-top: 30px;
+            }
+        }
+
+        @include desktop {
+
+            .entry-wrap {
+                margin-top: 2vw;
+                display: flex;
+                flex-flow: row wrap;
+                width: calc(100% + 40px);
+                margin-left: -20px;
+                margin-right: -20px;
+
+                >* {
+                    width: calc(100% - 40px);
+                    margin: 0 20px 40px;
+                }
+
+                .entry {
+                    margin: 0 20px 80px;
+                    width: calc(100% / 2 - 40px);
+                }
+
+
+            }
+        }
+
+        .featured-image-wrap {
+            margin-bottom: 20px;
+        }
+
+        .featured-image {
+            width: 100%;
+            height: 0;
+            padding-top: 40%;
+            display: block;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            @include mobile {
+                padding-top: 55%;
+            }
+        }
+
+        .post-edit-link {
+            text-decoration: none;
+            color: $default;
+        }
+
+        h2.entry-title {
+            margin-bottom: 5px;
+            line-height: 1em;
+        }
     }
 
-
-    h1.archive-title {
-        font-size: 25px;
-        font-weight: normal;
-
-        @include tablet {
-            font-size: 22px;
-        }
-
-
-        @include mobile {
-            font-size: 20px;
-        }
+    .archive-pagination {
+        text-align: center;
     }
 }
 
-body.archive,
-body.category,
-body.blog {
-    background: $light;
+body.blog.full-width-content,
+body.archive.full-width-content {
+    &:not(.paged) {
+        @include desktop {
+            .entry-wrap> {
+                .entry:first-child {
+                    width: calc(100% - 60px);
+                    display: flex;
+                    align-items: center;
 
-    @include mobile {
-        background-color: white;
-    }
+                    >* {
+                        margin: 0 30px;
+                    }
 
-    article.post {
-        padding: 30px;
-        box-shadow: 0 10px 30px 0 rgba(black, 0.07);
-        border-radius: 3px;
-        background-color: white;
-        margin-bottom: 30px;
+                    .featured-image-wrap {
+                        width: 65%;
+                        margin-left: 0;
 
-        .entry-header {
-            margin-bottom: 25px;
-        }
+                        .featured-image {
+                            padding-top: 60%;
+                        }
+                    }
 
-        .entry-content img.post-image,
-        .entry-content picture.entry-image>img {
-            width: calc(100% + 60px);
-            max-width: calc(100% + 60px);
-            margin-left: -30px;
-            margin-right: -30px;
-            margin-bottom: 20px;
-            height: auto !important;
-        }
 
-        &:last-child {
-            margin-bottom: 80px;
-        }
-
-        @include mobile {
-            padding-left: 0;
-            padding-right: 0;
-            margin-bottom: 40px;
-            box-shadow: none;
-        }
-    }
-
-    .entry-content {
-        :last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    h2.entry-title {
-        line-height: 1.1em;
-        margin-bottom: 10px;
-
-        a {
-            transition: .5s all ease;
+                    .archive-content {
+                        width: 35%;
+                        margin-right: 0;
+                    }
+                }
+            }
         }
     }
 }
