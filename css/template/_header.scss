@@ -87,8 +87,7 @@
    ========================================================================== */
 
 .site-header {
-    background-color: rgba(white, 0.95);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    background-color: white;
     padding: 0;
     transition: .3s all ease;
     width: 100%;
@@ -166,6 +165,22 @@
             margin-right: 0;
         }
     }
+
+    &.header-scrolled {
+        background: white;
+        box-shadow: 0 0 20px 0 rgba(black, 0.15);
+
+        .preheader {
+            display: none;
+        }
+
+        .title-area {
+            @include desktop {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
 }
 
 /* ==========================================================================
@@ -197,7 +212,6 @@
 }
 
 .wp-custom-logo .title-area {
-    // max-width: 350px;
     padding-bottom: 20px;
     padding-top: 20px;
     width: 100%;
@@ -209,9 +223,6 @@
 
         img {
             margin-left: 0;
-
-            // max-width: 130px;
-
         }
     }
 }
@@ -250,24 +261,4 @@
     padding-bottom: 15px;
     padding-top: 15px;
     width: 100%;
-}
-
-/* ==========================================================================
-   Scrolled
-   ========================================================================== */
-
-.site-header.header-scrolled {
-    background: white;
-    box-shadow: 0 0 20px 0 rgba(black, 0.15);
-
-    .preheader {
-        display: none;
-    }
-
-    .title-area {
-        @include desktop {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-    }
 }

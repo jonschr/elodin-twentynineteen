@@ -50,28 +50,12 @@ function elodin_twentynineteen_enqueue_scripts_styles() {
         genesis_sample_responsive_menu_settings()
     );
 
-    // wp_enqueue_script(
-    // 	'genesis-sample',
-    // 	get_stylesheet_directory_uri() . '/js/genesis-sample.js',
-    // 	array( 'jquery' ),
-    // 	filemtime(),
-    // 	true
-    // );
-
     wp_enqueue_script('nav-scroll-detection',
         get_stylesheet_directory_uri() . '/js/nav-scroll-detection.js',
         array('jquery'),
         CHILD_THEME_VERSION,
         true
     );
-
-    // wp_enqueue_script(
-    // 	'smoothscroll',
-    // 	get_stylesheet_directory_uri() . '/js/smoothscroll.js',
-    // 	array( 'jquery' ),
-    // 	filemtime(),
-    // 	true
-    // );
 
     wp_register_script( 'slick-main-script',
         get_stylesheet_directory_uri() . '/vendor/slick/slick.min.js',
